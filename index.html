@@ -4,38 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Maquettes de démonstration Soralva</title>
+<title>Démonstrations Soralva : trois univers de sites pour gîtes et chambres d'hôtes</title>
+<!-- Page d'entrée de demo.soralva.com (29/09). Copiée dans la démo par outils/publier-demo.py ; c'est ICI qu'on la
+     modifie, jamais dans la copie. Les couleurs sont celles de soralva.com (encre, or, crème), sans ses polices :
+     la démo ne charge que les polices des maquettes. Exclue de Google comme toutes les pages de la démo : ce sont
+     des établissements imaginaires. -->
 <style>
-  :root { color-scheme: light; }
+  :root { color-scheme: light; --encre: #1c3548; --or: #97721b; --creme: #f7f3ea; --gris: #57636e; --filet: #e2dccf; }
   * { box-sizing: border-box; }
-  body { margin: 0; padding: 48px 24px; background: #f6f3ee; color: #1f1b16; font-family: Georgia, "Times New Roman", serif; line-height: 1.5; }
-  .page { max-width: 640px; margin: 0 auto; }
-  h1 { font-size: 28px; font-weight: 400; margin: 0 0 8px; }
-  p.chapo { color: #55504a; margin: 0 0 40px; font-size: 16px; }
-  .univers { display: block; padding: 24px; margin-bottom: 16px; border: 1px solid #ddd6cb; border-radius: 4px; text-decoration: none; color: inherit; background: #fff; transition: border-color .15s ease; }
-  .univers:hover { border-color: #a8431f; }
-  .univers b { display: block; font-size: 20px; font-weight: 500; margin-bottom: 4px; }
-  .univers span { color: #6b655d; font-size: 15px; }
-  .note { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd6cb; font-size: 13px; color: #8a8378; }
+  body { margin: 0; background: var(--creme); color: var(--encre); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.5; }
+  .page { max-width: 720px; margin: 0 auto; padding: 48px 20px 56px; }
+  .marque { margin: 0 0 36px; font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+  .marque a { color: var(--encre); text-decoration: none; }
+  .marque span { color: var(--or); }
+  h1 { margin: 0 0 12px; font-size: clamp(28px, 5vw, 38px); line-height: 1.15; letter-spacing: -.01em; }
+  .chapo { margin: 0 0 36px; font-size: 17px; color: var(--gris); }
+  .univers { display: block; margin-bottom: 14px; padding: 22px 24px; border: 1px solid var(--filet); border-radius: 8px; background: #fff; color: inherit; text-decoration: none; transition: border-color .15s ease; }
+  .univers:hover, .univers:focus-visible { border-color: var(--or); }
+  .univers__nom { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--or); }
+  .univers__lieu { display: block; font-size: 20px; font-weight: 600; }
+  .univers__quand { display: block; margin-top: 4px; font-size: 15px; color: var(--gris); }
+  .retour { display: inline-flex; align-items: center; min-height: 44px; margin-top: 22px; font-weight: 600; color: var(--encre); }
+  .note { margin: 28px 0 0; padding-top: 18px; border-top: 1px solid var(--filet); font-size: 13.5px; color: var(--gris); }
 </style>
 </head>
 <body>
-  <div class="page">
-    <h1>Maquettes de démonstration Soralva</h1>
-    <p class="chapo">Trois univers fictifs, pour tester la navigation et donner un avis. Établissements et photos imaginaires.</p>
-    <a class="univers" href="ouvertures-4/hotes-diptyque.html">
-      <b>Le Tilleul</b>
-      <span>Chambres d'hôtes à Bourdeilles</span>
+  <main class="page">
+    <p class="marque"><a href="https://soralva.com/">Soralva<span>.</span></a></p>
+    <h1>Trois univers, trois sites à visiter</h1>
+    <p class="chapo">Chaque démonstration est un site complet, tel qu'un voyageur le découvre : l'accueil, les logements, la région, les cartes cadeaux, les conditions de location. Parcourez-les comme vous le feriez sur votre téléphone.</p>
+    <a class="univers" href="maison.html">
+      <span class="univers__nom">Maison</span>
+      <span class="univers__lieu">La Maison du Noyer, gîte à Villars</span>
+      <span class="univers__quand">Si l'on vient pour la maison elle-même, ses pièces et son jardin.</span>
     </a>
-    <a class="univers" href="ouvertures-4/maison.html">
-      <b>La Maison du Noyer</b>
-      <span>Gîte à Villars</span>
+    <a class="univers" href="horizon.html">
+      <span class="univers__nom">Horizon</span>
+      <span class="univers__lieu">Le Coteau, gîte à Alles-sur-Dordogne</span>
+      <span class="univers__quand">Si l'on vient pour ce qu'il y a autour, les chemins et les bonnes adresses.</span>
     </a>
-    <a class="univers" href="ouvertures-4/horizon.html">
-      <b>Le Coteau</b>
-      <span>Gîte à Alles-sur-Dordogne</span>
+    <a class="univers" href="hotes.html">
+      <span class="univers__nom">Hôtes</span>
+      <span class="univers__lieu">Le Tilleul, chambres d'hôtes à Bourdeilles</span>
+      <span class="univers__quand">Si l'on vient pour vous, votre accueil et votre table.</span>
     </a>
-    <p class="note">Démonstration Soralva, établissements imaginaires, photos créées par intelligence artificielle.</p>
-  </div>
+    <a class="retour" href="https://soralva.com/">← Retour sur soralva.com</a>
+    <p class="note">Établissements imaginaires : les photos des maisons et des chambres sont créées par intelligence artificielle, celles des lieux de la région viennent de Wikimedia Commons et sont créditées sur leur page. Les formulaires n'envoient rien.</p>
+  </main>
 </body>
 </html>

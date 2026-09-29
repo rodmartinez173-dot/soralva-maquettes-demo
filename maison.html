@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>La Maison du Noyer, gîte à Villars en Dordogne</title>
+<meta name="description" content="Gîte à Villars, à 13 km de Brantôme : une maison de pierre blonde de 1760 pour 10 personnes, jardin clos et vieux noyer, dès 1 650 € la semaine.">
+<link rel="canonical" href="https://www.maisondunoyer-exemple.fr/">
+<!-- Aperçu quand on partage le lien (24/09, repris de Hôtes). Adresses du futur site du client : la maquette utilise
+     le domaine fictif de son adresse e-mail ; l'image sort de outils/optimiser-photos.py (photos-ia/optim). -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="La Maison du Noyer">
+<meta property="og:title" content="La Maison du Noyer, gîte à Villars en Dordogne">
+<meta property="og:description" content="Gîte à Villars, à 13 km de Brantôme : une maison de pierre blonde de 1760 pour 10 personnes, jardin clos et vieux noyer, dès 1 650 € la semaine.">
+<meta property="og:url" content="https://www.maisondunoyer-exemple.fr/">
+<meta property="og:image" content="https://www.maisondunoyer-exemple.fr/photos/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La Maison du Noyer, maison de pierre blonde, son jardin et le vieux noyer, à Villars.">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Fiche d'identité lue par Google et les IA (24/09, sur le modèle de Hôtes). Un gîte est un meublé de tourisme :
+     sous-type VacationRental, la maison entière et sa capacité, une offre avec prix et unité (la semaine) ; jamais la
+     note Gîtes de France en AggregateRating (règle « self-serving »). Nom, adresse et téléphone identiques au pied. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VacationRental",
+  "@id": "https://www.maisondunoyer-exemple.fr/#etablissement",
+  "name": "La Maison du Noyer",
+  "description": "Gîte à Villars, en Dordogne, à 13 km de Brantôme : une maison de pierre blonde bâtie en 1760 et restaurée, louée entière pour 10 personnes, avec un jardin clos de murets, des roses anciennes et le vieux noyer qui lui a donné son nom.",
+  "url": "https://www.maisondunoyer-exemple.fr/",
+  "telephone": "+33 5 53 00 00 01",
+  "email": "bonjour@maisondunoyer-exemple.fr",
+  "image": [
+    "https://www.maisondunoyer-exemple.fr/photos/facade.jpg",
+    "https://www.maisondunoyer-exemple.fr/photos/piece-a-vivre.jpg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lieu-dit le Noyer",
+    "postalCode": "24530",
+    "addressLocality": "Villars",
+    "addressRegion": "Dordogne",
+    "addressCountry": "FR"
+  },
+  "containsPlace": {
+    "@type": "Accommodation",
+    "name": "La maison entière",
+    "occupancy": { "@type": "QuantitativeValue", "maxValue": 10 }
+  },
+  "priceRange": "À partir de 1 650 € la semaine",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Jardin clos",
+      "value": true
+    }
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Semaine dans la maison entière",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "minPrice": 1650,
+      "priceCurrency": "EUR",
+      "unitCode": "WEE",
+      "unitText": "semaine"
+    }
+  }
+}
+</script>
+<link rel="preload" href="polices/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="polices/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+  // Geste 2 armé dès le premier affichage (23/09, même correctif que Hôtes) : posée par le script de fin de page, la
+  // classe arrivait après un premier affichage complet ; en actualisant sur une section animée, elle se montrait, se
+  // masquait puis réapparaissait dans un ordre qui dépendait de la vitesse du poste.
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.classList.add('js-motion'); }
+</script>
+<style>
+/* Polices hébergées avec la page (24/09, comme Hôtes), allégées par outils/alleger-polices.py (origine : Google Fonts,
+   licence OFL, fichiers d'origine dans polices/origine). Plages de graisse identiques à celles que Google
+   déclarait : Bodoni Moda de 400 à 500, Manrope de 400 à 600 (une graisse plus forte demandée est ramenée à 600,
+   exactement comme avant). Plus aucun appel à un serveur tiers avant d'afficher le texte. */
+@font-face { font-family: "Bodoni Moda"; src: url("polices/bodoni-moda.woff2") format("woff2"); font-weight: 400 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Bodoni Moda"; src: url("polices/bodoni-moda-italique.woff2") format("woff2"); font-weight: 400 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Manrope"; src: url("polices/manrope.woff2") format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; }
+/* Maison, série 4, d’après ouvertures-3/maison.html : blanc pur, Bodoni Moda et Manrope, accent bronze.
+   Ce qui change par rapport à la série 3, à la demande de Rodolphe du 20/09 (« je n’aime pas ces étiquettes qui se
+   superposent à la photo, je préfère au final un texte incrusté au-dessus de la photo ») :
+   1. la bande blanche qui portait les faits disparaît : les faits sont incrustés sur la photo, en bas, en texte clair ;
+   2. le bouton plein de l’ouverture disparaît lui aussi : il devient un lien en capitales souligné d’un filet fin.
+      Le bouton plein « Réserver » reste dans l’en-tête, et dans la barre du pouce sur téléphone ;
+   3. la séparation obtenue en série 3 est gardée : le lieu en haut de la photo, les faits tout en bas, loin l’un de
+      l’autre, la pièce visible entre les deux ;
+   4. la lisibilité ne vient plus d’un fond uni mais de deux dégradés calés en pixels, celui du haut (inchangé) et un
+      nouveau dégradé bas, éteint bien avant le milieu de l’image ;
+   5. tout le reste est inchangé : photos, palette, polices, contenu, zoom lent de la photo, en-tête, barre du pouce.
+      Seule la graisse 600 de Manrope est ajoutée, pour les petits textes posés sur la photo. */
+:root {
+  --fond: #f8f3e8;                /* crème : la page et l'en-tête. Le blanc pur d'imprimante est abandonné le
+                                     21/09, choix M2 de Rodolphe sur planche. */
+  --encre: #161513;               /* presque noir, 18,3 sur le blanc */
+  --accent: #7f623b;              /* bronze, assombri le 21/09 avec le passage de la page en crème : à #8a6a40
+                                     il tombait à 4,50 sur le crème, pile sur le seuil. Il donne 5,13. */
+  --sur-accent: #ffffff;
+  --clair: #ffffff;               /* le texte posé sur la photo */
+  --voile: 16, 15, 13;            /* l’encre, en composantes, pour les dégradés */
+  --clair-c: 255, 255, 255;   /* le clair en composantes, pour les filets translucides du pied */
+  --accent-pied: #9d7949;   /* accent éclairci, lisible sur le fond sombre du pied */
+  --filet: rgba(22, 21, 19, .22);
+  --filet-clair: rgba(255, 255, 255, .52);
+  --titre: "Bodoni Moda", Didot, Georgia, serif;
+  --texte: "Manrope", "Segoe UI", sans-serif;
+  /* Les surfaces posées sur la page, barre du pouce et panneaux : un blanc cassé chaud, à un rapport de
+     1,20 du blanc pur de la page, sinon le panneau se confondrait avec elle. */
+  --fond-surface: #e8e6e1;        /* gris neutre : rien du sable de Hôtes, demande de Rodolphe du 21/09 */
+  /* Le fond des sections, distinct de la page ET de la surface des menus (Rodolphe, 21/09) :
+     une section ne doit jamais porter la couleur du menu, qui appartient aux surfaces flottantes. */
+  --fond-section: #ffffff;
+  --fond-tete: #eae8e8;    /* le bandeau du nom, plus foncé que le corps (Rodolphe, 21/09) */
+  --champ: #ffffff;         /* le fond des champs de saisie, plus clair que la carte qui les porte */
+  --champ-actif: #ffffff;   /* et le plus clair de tous quand on y écrit */
+  --erreur: #9a2f24;            /* rouge sombre, pour les erreurs de formulaire */
+  --marge: 64px;
+  --entete: 74px;
+  --photo: clamp(520px, calc(100svh - var(--entete) - 130px), 720px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0; padding-top: calc(var(--entete) + var(--haut-bandeaux, 0px)); background: var(--fond); color: var(--encre);
+  font-family: var(--texte); font-size: 18px; line-height: 1.65; font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+h1, h2, p { margin: 0; }
+img { display: block; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Capitales espacées : menu, surtitres, boutons, liens, et rien d’autre */
+.capitales {
+  font-family: var(--texte); font-weight: 500; font-size: 12px;
+  letter-spacing: 0.18em; text-transform: uppercase; line-height: 1.4;
+}
+.nowrap { white-space: nowrap; }
+
+/* Deux styles seulement : un bouton plein de rayon 0, et un lien en capitales souligné d’un filet fin */
+.bouton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 46px; padding: 0 24px; border: 0; border-radius: 0;
+  font-family: var(--texte); font-weight: 500; font-size: 12px; letter-spacing: 0.18em;
+  text-transform: uppercase; white-space: nowrap;
+  background: var(--accent); color: var(--sur-accent);
+  transition: background-color .2s ease;
+}
+.bouton:hover { background: var(--encre); }
+.bouton:active { background: var(--encre); transform: scale(.98); }
+
+/* En-tête sur le blanc de la page (refait le 21/09). Maison garde sa bande blanche, contrairement aux deux autres
+   univers : c'est le code du segment, six des dix références du groupe ont une bande opaque, et les deux plus haut
+   de gamme, Emile Garcin et Patrice Besse, ont exactement une bande blanche à marque centrée. Sa photo d'ouverture
+   est en outre un intérieur chargé, sur lequel un en-tête transparent se battrait. Ce qui change : la marque est
+   centrée et traitée en capitales espacées, le menu passe à gauche, le bouton plein devient un contour, la hauteur
+   descend de 80 à 74 px (Rodolphe, 21/09 : « plus fine en hauteur »), et un filet d'un pixel ferme la bande. */
+.entete {
+  position: fixed; z-index: 50; top: var(--haut-bandeaux, 0px); left: 0; right: 0;
+  height: var(--entete); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+  padding: 0 var(--marge); background: var(--fond); border-bottom: 1px solid var(--filet);
+  transition: height .28s ease, box-shadow .28s ease;
+}
+/* Réduite dès le défilement, comme sur soralva.com : 74 px au chargement, 58 px ensuite. La marque rétrécit avec
+   elle, et une ombre très douce détache la bande blanche de la photo. */
+.entete.collee { height: 58px; box-shadow: 0 6px 22px -12px rgba(var(--voile), .45); }
+.entete.collee .nom { font-size: 13px; letter-spacing: 0.2em; text-indent: 0.2em; }
+.entete.sans-transition, .entete.sans-transition * { transition: none; }
+.nom {
+  grid-column: 2; justify-self: center; position: relative;
+  font-family: var(--titre); font-weight: 500; font-size: 15px; line-height: 1;
+  letter-spacing: 0.22em; text-transform: uppercase; text-indent: 0.22em;
+  transition: font-size .28s ease, letter-spacing .28s ease;
+}
+/* 21/09 (Rodolphe) : « l'espace entre le logo et le menu est un peu vide ». Deux filets discrets encadrent la
+   marque au lieu d'agrandir le menu ou de resserrer la grille : ils reprennent le motif déjà en place pour les
+   surtitres (une ligne fine, avant le texte), sans toucher à la largeur des trois colonnes de l'en-tête. */
+.nom::before, .nom::after {
+  content: ""; position: absolute; top: 50%; width: 20px; height: 1px;
+  background: currentColor; opacity: .4; transform: translateY(-50%);
+}
+.nom::before { right: 100%; margin-right: 16px; }
+.nom::after { left: 100%; margin-left: 16px; }
+.menu { grid-column: 1; grid-row: 1; justify-self: start; display: flex; gap: 24px; }
+.actions { grid-column: 3; grid-row: 1; justify-self: end; display: flex; align-items: center; gap: 26px; }
+.menu a, .actions a:not(.bouton) { padding: 12px 0; font-size: 13.5px; letter-spacing: 0.16em; }
+.tel { font-variant-numeric: tabular-nums; letter-spacing: 0.1em; white-space: nowrap; }
+/* Le bouton de l'en-tête en contour : le bloc plein de couleur était ce qui faisait le plus « site ordinaire ». */
+.entete .bouton { min-height: 42px; padding: 0 22px; background: transparent; color: var(--encre); box-shadow: inset 0 0 0 1px var(--filet); }
+.entete .bouton:hover { background: var(--encre); color: var(--sur-accent); box-shadow: none; }
+
+/* La bulle WhatsApp, ordinateur seulement (décision de l'étape 2 : aucune bulle sur téléphone, la barre du pouce
+   porte « Écrire »). Visible dès l'arrivée, choix de Rodolphe du 21/09, exception assumée au point 16 de la grille.
+   Carrée à 2 px de rayon comme les boutons, et non ronde : le rond serait le seul de tout le site. */
+/* La bulle WhatsApp est exactement celle de soralva.com dans les trois univers (Rodolphe, 21/09) : ronde,
+   58 px, vert WhatsApp, glyphe blanc plein. C'est le seul élément du site qui n'obéit pas à la palette de
+   l'univers, et c'est voulu : WhatsApp est une marque, on la reconnaît à sa couleur, pas à la nôtre. */
+.bulle {
+  position: fixed; z-index: 40; right: 22px; bottom: 22px;
+  width: 58px; height: 58px; display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: #25D366; color: #ffffff;
+  box-shadow: 0 10px 30px -6px rgba(0, 0, 0, .45);
+}
+.bulle:hover { background: #1EBE59; }
+.bulle svg { width: 28px; height: 28px; fill: currentColor; }
+/* ---- Pied de page premium (refonte 21/09) ---- */
+.pied { background: rgb(var(--voile)); color: var(--clair); padding: 0 var(--marge) 96px; }
+.pied__marque-haut { max-width: 1180px; margin: 0 auto; padding-top: 2px; border-top: 2px solid var(--accent); }
+.pied__grille { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; align-items: start; max-width: 1180px; margin: 0 auto; padding: 68px 0 54px; }
+.pied__nom { font-family: "Bodoni Moda", Didot, Georgia, serif; font-weight: 400; font-size: 32px; line-height: 1.02; margin: 0; letter-spacing: -.01em; }
+.pied__signe { font-family: "Bodoni Moda", Didot, Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.35; opacity: .82; margin: 14px 0 28px; max-width: 22ch; }
+.pied__reseaux { display: flex; gap: 12px; }
+.pied__reseaux a { display: flex; width: 44px; height: 44px; align-items: center; justify-content: center;
+  border: 1px solid rgba(var(--clair-c), .28); border-radius: 2px; color: inherit; transition: border-color .2s ease, background-color .2s ease; }
+.pied__reseaux a:hover { border-color: var(--accent-pied); background: rgba(var(--clair-c), .06); }
+.pied__reseaux svg { width: 18px; height: 18px; fill: currentColor; }
+.pied__bloc { display: flex; flex-direction: column; }
+.pied__liste { display: flex; flex-direction: column; }
+/* Intitulé agrandi et détaché de sa liste (22/09, Rodolphe : « Découvrir » et « Nous joindre » trop petits) :
+   14 px reste net en dessous du nom de la maison (32 px) et de la promesse, donc sans lui faire concurrence.
+   Sélecteur renforcé (.pied__bloc .pied__label) : la règle .pied__bloc p plus bas, plus spécifique qu'une
+   simple classe, écrasait sinon la marge basse ci-dessous et la laissait à 9 px au lieu de 26. */
+/* opacity: 1 (24/09) : la règle .pied__bloc p plus bas lui donnait aussi .68, qui faisait tomber le bronze à 2,83
+   sur le fond du pied ; opaque, il tient 4,8. */
+.pied__bloc .pied__label { font-size: 14px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--accent-pied); margin: 0 0 26px; line-height: 1; opacity: 1; }
+.pied__nom { line-height: 1; }
+.pied__bloc a { color: inherit; opacity: .84; padding: 7px 0; width: fit-content; max-width: 100%; overflow-wrap: anywhere; transition: opacity .18s ease, color .18s ease; }
+.pied__bloc a:hover { opacity: 1; color: var(--accent-pied); }
+.pied__bloc p { margin: 9px 0 0; opacity: .68; line-height: 1.55; }
+.pied__bas { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; max-width: 1180px; margin: 0 auto;
+  padding-top: 36px; border-top: 1px solid rgba(var(--clair-c), .16); font-size: 12.5px; }
+.pied__credit { margin: 0; opacity: .58; }
+.pied__legal { display: flex; gap: 20px; }
+.pied__legal a { color: inherit; opacity: .72; transition: opacity .18s ease; }
+.pied__legal a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
+.pied__haut { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; opacity: .72; transition: opacity .18s ease; }
+.pied__haut:hover { opacity: 1; }
+/* Bornes hautes en ,98 (24/09, comme Hôtes) : avec « max-width: 760px » et « min-width: 761px », une largeur
+   fractionnaire (zoom du navigateur) tombait entre les deux, aucune règle ne s'appliquait et l'en-tête cassait. */
+@media (max-width: 760.98px) {
+  .pied { padding: 0 var(--marge) 34px; }
+  .pied__marque { text-align: center; }
+  .pied__signe { margin-left: auto; margin-right: auto; }
+  .pied__reseaux { justify-content: center; }
+  /* Les deux colonnes de liens prennent la même hauteur et répartissent leurs liens, pour que le
+     premier et le dernier de chaque colonne (Contact et Dordogne) tombent sur la même ligne. */
+  .pied__liens, .pied__grille { align-items: stretch; }
+  .pied__liste { flex: 1; justify-content: space-between; }
+  /* Deux colonnes de liens côte à côte, la marque au-dessus, pour raccourcir le pied (Rodolphe, 21/09). */
+  .pied__grille { grid-template-columns: 1fr 1fr; gap: 30px 24px; padding: 46px 0 38px; }
+  .pied__marque { grid-column: 1 / -1; }
+  .pied__nom { font-size: 27px; }
+  /* Cibles de 44 px pour les liens du pied, téléphone et courriel compris. */
+  .pied__bloc a { min-height: 44px; padding: 0; display: flex; align-items: center; }
+  .pied__bloc p { min-height: 44px; display: flex; align-items: center; }
+  .pied__bas { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .pied__legal { flex-wrap: wrap; gap: 0 18px; }
+  .pied__legal a { min-height: 44px; display: inline-flex; align-items: center; }
+  .pied__haut { margin-left: 0; min-height: 44px; }
+}
+/* 24/09 : pied sur téléphone réorganisé comme Hôtes le 23/09. Les deux colonnes étroites coupaient l'e-mail en
+   trois morceaux et « Nous joindre » en deux lignes à 320 px. « Découvrir » passe sur deux colonnes de deux liens,
+   « Nous joindre » dessous sur toute la largeur ; l'intitulé ne prend plus la hauteur de 44 px des liens (elle lui
+   venait de .pied__bloc p) ; en bas, les trois mentions sur une ligne, puis le crédit et « Haut de page ». Les
+   liens gardent leurs 44 px pour le doigt. Pas d'icônes devant les liens : c'est un geste de Hôtes. */
+@media (max-width: 760.98px) {
+  .pied__grille { grid-template-columns: minmax(0, 1fr); gap: 26px; padding: 44px 0 12px; }
+  .pied__liste { flex: none; justify-content: flex-start; }
+  nav.pied__bloc .pied__liste { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 12px; }
+  .pied__bloc .pied__label { min-height: 0; margin-bottom: 6px; }
+  .pied__liste a[href^="tel"] { white-space: nowrap; }
+  .pied__bas { display: grid; grid-template-columns: 1fr auto; gap: 0 12px; align-items: center; padding-top: 6px; }
+  .pied__legal { grid-row: 1; grid-column: 1 / -1; flex-wrap: nowrap; justify-content: space-between; gap: 0 10px; }
+  .pied__credit { grid-row: 2; grid-column: 1; }
+  .pied__haut { grid-row: 2; grid-column: 2; }
+  .pied { padding-bottom: 8px; }
+}
+/* L'adresse du pied se coupe après « @ », jamais au trait d'union du domaine (sur toute la largeur, il tient). */
+.pied .ligne-mail__domaine { white-space: nowrap; }
+
+@media (max-width: 760.98px) { .bulle { display: none; } }
+
+/* ---- Lot 3 du point 4 (21/09) : le formulaire de demande ----
+   Champs et règles du module 7, validé le 16/09 : dates obligatoires avec une case « dates flexibles »,
+   adultes et enfants séparés, aucune case de consentement (base légale : mesures précontractuelles), une
+   phrase d'information sous le bouton, et le délai de réponse annoncé au-dessus comme dans « Écrire ».
+   Quatre états, appelés par ?forme=erreurs, ?forme=envoi, ?forme=confirme. */
+.demande { padding: 52px var(--marge) 56px; background: var(--fond); }
+.demande__tete { max-width: 60ch; }
+.demande h2 { margin-top: 12px; }
+.demande__dit { margin-top: 18px; font-size: 17px; line-height: 1.6; }
+
+/* La carte, reprise de soralva.com : le formulaire n'est pas posé à plat sur la page, il vit dans une surface à
+   lui, celle des panneaux du pouce. Les champs, eux, sont plus clairs que la carte : ce sont les seules zones où
+   l'on écrit, et elles doivent se voir comme telles. */
+.carte-demande {
+  margin-top: 36px; max-width: 820px; padding: clamp(24px, 2.6vw, 34px);
+  background: var(--fond); border-radius: 4px;
+}
+.carte-demande__titre { margin: 0 0 20px; font-size: 17px; font-weight: 700; }
+form { display: grid; gap: 20px 24px; grid-template-columns: 1fr 1fr; }
+.champ { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.champ--large { grid-column: 1 / -1; }
+/* Étiquettes en bas de casse : les capitales espacées sont faites pour un menu, pas pour un formulaire qu'on
+   remplit champ après champ. */
+.champ label { font-size: 13.5px; font-weight: 600; letter-spacing: .01em; text-transform: none; }
+.champ small { font-size: 13px; font-weight: 400; opacity: .72; }
+/* Le champ, dessiné comme sur soralva.com : rayon plus rond que le reste du site, assumé (c'est la seule surface
+   où l'on écrit), ombre intérieure très pâle qui le creuse, bordure chaude qui ne dépend pas du contraste entre le
+   champ et la carte, et passage au plus clair quand on y écrit. */
+input, select, textarea {
+  width: 100%; min-height: 52px; padding: 15px 16px;
+  border: 1px solid var(--accent); border-radius: 8px;
+  background: var(--champ); color: var(--encre);
+  font-family: inherit; font-size: 16px; line-height: 1.4;
+  box-shadow: inset 0 1px 2px rgba(var(--voile), .07);
+  transition: background-color .18s ease, box-shadow .18s ease;
+}
+textarea { min-height: 132px; resize: vertical; }
+input:hover, select:hover, textarea:hover { background: var(--champ-actif); }
+/* Le focus change de couleur, pas seulement d'épaisseur : la bordure passe à l'encre, plus foncée que
+   l'accent au repos, en plus du fond éclairci et de l'anneau (Rodolphe, 21/09 : « assurez-vous que la bordure
+   change de couleur »). */
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--encre);
+  background: var(--champ-actif); box-shadow: 0 0 0 4px rgba(var(--voile), .10);
+}
+/* Une case à cocher porte une phrase, pas une étiquette. */
+.champ label.case { display: flex; align-items: flex-start; gap: 11px; font-size: 15.5px; font-weight: 400;
+  letter-spacing: 0; text-transform: none; line-height: 1.45; }
+.case input { min-height: 0; width: 22px; height: 22px; flex: none; margin: 1px 0 0; padding: 0;
+  border-radius: 3px; box-shadow: none; accent-color: var(--accent); }
+/* L'erreur : un filet de 2 px sur le champ, un mot sous lui, et un résumé en tête qui mène aux champs.
+   Jamais la couleur seule : le mot « Erreur » et le filet épais disent la même chose autrement. */
+.champ--faux input, .champ--faux select, .champ--faux textarea { border: 2px solid var(--erreur); }
+.champ__erreur { display: none; font-size: 13.5px; font-weight: 600; color: var(--erreur); }
+.champ--faux .champ__erreur { display: block; }
+.resume { display: none; grid-column: 1 / -1; padding: 16px 18px; background: var(--champ); border-left: 4px solid var(--erreur); border-radius: 3px; }
+.resume p { margin: 0; font-weight: 700; color: var(--erreur); }
+.resume ul { margin: 8px 0 0; padding: 0; font-size: 15px; }
+.resume li + li { margin-top: 4px; }
+.resume a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+form.a-erreurs .resume { display: block; }
+/* Le compteur du message existe à cause du COLLAGE et non de la frappe : maxlength tronque un texte collé sans
+   rien dire. Repris de soralva.com. */
+.compteur { align-self: flex-end; font-size: 12px; letter-spacing: .04em; opacity: .7; font-variant-numeric: tabular-nums; }
+/* Le test anti-robot : sa place est réservée dès le départ pour que rien ne saute quand il se charge, et il est
+   nommé, comme l'exige la politique de confidentialité. */
+.anti-robot {
+  grid-column: 1 / -1; display: flex; align-items: center; gap: 12px;
+  min-height: 70px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px;
+  font-size: 13.5px; line-height: 1.45; opacity: .9;
+}
+.anti-robot svg { width: 22px; height: 22px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+/* Le champ-piège : invisible à l'œil, rempli par les robots, jamais par un visiteur. Repris de soralva.com. */
+.champ-piege { position: absolute; left: -9999px; }
+.demande__pied { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
+.demande__pied .bouton { align-self: start; min-height: 52px; padding: 0 30px; }
+.demande__note { font-size: 15px; line-height: 1.6; opacity: .82; max-width: 62ch; }
+.demande__note a { text-decoration: underline; text-underline-offset: 3px; }
+form.envoi .bouton { opacity: .75; pointer-events: none; }
+form.envoi .bouton::after { content: "…"; }
+.confirme { display: none; max-width: 62ch; margin-top: 36px; padding: 28px 30px;
+  background: var(--fond); border-left: 4px solid var(--accent); border-radius: 4px; }
+.confirme h3 { margin: 0; font-size: 22px; }
+.confirme p { margin: 12px 0 0; font-size: 16px; line-height: 1.6; }
+.demande.est-confirmee .carte-demande { display: none; }
+.demande.est-confirmee .confirme { display: block; }
+/* ---- 24/09 : les quatre blocs communs de la section Réserver (module 7, f à i), repris de Hôtes ----
+   Même contenu et même ordre que Hôtes, dans le langage de Maison : Bodoni Moda pour les titres et les grands
+   numéros, capitales bronze pour les intitulés, filets fins, aucun arrondi, aucune scène ni geste manuscrit. */
+.etapes-bloc, .canaux-bloc { margin-top: 48px; }
+.etapes-bloc__titre, .canaux-bloc__titre { margin: 0 0 22px; font-family: var(--titre); font-weight: 400; font-size: 28px; line-height: 1.2; }
+/* f. Les étapes : quatre colonnes coiffées d'un filet, le grand numéro en italique bronze (5,6 sur le blanc). */
+.etapes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 32px; list-style: none; margin: 0; padding: 0; }
+.etapes li { display: flex; flex-direction: column; gap: 8px; padding-top: 18px; border-top: 1px solid var(--filet); }
+.etapes__num { font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 46px; line-height: 1; color: var(--accent); }
+.etapes__titre { margin: 4px 0 0; font-size: 17px; font-weight: 700; line-height: 1.35; }
+.etapes li p:not(.etapes__titre) { margin: 0; font-size: 16px; line-height: 1.55; }
+/* g. Les canaux : trois colonnes séparées d'un filet ; la valeur en Bodoni soulignée de bronze dit « c'est un
+   lien », et toute la colonne l'est. Cible des liens « Contact », laissée sous l'en-tête réduit. */
+.canaux { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; list-style: none; margin: 0; padding: 0; }
+.canaux li { padding-right: 36px; }
+.canaux li + li { padding-left: 36px; border-left: 1px solid var(--filet); }
+.canaux li:last-child { padding-right: 0; }
+.canal { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 14px 0; color: var(--encre); }
+.canal:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.canal__libelle { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; line-height: 1.3; color: var(--accent); }
+.canal__libelle svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.canal--wa .canal__libelle svg { fill: #25D366; stroke: none; }
+.canal__valeur {
+  font-family: var(--titre); font-size: 27px; font-weight: 400; line-height: 1.25;
+  text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 6px;
+  transition: color .2s ease;
+}
+.canal:hover .canal__valeur, .canal:focus-visible .canal__valeur { color: var(--accent); }
+.canal__mot { font-size: 16px; line-height: 1.5; }
+.canaux-bloc, .carte-demande { scroll-margin-top: calc(var(--haut-bandeaux, 0px) + 58px + 24px); }
+/* h. Le formulaire replié : la classe n'est posée que par le script, sans lui tout reste affiché. */
+.demande.formulaire-ferme .demande__formulaire { display: none; }
+.demande__formulaire { margin-top: 40px; }
+.demande__formulaire .carte-demande { margin-top: 0; }
+.carte-demande__delai { margin: -12px 0 20px; font-size: 16px; line-height: 1.5; }
+/* i. La colonne « Une question ? » : la façade, puis le téléphone ; sur ordinateur, à droite du formulaire, et
+   l'encadré reste collé sous l'en-tête pendant qu'on remplit (même mécanisme que Hôtes). */
+.colonne-info { margin: 24px 0 0; }
+.colonne-info__cadre { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: var(--fond-surface); }
+.colonne-info__cadre img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }  /* 25/09 : photo 17 (le hall), à la place de la façade passée à « La maison » */
+.colonne-info__sous { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 22px 24px; background: var(--fond); }
+.colonne-info__question { margin: 0; font-family: var(--titre); font-size: 24px; line-height: 1.2; }
+.colonne-info__tel { font-size: 24px; font-weight: 600; letter-spacing: .02em; font-variant-numeric: tabular-nums;
+  text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.colonne-info__tel:hover { color: var(--accent); }
+.colonne-info__invite { margin: 0; font-size: 16px; line-height: 1.5; }
+.demande.est-confirmee .etapes-bloc, .demande.est-confirmee .canaux-bloc, .demande.est-confirmee .colonne-info { display: none; }
+@media (min-width: 961px) {
+  /* Colonne plafonnée à 460 px (24/09) : en 1fr, elle prenait toute la place restante, 925 px de large et une photo
+     de 1 156 px de haut à 1 920 px d'écran. Rien ne change jusqu'à 1 440 px (445 px de colonne). */
+  .demande__formulaire { display: grid; grid-template-columns: minmax(0, 820px) minmax(280px, 1fr); gap: 32px; align-items: start; }
+  /* Le plafond porte sur la colonne et non sur la piste de la grille : une piste plafonnée à 460 px prenait de la
+     place au formulaire (645 px au lieu de 820 à 1 280 px d'écran). */
+  .colonne-info { max-width: 460px; }
+  .carte-demande { max-width: none; }
+  .colonne-info { align-self: stretch; margin: 0; display: flex; flex-direction: column; }
+  .colonne-info__cadre { aspect-ratio: 4 / 5; }
+  .colonne-info__sous { position: sticky; top: calc(var(--haut-bandeaux, 0px) + 58px + 24px); }
+}
+/* Sous 380 px, « Contacter les propriétaires » ne tient plus à 24 px sur une ligne (contrôle du 24/09, 320 px). */
+@media (max-width: 379.98px) { .canaux .canal__valeur { font-size: 21px; } }
+@media (min-width: 1000px) and (max-width: 1199.98px) {
+  .canal__valeur { font-size: 24px; }
+  .canal__mot { contain: inline-size; align-self: stretch; }
+}
+@media (max-width: 999.98px) {
+  .etapes { grid-template-columns: 1fr; }
+  .etapes li { display: grid; grid-template-columns: 62px 1fr; column-gap: 8px; row-gap: 4px; padding: 16px 0; }
+  .etapes li:last-child { border-bottom: 1px solid var(--filet); }
+  .etapes__num { grid-row: 1 / span 2; font-size: 40px; }
+  .etapes__titre, .etapes li p:not(.etapes__titre) { grid-column: 2; }
+  .canaux { grid-template-columns: 1fr; }
+  .canaux li, .canaux li + li { padding: 0; border-left: 0; }
+  .canaux li + li { border-top: 1px solid var(--filet); }
+}
+@media (max-width: 760.98px) {
+  .demande { padding: 24px var(--marge) 40px; }
+  .carte-demande { margin-top: 26px; padding: 20px 18px; }
+  .etapes-bloc, .canaux-bloc { margin-top: 36px; }
+  .etapes-bloc__titre, .canaux-bloc__titre { font-size: 24px; }
+  .canal__valeur { font-size: 24px; }
+  .demande__formulaire { margin-top: 26px; }
+  /* minmax(0, 1fr) et non 1fr (24/09) : une piste 1fr ne descend pas sous la largeur naturelle de son contenu ; à
+     300 px, formulaire ouvert, les champs dépassaient de la carte (et de l'écran sur Hôtes et Horizon). */
+  form { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .demande__pied .bouton { width: 100%; }
+}
+
+/* ---- Lot 2 du point 4 (21/09) : les trois bandeaux ----
+   1. Le bandeau de DÉMONSTRATION dit que l'établissement est imaginaire et les photos créées par IA. Il ne vivra
+      que sur nos démos, jamais sur le site d'un client, et il reste visible en permanence : c'est un avertissement,
+      il n'a pas à disparaître au premier défilement.
+   2. Le MESSAGE DU MOMENT est celui que le propriétaire écrit dans son tableur. Un seul à la fois, jamais de
+      fenêtre qui s'ouvre seule, et il s'efface tout seul à sa date de fin.
+   Les deux s'empilent au-dessus de l'en-tête, qui descend d'autant : ils ne recouvrent donc jamais la photo ni
+   le menu.
+   3. Le bandeau de CONSENTEMENT est en bas. Sur téléphone il se pose AU-DESSUS de la barre du pouce, qui reste
+      visible (décision de Rodolphe du 21/09) : depuis que l'en-tête a disparu sur téléphone, la barre est la seule
+      navigation de la page. Refuser et accepter ont exactement le même dessin, comme la CNIL l'exige. */
+.bandeaux { position: fixed; z-index: 70; top: 0; left: 0; right: 0; }
+.bandeau {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 6px 14px;
+  min-height: 42px; margin: 0; padding: 9px var(--marge);
+  font-size: 13px; line-height: 1.35; text-align: center;
+}
+.bandeau--demo {
+  background: var(--encre); color: var(--fond);
+  font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+}
+.bandeau--message { background: var(--accent); color: var(--sur-accent); font-weight: 600; }
+.bandeau--message a { text-decoration: underline; text-underline-offset: 3px; }
+/* L'attribut hidden ne masque rien quand une règle donne un display : la règle du navigateur est moins forte. */
+.bandeau[hidden], .consentement[hidden], .bandeaux[hidden] { display: none; }
+/* Tant que le consentement n'est pas donné, la bulle WhatsApp s'efface : elle serait à moitié recouverte, et on
+   ne pose qu'une question à la fois. */
+html:has(#consentement:not([hidden])) .bulle { display: none; }
+
+/* Le bandeau de consentement est SOMBRE, comme celui de soralva.com, et non à la couleur de surface : sur
+   téléphone il touche la barre du pouce, et deux surfaces claires côte à côte ne se distinguaient plus
+   (Rodolphe, 21/09). Le fond d'encre le détache de tout et le désigne comme un élément de système, pas de
+   contenu. Filet d'accent de 3 px en haut, comme sur soralva.com. */
+.consentement {
+  position: fixed; z-index: 65; left: 0; right: 0; bottom: 0;
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 14px 28px;
+  padding: 18px var(--marge); background: var(--encre); color: var(--fond);
+  border-top: 3px solid var(--accent); box-shadow: 0 -12px 30px -14px rgba(var(--voile), .75);
+  font-size: 14px; line-height: 1.55;
+}
+.consentement p { margin: 0; max-width: 66ch; }
+.consentement strong { font-weight: 700; }
+.consentement__actions { display: flex; align-items: center; gap: 12px; }
+/* Accepter puis Refuser, dans cet ordre, comme sur soralva.com. Le dessin des deux est rigoureusement le même :
+   c'est lui, et non la place, que la CNIL regarde. */
+.consentement button {
+  min-height: 44px; padding: 0 22px; border: 0; border-radius: 2px;
+  background: var(--accent); color: var(--sur-accent); font: inherit; font-size: 11px; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; cursor: pointer;
+}
+.consentement button:hover { background: var(--fond); color: var(--encre); }
+.consentement a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760.98px) {
+  /* Sur téléphone, le bandeau prend la place de la barre du pouce au lieu de se poser au-dessus (décision de
+     Rodolphe, 21/09) : la barre ne revient qu'une fois le choix fait. Le visiteur n'a donc qu'une chose à faire,
+     et le menu ne l'invite pas à ignorer la question. Ce n'est pas un mur : refuser rend la barre aussi vite
+     qu'accepter, et la page reste lisible et défilable derrière. */
+  .consentement { bottom: 0; grid-template-columns: 1fr; gap: 12px; padding: 14px var(--marge); font-size: 13.5px; }
+  /* Refuser à gauche et Accepter à droite, l'inverse de l'ordinateur, comme sur soralva.com : le pouce droit
+     tombe sur le bouton de droite. L'ordre du code ne change pas, seul l'affichage s'inverse. */
+  .consentement__actions { display: flex; flex-direction: row-reverse; gap: 10px; }
+  .consentement__actions button { flex: 1 1 0; padding: 0 10px; }
+}
+html:has(#consentement:not([hidden])) .barre { display: none; }
+
+/* L’ouverture : la photo bord à bord, le lieu incrusté en haut, les faits et le lien incrustés en bas */
+.ouverture { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); }
+.cadre {
+  grid-row: 1; grid-column: 1; position: relative; height: var(--photo);
+  overflow: hidden; background: rgb(var(--voile));
+}
+.photo {
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 55%;
+  transform-origin: 46% 62%;
+  animation-name: approche; animation-duration: 10s; animation-timing-function: cubic-bezier(.25, .1, .25, 1);
+  animation-iteration-count: 1; animation-fill-mode: forwards;
+}
+@keyframes approche { from { transform: scale(1); } to { transform: scale(1.04); } }
+
+/* Deux dégradés, et eux seuls, portent la lisibilité :
+   1. en bas, sous les faits et le lien, une chute de lumière calée en pixels, éteinte à 255 px du bord, soit bien
+      avant le milieu d’une photo de 520 à 720 px de haut : la pièce, la cheminée et la fenêtre gardent leur clarté ;
+   2. en haut à gauche, l’ellipse de la série 3, inchangée, sous le lieu seulement. */
+.cadre::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(to top,
+      rgba(var(--voile), .78) 0,
+      rgba(var(--voile), .76) 52px,
+      rgba(var(--voile), .70) 92px,
+      rgba(var(--voile), .54) 135px,
+      rgba(var(--voile), .32) 180px,
+      rgba(var(--voile), .13) 220px,
+      rgba(var(--voile), 0) 255px),
+    radial-gradient(ellipse 700px 270px at 330px 165px,
+      rgba(var(--voile), .74) 0,
+      rgba(var(--voile), .70) 45%,
+      rgba(var(--voile), .34) 76%,
+      rgba(var(--voile), 0) 100%);
+}
+
+/* Le lieu, en haut à gauche, sur les poutres et la pierre */
+.lieu {
+  grid-row: 1; grid-column: 1; align-self: start; position: relative; z-index: 2;
+  padding: 56px var(--marge) 0; max-width: 760px; color: var(--clair);
+  text-shadow: 0 1px 18px rgba(var(--voile), .34);
+}
+.surtitre { display: flex; align-items: center; gap: 14px; }
+.surtitre::before { content: ""; width: 32px; height: 1px; background: currentColor; opacity: .8; flex: none; }
+h1 {
+  font-family: var(--titre); font-weight: 500; font-size: 62px; line-height: 1.04;
+  letter-spacing: -0.01em; margin-top: 16px; text-wrap: balance;
+}
+.promesse {
+  font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 27px; line-height: 1.3;
+  max-width: 560px; margin-top: 12px;
+}
+@media (min-width: 761px) {
+  /* 21/09 (Rodolphe) : « GÎTE À VILLARS... » n'était pas aligné avec « La Maison du Noyer » : le filet placé
+     avant le texte du surtitre le décalait de 46 px (32 px de filet + 14 px d'écart) par rapport au bord gauche
+     du titre. Le filet sort du texte, se loge dans la marge, et les deux lignes partagent maintenant le même bord. */
+  .surtitre { position: relative; }
+  .surtitre::before { position: absolute; right: 100%; margin-right: 14px; top: 50%; transform: translateY(-50%); }
+  /* 21/09 (Rodolphe) : « augmente l'interligne du sous-titre » pour qu'il respire davantage : de 1,3 à 1,42. */
+  .promesse { line-height: 1.42; }
+}
+
+/* Les faits et le lien, incrustés au bas de la photo. Le lien reste le filet fin du 20/09 ; les faits, eux,
+   retrouvent une bande le 21/09 (Rodolphe : « les informations pratiques flottent sans conteneur, mettez-les
+   dans un conteneur distinct et visible »). C'est un retour partiel sur le choix du 20/09 (« je n'aime pas ces
+   étiquettes qui se superposent à la photo, je préfère au final un texte incrusté au-dessus de la photo », qui
+   avait fait disparaître la bande blanche de la série 3) : Rodolphe le redemande, on l'applique, mais la bande
+   est unie et à l'encre du dégradé (rgb(var(--voile)), déjà utilisée au pied de page et au bandeau de
+   consentement) plutôt que blanche, pour ne pas réintroduire l'étiquette qu'il avait écartée. */
+.socle {
+  grid-row: 1; grid-column: 1; align-self: end; position: relative; z-index: 2;
+  display: flex; align-items: baseline; justify-content: space-between; gap: 40px;
+  padding: 0 var(--marge) 40px; color: var(--clair);
+  text-shadow: 0 1px 14px rgba(var(--voile), .38);
+}
+/* La bande des faits (21/09) : couleur unie, pas de transparence, pour que le contraste ne dépende plus de la
+   photo en dessous, quel que soit le jeu de photos. */
+.bande-infos { padding: 13px 20px; background: rgb(var(--voile)); border-radius: 3px; }
+.faits {
+  /* nowrap et non wrap : sur trois faits, la largeur intrinsèque d'une bande qui les enveloppe tombe, dans
+     Chrome, à un ou deux pixels sous celle qu'il faut pour les tenir sur une ligne (écart mesuré, pas une
+     supposition), et le troisième repassait seul à la ligne suivante, filet de séparation en tête, sans texte
+     avant lui. Avec le filet resserré à 16 px ci-dessous, la ligne tient large sur un ordinateur (dès 1200 px). */
+  display: flex; flex-wrap: nowrap; align-items: baseline;
+  font-size: 18px; line-height: 1.6; font-weight: 500;
+}
+/* 21/09 (Rodolphe) : « des séparateurs plus visibles » entre les trois informations : le filet passe de 1 à
+   1,5 px, et son opacité de ,52 (--filet-clair) à ,55 fixe, la bande étant maintenant unie et non plus la photo. */
+.faits li + li { border-left: 1.5px solid rgba(255, 255, 255, .55); margin-left: 16px; padding-left: 16px; }
+/* flex-shrink à 0 : sans lui, le nowrap ci-dessus tient les trois faits sur une ligne en écrasant chacun sous sa
+   largeur naturelle, et c'est le TEXTE qui repasse alors à la ligne à l'intérieur de chaque fait (plus haut
+   encore que le défaut d'origine). Vérifié à 1200 px, la largeur la plus étroite avant le passage à la
+   composition simplifiée de l'en-tête : les trois faits tiennent sur leur largeur naturelle sans déborder. */
+.faits li { flex-shrink: 0; }
+.faits b { font-weight: 600; font-variant-numeric: tabular-nums; }
+.etoiles { letter-spacing: .05em; font-size: .82em; opacity: .92; margin-right: 2px; }
+.lien {
+  display: inline-flex; align-items: baseline; gap: 12px; flex: none;
+  font-family: var(--texte); font-weight: 600; font-size: 13.5px; letter-spacing: 0.17em;
+  /* Taille remontée de 12 à 13,5 px le 21/09 (Rodolphe : « un peu perdu visuellement ») : l'alignement à droite
+     existait déjà (.socle est en justify-content: space-between), seule la taille manquait de présence. Le
+     bouton plein n'a pas été repris ici : le 20/09, Rodolphe avait justement fait disparaître le bouton plein de
+     l'ouverture au profit de ce lien souligné (« il devient un lien en capitales souligné d'un filet fin »), qui
+     ne reste que dans l'en-tête et la barre du pouce. Reprendre un bouton plein ici serait revenir sur ce choix
+     alors que la revue laissait le choix entre les deux options ; la seconde n'entre pas en tension. */
+  text-transform: uppercase; white-space: nowrap;
+  padding-bottom: 9px; border-bottom: 1px solid var(--filet-clair);
+  transition: border-color .2s ease;
+}
+.lien:hover { border-bottom-color: var(--clair); }
+.lien .fleche { transition: transform .2s ease; }
+.lien:hover .fleche { transform: translateX(4px); }
+
+/* Le début de la section suivante */
+.suite { padding: 34px var(--marge) 56px; }
+.suite .surtitre { color: var(--accent); }
+.suite h2 { font-family: var(--titre); font-weight: 400; font-size: 38px; line-height: 1.12; margin-top: 16px; max-width: 720px; text-wrap: balance; }
+.suite p:not(.surtitre) { margin-top: 22px; max-width: 620px; }
+
+/* Barre du pouce : téléphone seulement */
+.barre { display: none; }
+
+/* Entre 761 et 1199 px, la marque centrée ne tient plus à côté de quatre entrées de menu, du téléphone et du
+   bouton : elle toucherait le menu. On repasse alors à la composition simple, marque à gauche, menu et bouton à
+   droite, téléphone masqué, jusqu'à ce que la place revienne. */
+@media (max-width: 1199.98px) and (min-width: 761px) {
+  :root { --marge: 40px; }
+  .entete { grid-template-columns: auto 1fr auto; }
+  .nom { grid-column: 1; justify-self: start; }
+  /* Le logo n'est plus centré à cette largeur : les filets du 21/09 n'ont plus de sens de part et d'autre. */
+  .nom::before, .nom::after { display: none; }
+  .menu { grid-column: 2; justify-self: end; padding-right: 30px; }
+  .actions { grid-column: 3; justify-self: end; }
+  .tel { display: none; }
+  /* 24/09 : les trois faits tiennent 878 px sur une ligne (nowrap, voir .faits). Côte à côte avec le lien, ils
+     sortaient de leur bande puis de l'écran (138 px à 768 px) et passaient sous « Voir les disponibilités » à
+     1 024 px. Sur tablette, le lien passe sous la bande. */
+  .socle { flex-direction: column; align-items: flex-start; gap: 22px; }
+}
+/* 24/09 : entre 761 et 959 px, la marque, les quatre liens et le bouton demandaient environ 800 px pour 688 : la
+   marque et deux liens passaient sur deux lignes à 768 px. Même remède que Hôtes à ces largeurs : lettres moins
+   espacées, écarts resserrés, et aucun libellé ne se coupe. */
+@media (max-width: 959.98px) and (min-width: 761px) {
+  .nom, .entete.collee .nom { font-size: 14px; letter-spacing: .12em; text-indent: 0; white-space: nowrap; }
+  .menu { gap: 16px; padding-right: 18px; }
+  .menu a { font-size: 13px; letter-spacing: .06em; white-space: nowrap; }
+  .entete .bouton { padding: 0 16px; }
+}
+/* 26/09 : cinq liens depuis « Journal » : entre 1 200 et 1 440 px, lettres moins espacées et le numéro de l'en-tête
+   retiré (il reste dans Contact, le pied et la section Réserver), comme sous 1 200 px. */
+@media (min-width: 1200px) and (max-width: 1439.98px) { .menu { gap: 20px; } .menu a { letter-spacing: .1em; white-space: nowrap; } .tel { display: none; } }
+@media (min-width: 961px) and (max-width: 1199.98px) { .menu { gap: 18px; } .menu a { letter-spacing: .08em; white-space: nowrap; } }
+/* Et sous 1 000 px, la ligne de 878 px ne tient plus du tout : les faits s'empilent, sans filet de séparation. */
+@media (max-width: 999.98px) and (min-width: 761px) {
+  .faits { flex-direction: column; align-items: flex-start; line-height: 1.5; }
+  .faits li + li { border-left: 0; margin-left: 0; padding-left: 0; margin-top: 4px; }
+}
+
+@media (max-width: 760.98px) {
+  :root {
+    --marge: 16px;
+    /* L'en-tête disparaît sur téléphone (21/09) : il ne portait que le nom, il n'était pas collant et le menu est
+       dans la barre du pouce. La photo récupère ses 60 px. */
+    --photo: clamp(460px, 73svh, 640px);
+  }
+  body { font-size: 17px; line-height: 1.6; padding-bottom: calc(74px + env(safe-area-inset-bottom)); }
+  .capitales { font-size: 11.5px; letter-spacing: 0.14em; }
+  /* Plus d'en-tête sur téléphone, mais les bandeaux du haut restent fixes : la page leur laisse leur place. */
+  body { padding-top: var(--haut-bandeaux, 0px); }
+  .entete { display: none; }
+
+  /* Téléphone : la cheminée et le fauteuil sous le lieu, les faits incrustés au pied de la photo */
+  .photo { object-position: 12% 50%; transform-origin: 40% 60%; }
+  .cadre::after {
+    background:
+      /* Relevé de quatre centièmes le 21/09 : le jeu « pire cas » laissait les deux premiers faits à 6,71 et 6,96
+         pour 7. L'écart à combler étant de deux valeurs sur 255, le renfort reste invisible sur une bonne photo. */
+      linear-gradient(to top,
+        rgba(var(--voile), .70) 0,
+        rgba(var(--voile), .69) 60px,
+        rgba(var(--voile), .66) 120px,
+        rgba(var(--voile), .60) 160px,
+        rgba(var(--voile), .40) 195px,
+        rgba(var(--voile), .17) 225px,
+        rgba(var(--voile), 0) 255px),
+      linear-gradient(180deg,
+        rgba(var(--voile), .72) 0,
+        rgba(var(--voile), .68) 27%,
+        rgba(var(--voile), .55) 41%,
+        rgba(var(--voile), .17) 56%,
+        rgba(var(--voile), 0) 70%);
+  }
+  .lieu { padding-top: 22px; max-width: none; }
+  .surtitre { align-items: flex-start; gap: 12px; }
+  .surtitre::before { width: 24px; margin-top: .72em; }
+  h1 { font-size: 40px; margin-top: 10px; }
+  .promesse { font-size: 24px; margin-top: 6px; max-width: none; }
+
+  .socle { display: block; padding: 0 var(--marge) 24px; }
+  /* 21/09 (Rodolphe) : « un bouton pleine largeur, juste sous les badges ». Le lien souligné du 20/09 devient ici
+     un bouton plein sur téléphone seulement : c'est une exception documentée au principe du 20/09 (« il devient
+     un lien... le bouton plein reste dans l'en-tête et la barre du pouce »), demandée à nouveau et donc appliquée,
+     mais elle ne s'étend pas à l'ordinateur (voir plus haut, .lien de base, resté un lien souligné agrandi). Fond
+     à l'encre et non au bronze de l'accent : à cette taille de texte (12 px) sur une photo, seul un fond opaque
+     et très sombre passe le seuil renforcé de 7, quelle que soit la photo. */
+  .lien {
+    margin-top: 16px; width: 100%; align-items: center; justify-content: center; gap: 10px;
+    padding: 0 20px; min-height: 50px; border: 0; border-radius: 2px;
+    background: rgb(var(--voile)); color: var(--clair); text-shadow: none;
+    font-size: 12px; letter-spacing: 0.16em;
+  }
+  .lien:hover, .lien:active { background: var(--accent); }
+
+  .suite { padding: 24px var(--marge) 80px; }
+  .suite h2 { font-size: 27px; margin-top: 12px; }
+  .suite p:not(.surtitre) { margin-top: 18px; }
+
+  /* Barre du pouce : même dessin sur les trois univers, modèle Hôtes (décision de Rodolphe, 24/09). Aucun pavé
+     plein ; capitales de 13 px ; case Réserver un quart plus large, cadrée d'un filet de 2 px et soulignée d'un
+     trait, icône et graisse plus fortes. Couleurs propres à Maison : cadre, trait et icône en bronze (4,54 sur
+     la barre). Le translateZ(0) est le correctif de Hôtes contre la barre qui tremble au défilement mobile. */
+  .barre {
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1.25fr; align-items: center; gap: 2px;
+    position: fixed; z-index: 10; left: 0; right: 0; bottom: 0;
+    height: calc(74px + env(safe-area-inset-bottom)); padding: 0 10px env(safe-area-inset-bottom);
+    background: var(--fond-surface); border-top: 1px solid var(--filet);
+    transform: translateZ(0);
+  }
+  .barre a {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+    min-height: 52px; font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; line-height: 1; color: var(--encre);
+  }
+  .barre svg { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .barre .bouton {
+    position: relative; flex-direction: column; gap: 3px; min-height: 52px; padding: 0;
+    border: 2px solid var(--accent);
+    background: transparent; color: var(--encre); font-size: 13px; font-weight: 800; letter-spacing: .04em;
+  }
+  .barre .bouton:hover { background: transparent; }
+  .barre .bouton svg { stroke: var(--accent); stroke-width: 2; }
+  .barre .bouton::after {
+    content: ""; position: absolute; left: 24%; right: 24%; bottom: 0; height: 2px; background: var(--accent);
+  }
+
+  /* ---- Les deux panneaux du pouce (point 4, lot 1, 21/09) ----
+     Menu et Écrire s'ouvrent par le bas, sous le pouce, et non par le haut : sur un téléphone tenu d'une main, le
+     haut de l'écran est hors de portée. Ce sont des <dialog> : le navigateur donne l'assombrissement, la fermeture
+     par Échap et le piège de tabulation sans une ligne de script. Aucun coin arrondi, aucune ombre. */
+  .feuille {
+    position: fixed; z-index: 60; inset: auto 0 0 0; top: auto;
+    width: 100%; max-width: none; max-height: 80svh; margin: 0; padding: 0;
+    border: 0; border-radius: 0;
+    background: var(--fond-section); color: var(--encre);
+  }
+  .feuille::backdrop { background: rgba(var(--voile), .62); }
+  .feuille__tete { display: flex; align-items: center; justify-content: space-between; padding: 16px var(--marge) 12px; }
+  .feuille__titre { font-size: 10px; letter-spacing: .22em; font-weight: 600; text-transform: uppercase; }
+  .feuille__fermer {
+    width: 44px; height: 44px; margin-right: -10px; display: flex; align-items: center; justify-content: center;
+    border: 0; background: none; color: inherit; cursor: pointer;
+  }
+  .feuille__fermer svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; }
+  .feuille a:not(.feuille__titre), .feuille .ligne-mail {
+    display: flex; align-items: center; gap: 14px; min-height: 58px;
+    padding: 0 var(--marge); border-top: 1px solid var(--filet);
+  }
+  .feuille nav a { font-family: var(--titre); font-size: 21px; font-weight: 400; }
+  .feuille nav a::after { content: ""; flex: none; width: 9px; height: 9px; margin-left: auto; margin-right: 4px;
+    border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); opacity: .6; }
+  .feuille__action { font-size: 17px; font-weight: 500; }
+  .feuille__action svg { width: 21px; height: 21px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+  .ligne-mail { font-size: 15px; }
+  .ligne-mail span { opacity: .78; overflow-wrap: anywhere; }
+  /* 24/09, repris de Hôtes : l'adresse se coupe après « @ », jamais au trait d'union du domaine. */
+  .ligne-mail__domaine { white-space: nowrap; }
+  .ligne-mail button {
+    margin-left: auto; min-height: 40px; padding: 0 16px; border: 1px solid var(--filet); border-radius: 0;
+    background: none; color: inherit; font: inherit; font-size: 10px; font-weight: 600;
+    letter-spacing: .18em; text-transform: uppercase; cursor: pointer;
+  }
+  .feuille__pied { padding: 16px var(--marge) calc(20px + env(safe-area-inset-bottom)); border-top: 1px solid var(--filet); }
+  .feuille__pied .bouton { width: 100%; }
+  /* Reprise des panneaux le 21/09 : l'en-tête prend le fond des sections, plus clair, pour séparer le nom de
+     l'établissement des entrées ; le nom passe de 10 à 13 px ; chaque entrée porte une icône ; et les deux actions
+     du panneau Écrire prennent elles aussi le fond clair, avec le vert de WhatsApp et le bleu de l'enveloppe. */
+  .feuille__tete { background: var(--fond-tete); }
+  .feuille__titre { font-size: 13px; letter-spacing: .2em; }
+  .feuille nav a svg {
+    width: 21px; height: 21px; flex: none; fill: none; stroke: currentColor;
+    stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; opacity: .7;
+  }
+  .feuille__action { background: var(--fond-section); }
+  .feuille__action svg { opacity: 1; }
+  .feuille__action--wa svg { stroke: #25D366; }
+  .feuille__action--mail svg { stroke: #2f6fb5; }
+  /* Ce qu'on voit quand on touche une entrée (demande de Rodolphe, 21/09) : sans lui, rien ne répond au doigt
+     avant que la page change. La classe .est-presse ne sert qu'aux captures, l'état réel est :active. */
+  .feuille nav a:active, .feuille nav a.est-presse,
+  .feuille__action:active, .feuille__action.est-presse { background: rgba(var(--voile), .07); }
+  .barre a:active, .barre a.est-presse { background: rgba(var(--voile), .05); }
+}
+/* Moins d’animations demandées : la photo reste à l’échelle 1, rien ne glisse. */
+
+/* Geste 2 : l'apparition douce des sections au défilement. Armé seulement hors mouvement réduit
+   (classe js-motion posée par script) : sans JS ou en mouvement réduit, tout reste visible. */
+.js-motion .reveal { opacity: 0; transform: translateY(24px); }
+.js-motion .reveal.vu { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s cubic-bezier(.25,.1,.25,1); }
+/* Survol des liens du menu : passage à l'accent. */
+.menu a { transition: color .18s ease; }
+.menu a:hover { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .photo { animation: none; transform: none;
+  .entete, .nom { transition: none; }
+  .js-motion .reveal { opacity: 1; transform: none; transition: none; }
+}
+  .bouton, .lien, .lien .fleche { transition: none; }
+}
+
+/* 23/09 : titre des panneaux Menu et Écrire agrandi (Rodolphe : « afficher en plus grand »), de 13 à 16 px,
+   15 px sous 380 px de large pour que « Écrire à Claire et Marc » tienne sur une ligne à côté de la croix. */
+.feuille__titre { font-size: 16px; letter-spacing: .14em; }
+@media (max-width: 379.98px) { .feuille__titre { font-size: 15px; letter-spacing: .1em; } }
+
+/* ==== 24/09 : lisibilité pour les voyageurs âgés, règle de Hôtes du 23/09 reportée sur Maison ====
+   Deux règles : un plancher de 16 px pour tout texte qu'on lit vraiment (15 pour les étiquettes et les messages du
+   formulaire, 13 pour les petites capitales, les boutons et le bas du pied), et plus aucun texte courant éclairci.
+   Relevé avant : capitales à 11,5-12 px, étiquettes du formulaire à 13,5, note sous le bouton à 15 et à 82 %
+   d'opacité, bas du pied à 12,5, bouton « Copier » à 10, et six textes éclaircis entre 58 et 90 %. Posé en fin de
+   feuille pour l'emporter sur les règles d'origine, téléphone compris. */
+.surtitre.capitales { font-size: 13px; }   /* les surtitres seuls : titre des panneaux et téléphone gardent leur taille */
+.bouton { font-size: 13px; }
+.lien { font-size: 13.5px; }
+.champ label { font-size: 15px; }
+.champ small { font-size: 14px; opacity: 1; }
+.champ label.case { font-size: 16px; }
+.champ__erreur { font-size: 15px; }
+.resume ul { font-size: 16px; }
+.compteur { font-size: 13px; opacity: 1; }
+.anti-robot { font-size: 15px; opacity: 1; }
+.demande__note { font-size: 16px; opacity: 1; }
+.pied__signe { opacity: 1; }
+.pied__bloc a, .pied__bloc p { opacity: 1; }
+.pied__bas { font-size: 13px; }
+.pied__credit { opacity: .85; }
+.pied__legal a, .pied__haut { opacity: .92; }
+.bandeau--demo { font-size: 13px; }
+.consentement { font-size: 15px; }
+.consentement button { font-size: 13px; }
+.ligne-mail span { opacity: 1; }
+.ligne-mail button { font-size: 13px; }
+@media (max-width: 760.98px) {
+  .surtitre.capitales { font-size: 13px; letter-spacing: .1em; }
+  .lien { font-size: 13px; letter-spacing: .12em; }
+  .consentement { font-size: 15px; }
+}
+
+/* 24/09 : pied de page aligné sur Hôtes (demande de Rodolphe : « les icônes des liens sociaux sont différentes, il
+   manque les icônes pour chaque page »). Icônes de réseaux seules, en crème, sans cadre, cibles de 44 px gardées ;
+   pictogramme au trait devant chaque lien de page et de contact, à l'accent du pied, comme sur Hôtes. */
+.pied__reseaux { gap: 6px; margin-left: -8px; }
+.pied__reseaux a { width: 44px; height: 44px; border: 0; background: none; color: var(--clair); border-radius: 12px; }
+.pied__reseaux a:hover { background: rgba(var(--clair-c), .07); color: var(--accent-pied); border: 0; }
+.pied__reseaux svg { width: 28px; height: 28px; fill-rule: evenodd; }
+.pied__bloc a.pied__contact, .pied__bloc a.pied__avec-icone { display: inline-flex; align-items: flex-start; gap: 11px; }
+.pied__icone { width: 17px; height: 17px; flex: none; margin-top: .2em; fill: none; stroke: var(--accent-pied); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 760.98px) { .pied__reseaux { margin-left: 0; } }
+
+/* f bis. Le lien entre les étapes (24/09, choix de Rodolphe sur planche : la moulure). Comme le fil de Hôtes : il se dessine
+   d'une étape à la suivante et chaque étape apparaît quand il l'atteint, une seule fois, quand la section arrive à
+   l'écran. Il vit dans la rangée du numéro, de la fin du numéro jusqu'à 18 px avant le suivant (marge négative de la
+   largeur de la gouttière) : centré à toutes les largeurs. Sans script ou en mouvement réduit, tout est visible. */
+.etapes li { border-top: 0; padding-top: 0; }
+.etapes__tete { display: flex; align-items: center; margin-right: -32px; }
+.etapes li:last-child .etapes__tete { margin-right: 0; }
+.etapes__lien { position: relative; flex: 1; align-self: center; height: 12px; margin: 0 18px; }
+/* La moulure : un double filet bronze et un losange au milieu, comme les boiseries d'une maison de maître. */
+.etapes__lien { border-top: 1px solid var(--accent); border-bottom: 1px solid var(--accent); height: 7px; }
+.etapes__lien::after { content: ""; position: absolute; left: 50%; top: 50%; width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px; background: var(--accent); transform: rotate(45deg); }
+@media (max-width: 999.98px) {
+  .etapes li, .etapes li:last-child { position: relative; border: 0; padding: 12px 0 22px; }
+  .etapes__tete { display: contents; }
+  /* Sur téléphone, le lien descend dans la colonne du numéro, jusqu'au numéro suivant. */
+  /* align-self: stretch : hérité « center » de l'ordinateur, il donnait une hauteur nulle à cet élément absolu de grille. */
+  .etapes__lien { position: absolute; left: 12px; top: 64px; bottom: -6px; width: 12px; height: auto; margin: 0; align-self: stretch; }
+  .etapes__lien { border: 0; border-left: 1px solid var(--accent); border-right: 1px solid var(--accent); width: 7px; left: 16px; }
+}
+.js-motion .etapes-bloc li { opacity: 0; transform: translateY(10px); }
+.js-motion .etapes-bloc .etapes__lien { clip-path: inset(0 100% 0 0); }
+.js-motion .etapes-bloc .etapes__lien > * , .js-motion .etapes-bloc .etapes__lien::after { transform: rotate(45deg) scale(0); }
+.js-motion .etapes-bloc.vu li { animation: etape-apparait .6s ease forwards; animation-delay: calc(var(--i) * .7s); }
+.js-motion .etapes-bloc.vu .etapes__lien { animation: etape-lien .55s ease forwards; animation-delay: calc(var(--i) * .7s + .35s); }
+.js-motion .etapes-bloc.vu .etapes__lien > *, .js-motion .etapes-bloc.vu .etapes__lien::after {
+  animation: etape-orne .45s cubic-bezier(.3, 1.6, .5, 1) forwards; animation-delay: calc(var(--i) * .7s + .75s + var(--j, 0s));
+}
+.etapes li:nth-child(2) { --i: 1; } .etapes li:nth-child(3) { --i: 2; } .etapes li:nth-child(4) { --i: 3; }
+@media (max-width: 999.98px) { .js-motion .etapes-bloc .etapes__lien { clip-path: inset(0 0 100% 0); } }
+@keyframes etape-apparait { to { opacity: 1; transform: none; } }
+@keyframes etape-lien { to { clip-path: inset(0 0 0 0); } }
+@keyframes etape-orne { to { transform: rotate(45deg) scale(1); } }
+
+/* 24/09 : les canaux en cartes à médaillon (option D de planche-canaux-maison-horizon.html, choisie par Rodolphe
+   pour les trois univers : « tout est plat, de la même couleur »). Chaque canal est une carte crème, comme le formulaire, et un
+   rond d'icône déborde de son bord haut ; les trois ronds ont chacun leur couleur (demande de Rodolphe) :
+   téléphone au bronze, WhatsApp à son vert officiel, écrit au bleu ardoise des toits. Icône blanche : 5,7 sur le bronze, 8,8 sur l'ardoise ; le logo WhatsApp reste en blanc sur son vert. Trois colonnes dès 900 px, une
+   seule en dessous ; l'écart entre cartes laisse la place au rond qui déborde. */
+.canaux-bloc__titre { margin-bottom: 46px; }
+.canaux { display: grid; grid-template-columns: minmax(0, 1fr); gap: 40px 22px; max-width: none; list-style: none; margin: 0; padding: 0; }
+.canaux li, .canaux li + li { padding: 0; border: 0; }
+.canal {
+  position: relative; height: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+  padding: 40px 22px 24px; background: var(--fond); border: 1px solid var(--filet); border-radius: 6px;
+  box-shadow: 0 14px 28px -22px rgba(var(--voile), .45); transition: transform .2s ease, box-shadow .2s ease;
+}
+.canal:hover, .canal:focus-visible { transform: translateY(-2px); box-shadow: 0 18px 32px -20px rgba(var(--voile), .5); }
+.canal:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.canal__rond {
+  position: absolute; top: -26px; left: 22px; width: 52px; height: 52px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; background: var(--rond); color: #fff;
+  box-shadow: 0 8px 18px -10px rgba(var(--voile), .55); transition: transform .2s ease;
+}
+.canal__rond svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.canal--tel { --rond: var(--accent); }
+.canal--wa { --rond: #25D366; }
+.canal--ecrit { --rond: #3e4c5e; }
+.canal--wa .canal__rond svg { fill: #fff; stroke: none; }
+.canal:hover .canal__rond, .canal:focus-visible .canal__rond { transform: scale(1.08); }
+@media (min-width: 900px) { .canaux { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) {
+  .canal, .canal__rond { transition: none; }
+  .canal:hover, .canal:focus-visible, .canal:hover .canal__rond, .canal:focus-visible .canal__rond { transform: none; }
+}
+
+/* 24/09 : angles et ombres doux dans la section Réserver (choix de Rodolphe sur planche-boutons-maison-horizon.html :
+   la carte d'avant, presque carrée et sans ombre, n'était pas voulue). Même principe que Hôtes, arrondi propre à
+   l'univers (6px) : sur téléphone la colonne « Une question ? » est un seul bloc arrondi ; à partir de 961 px
+   la photo et l'encadré collant deviennent deux blocs, séparés de 20 px, chacun arrondi et ombré. */
+.carte-demande { border-radius: 6px; box-shadow: 0 22px 40px -28px rgba(var(--voile), .45), 0 8px 18px -16px rgba(var(--voile), .2); }
+.colonne-info { border-radius: 6px; overflow: hidden; box-shadow: 0 22px 40px -28px rgba(var(--voile), .45); }
+@media (min-width: 961px) {
+  .colonne-info { gap: 20px; overflow: visible; border-radius: 0; box-shadow: none; }
+  .colonne-info__cadre, .colonne-info__sous { border-radius: 6px; box-shadow: 0 22px 40px -28px rgba(var(--voile), .45); }
+}
+
+/* 24/09 : bouton « enseigne en italique » (M2, choix de Rodolphe sur planche-boutons-maison-horizon.html) : aplat
+   bronze, le mot dans l'italique Bodoni des titres, angles droits ; le même bouton partout (en-tête, formulaire,
+   panneau du menu), l'en-tête perd donc son contour. Crème sur bronze : 5,1. La barre du pouce garde le dessin
+   commun aux trois univers (capitales Manrope). */
+.bouton {
+  font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 19px; letter-spacing: .01em;
+  text-transform: none; background: var(--accent); color: var(--fond);
+}
+.bouton:hover, .bouton:active { background: var(--encre); color: var(--fond); }
+.entete .bouton { background: var(--accent); color: var(--fond); box-shadow: none; }
+.entete .bouton:hover { background: var(--encre); color: var(--fond); }
+.demande__pied .bouton { font-size: 20px; }
+.barre .bouton { font-family: var(--texte); font-style: normal; }
+
+/* 24/09 soir (Rodolphe : titres, numéros et valeurs des canaux « se voient comme incomplets »). Bodoni Moda est une
+   police variable à taille optique (axe opsz de 6 à 96) : réglé d'office sur la taille du texte, il donnait à 28-46 px
+   des déliés si fins qu'ils disparaissaient sur un écran Windows à 125 % (le « N », les « 0 » et les « 4 »). Le
+   réglage existait déjà quand la police venait de Google. Fixé à 11, la valeur de texte de la police, partout ;
+   seul le grand nom de l'ouverture garde le réglage automatique, où ses déliés restent visibles. */
+body { font-variation-settings: "opsz" 11; }
+#nom-etablissement { font-variation-settings: normal; }
+
+
+/* 24/09 soir : les chiffres clés (choix 2 de Rodolphe sur planche-faits-maison.html, après « trouver une autre
+   solution que le bloc noir austère »). Plus de pavé : trois grands chiffres dans l'italique des titres, chacun avec
+   sa légende en petites capitales, posés sur l'assombrissement du bas de la photo et soulignés d'un filet crème, qui
+   tient lieu du conteneur demandé le 21/09. « Voir les disponibilités » devient un bouton crème en italique, distinct
+   du bouton bronze de l'en-tête (encre sur crème 16,5). Ordinateur et tablette ; le téléphone, voir plus bas. */
+@media (min-width: 761px) {
+  .socle { align-items: flex-end; }
+  .bande-infos { background: none; border-radius: 0; padding: 18px 0 0; border-top: 1px solid rgba(248, 243, 232, .55); }
+  .faits { align-items: flex-end; font-size: inherit; line-height: 1; }
+  .faits li + li { border-left: 1px solid rgba(248, 243, 232, .4); margin-left: 34px; padding-left: 34px; margin-top: 0; }
+  .faits li { display: flex; flex-direction: column; gap: 8px; }
+  .faits .chiffre { font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 40px; line-height: 1; white-space: nowrap; }
+  .faits .chiffre small { font-size: .5em; }
+  .faits .legende { font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; line-height: 1.3; white-space: nowrap; }
+  .faits .etoiles { font-size: 1em; letter-spacing: .04em; margin-right: 4px; opacity: 1; }
+  .lien {
+    align-items: center; gap: 12px; padding: 0 26px; min-height: 52px; border: 0; background: #f8f3e8; color: #161513;
+    text-shadow: none; font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 20px;
+    letter-spacing: .01em; text-transform: none;
+  }
+  .lien:hover { background: #fff; }
+}
+/* Tablette : le bouton passe sous les chiffres, qui remontent d'autant, là où l'assombrissement du bas faiblissait
+   (« sur 5 » à 3,64 et « dès » à 4,44 avec les photos pire cas, pour 4,5). La chute de lumière monte plus haut à ces
+   largeurs seulement ; l'ellipse du lieu, en haut, ne change pas. */
+@media (min-width: 761px) and (max-width: 1199.98px) {
+  .cadre::after {
+    background:
+      linear-gradient(to top,
+        rgba(var(--voile), .80) 0,
+        rgba(var(--voile), .78) 110px,
+        rgba(var(--voile), .72) 180px,
+        rgba(var(--voile), .52) 240px,
+        rgba(var(--voile), .26) 290px,
+        rgba(var(--voile), 0) 340px),
+      radial-gradient(ellipse 700px 270px at 330px 165px,
+        rgba(var(--voile), .74) 0,
+        rgba(var(--voile), .70) 45%,
+        rgba(var(--voile), .34) 76%,
+        rgba(var(--voile), 0) 100%);
+  }
+}
+/* Tablette : les trois chiffres restent sur une ligne, plus serrés, et le bouton passe dessous (voir .socle plus haut). */
+@media (min-width: 761px) and (max-width: 1199.98px) {
+  .socle { align-items: flex-start; }
+  .faits { flex-direction: row; align-items: flex-end; }
+  .faits li + li { margin-left: 22px; padding-left: 22px; margin-top: 0; border-left: 1px solid rgba(248, 243, 232, .4); }
+  .faits .chiffre { font-size: 34px; }
+  .faits .legende { letter-spacing: .08em; }
+}
+
+/* 24/09 soir : les chiffres clés aussi sur téléphone (choix 2 de Rodolphe sur planche-telephone-maison.html). Ils
+   remplacent les étiquettes arrondies du 21/09, retirées ; le téléphone et l'ordinateur ont le même dessin. Les
+   légendes se raccourcissent à cette largeur (« personnes », « la semaine », « 38 avis »), sans étoiles, pour tenir
+   sur une ou deux lignes. Le bouton devient le bouton crème en italique de l'ordinateur (encre sur crème 16,5) : le
+   fond presque noir choisi le 21/09 pour la lisibilité n'est plus nécessaire, le crème est plus lisible encore. */
+@media (max-width: 760.98px) {
+  .bande-infos { display: block; background: none; padding: 14px 0 0; border-top: 1px solid rgba(248, 243, 232, .55); border-radius: 0; }
+  /* Grille à la largeur de chaque chiffre (Rodolphe : « bien aligné ») : les trois chiffres sur une même ligne de
+     base, les trois légendes sur une même ligne en dessous, des écarts égaux de part et d'autre de chaque filet. Trois
+     colonnes égales faisaient chevaucher « 1 650 € » et « 4,8 » à 320 px. */
+  /* Troisième réglage (Rodolphe : « il y a un espace vide à droite », puis « recentre bien, ça touche trop les
+     bords ») : trois colonnes qui se partagent toute la largeur, chaque fait centré dans la sienne, un filet entre deux
+     colonnes. Aucun texte ne touche plus le bord, et il ne reste pas de vide d'un seul côté. Une colonne ne descend
+     jamais sous la largeur de son chiffre. Le prix, le plus large, prend exactement la sienne, 14 px de marge de part
+     et d'autre de ses filets ; les deux autres colonnes se partagent le reste à égalité, et la légende « maison
+     entière » passe sur deux lignes sur les plus petits écrans plutôt que de toucher le filet. */
+  .faits { display: grid; grid-template-columns: minmax(0, 1fr) max-content minmax(0, 1fr); align-items: start; font-size: inherit; line-height: 1; }
+  .faits li { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 7px; min-width: 0; padding: 0 4px; }
+  .faits li:nth-child(2) { padding: 0 14px; }
+  .faits li + li { border-left: 1px solid rgba(248, 243, 232, .4); margin: 0; }
+  .faits .chiffre { font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 26px; line-height: 1; white-space: nowrap; }
+  .faits .chiffre small { font-size: .6em; }
+  .faits .legende { font-size: 13px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; line-height: 1.3; white-space: normal; }
+  .faits .legende .etoiles, .legende__suite { display: none; }
+  /* Le bouton sur le fond de la photo, comme sur Hôtes (Rodolphe) : sans aplat, un contour crème de 2 px, le texte
+     crème ; l'italique des titres de Maison reste. Le contraste est celui du texte crème sur le bas assombri de la
+     photo, mesuré par le contrôle complet avec les trois jeux de photos. */
+  .lien {
+    background: transparent; color: var(--clair); border: 2px solid rgba(248, 243, 232, .95); border-radius: 2px;
+    font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 19px; letter-spacing: .01em; text-transform: none;
+  }
+  .lien:hover, .lien:active { background: rgba(248, 243, 232, .14); }
+}
+@media (max-width: 379.98px) {
+  .faits .chiffre { font-size: 23px; }
+}
+.legende__court { display: none; }
+@media (max-width: 760.98px) {
+  .legende__long { display: none; }
+  .legende__court { display: inline; }
+}
+
+/* 24/09 soir (Rodolphe) : le nom revient au centre de l'en-tête (« ça différencie ce template en premium ») ; le menu
+   centré du même jour est retiré. Et « Voir les disponibilités » quitte le bord droit pour suivre les chiffres clés,
+   à 56 px, centré sur leur hauteur. */
+@media (min-width: 1200px) {
+  .socle { justify-content: flex-start; align-items: center; gap: 56px; }
+}
+
+/* 24/09 soir : le nom avait été décalé de 36 px à droite car le menu (5 liens) était alors plus long que les actions.
+   Repère caduc depuis le 28/09 : Journal et Contact sont passés côté actions, qui est maintenant le bloc le plus
+   long ; le nom reste donc centré géométriquement. */
+
+/* Section 3, « La maison » (25/09, choix M-B sur planche-section-3.html). Texte à gauche avec ses repères en
+   italique bronze ; à droite, la façade posée avec une marge sur un fond blanc, et le détail qui déborde du cadre
+   en bas à droite ; la légende du détail sous la façade, comme un cartel. Sans façade (photo facultative), le
+   détail prend seul la place, sans débord. */
+.maison-lieu { padding-bottom: 32px; }
+/* 25/09 : pleine largeur dans les marges, comme « Réserver » (retour de Rodolphe, « pas adapté au desktop »). */
+.maison-lieu__grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 80px; align-items: center; }
+.maison-lieu__reperes { font-family: var(--titre); font-style: italic; font-size: 21px; line-height: 1.35; color: var(--accent); }
+.suite p.maison-lieu__reperes { margin-top: 14px; }
+.maison-lieu__photos { position: relative; margin: 0 26px 0 0; padding: 18px 18px 78px; background: #ffffff; box-shadow: 0 1px 0 var(--filet); }
+.maison-lieu__facade { aspect-ratio: 3 / 2; overflow: hidden; }
+.maison-lieu__detail { position: absolute; right: -26px; bottom: -44px; width: 38%; aspect-ratio: 4 / 5; overflow: hidden; border: 8px solid #ffffff; box-shadow: 0 10px 26px rgba(22, 21, 19, .18); }
+.maison-lieu__photos img { width: 100%; height: 100%; object-fit: cover; }
+.maison-lieu__detail img { object-position: 58% 50%; }
+.maison-lieu__cartel { position: absolute; left: 18px; bottom: 16px; width: 54%; padding-top: 10px; border-top: 1px solid var(--filet); font-size: 15px; line-height: 1.45; color: #4d4a44; }
+.maison-lieu__photos:not(:has(.maison-lieu__facade)) { margin-right: 0; padding-bottom: 18px; }
+.maison-lieu__photos:not(:has(.maison-lieu__facade)) .maison-lieu__detail { position: static; width: 100%; border: 0; box-shadow: none; }
+.maison-lieu__photos:not(:has(.maison-lieu__facade)) .maison-lieu__cartel { position: static; width: auto; margin-top: 12px; }
+@media (max-width: 999.98px) {
+  .maison-lieu__grille { grid-template-columns: minmax(0, 1fr); gap: 44px; max-width: 680px; }
+}
+@media (max-width: 760.98px) {
+  .maison-lieu { padding-bottom: 28px; }
+  .maison-lieu__grille { gap: 36px; }
+  .maison-lieu__reperes { font-size: 19px; }
+  .maison-lieu__photos { order: -1; margin-right: 20px; padding: 12px 12px 14px; }
+  .maison-lieu__detail { right: -20px; bottom: -28px; width: 40%; border-width: 6px; }
+  .maison-lieu__cartel { position: static; width: 54%; margin-top: 12px; font-size: 14px; }
+}
+
+/* L'onde du bouton Réserver de l'en-tête (25/09, extension de celle de Hôtes, décision de Rodolphe) : le bouton
+   gonfle à peine et un fin anneau bronze s'en détache puis s'efface, toutes les 5 s ; garde-fous dans le script de
+   fin de page. Sans ombre au repos : l'enseigne de Maison n'en a pas. */
+@keyframes onde-reserver {
+  0%, 100% { transform: none; box-shadow: 0 0 0 0 rgba(127, 98, 59, 0); }
+  40% { transform: scale(1.03); box-shadow: 0 0 0 0 rgba(127, 98, 59, .45); }
+  85% { box-shadow: 0 0 0 12px rgba(127, 98, 59, 0); }
+}
+.entete .bouton.onde { animation: onde-reserver 1.9s cubic-bezier(.45, 0, .35, 1); }
+
+/* Section 4, le logement (25/09, choix M-B sur planche-section-4.html). Fond blanc (la section 3 est crème) ; la
+   photo en bandeau d'un bord à l'autre ; les chiffres clés en Bodoni italique séparés de filets, le geste de
+   l'ouverture ; sur téléphone, les chiffres passent en deux colonnes. Un filet la sépare de « Réserver », blanc aussi. */
+.maison-logement { padding: 56px var(--marge) 52px; background: var(--fond-section); border-bottom: 1px solid var(--filet); }
+.maison-logement .surtitre { color: var(--accent); }
+.maison-logement h2 { font-family: var(--titre); font-weight: 400; font-size: 38px; line-height: 1.12; margin-top: 16px; max-width: 820px; text-wrap: balance; }
+.maison-logement__photo { aspect-ratio: 21 / 9; margin: 40px calc(-1 * var(--marge)) 40px; overflow: hidden; }
+.maison-logement__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+.maison-logement__bas { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px 56px; flex-wrap: wrap; }
+.maison-logement__chiffres { display: flex; list-style: none; margin: 0; padding: 0; }
+.maison-logement__chiffres li { padding: 0 28px; border-left: 1px solid var(--filet); }
+.maison-logement__chiffres li:first-child { padding-left: 0; border-left: 0; }
+.maison-logement__chiffres b { display: block; font-family: var(--titre); font-style: italic; font-weight: 400; font-size: 38px; line-height: 1.1; white-space: nowrap; }
+.maison-logement__chiffres small { font-family: var(--texte); font-style: normal; font-size: .5em; }
+.maison-logement__chiffres span { display: block; margin-top: 6px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #4d4a44; }
+.maison-logement__action { text-align: right; }
+.maison-logement__action p { margin-top: 14px; font-size: 16px; }
+.maison-logement__lien { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 5px; }
+@media (max-width: 999.98px) {
+  .maison-logement__action { text-align: left; }
+}
+@media (max-width: 760.98px) {
+  .maison-logement { padding: 28px var(--marge) 28px; }
+  .maison-logement h2 { font-size: 27px; margin-top: 12px; }
+  .maison-logement__photo { aspect-ratio: 4 / 3; margin: 28px calc(-1 * var(--marge)) 30px; }
+  .maison-logement__chiffres { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 0; width: 100%; }
+  .maison-logement__chiffres li { padding: 0 16px; }
+  .maison-logement__chiffres li:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .maison-logement__chiffres b { font-size: 30px; }
+}
+
+/* Section 5, « Dehors » (25/09, choix M-A sur planche-section-5.html). Crème de la page, entre le blanc du logement et
+   le blanc de « Réserver » ; la photo occupe les deux tiers et file jusqu'au bord droit de l'écran. */
+.maison-dehors { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 72px; align-items: center; padding: 60px 0 60px var(--marge); background: var(--fond); }
+.maison-dehors h2 { font-family: var(--titre); font-weight: 400; font-size: 38px; line-height: 1.12; margin-top: 16px; text-wrap: balance; }
+.maison-dehors .surtitre { color: var(--accent); }
+.maison-dehors__reperes { margin: 14px 0 20px; font-family: var(--titre); font-style: italic; font-size: 20px; line-height: 1.35; color: var(--accent); }
+.maison-dehors__photo { aspect-ratio: 16 / 10; overflow: hidden; }
+.maison-dehors__photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 999.98px) {
+  .maison-dehors { gap: 44px; }
+  .maison-dehors h2 { font-size: 32px; }
+}
+@media (max-width: 760.98px) {
+  .maison-dehors { grid-template-columns: minmax(0, 1fr); gap: 30px; padding: 0 0 28px; }
+  .maison-dehors__photo { order: -1; aspect-ratio: 4 / 3; }
+  .maison-dehors__texte { padding: 0 var(--marge); }
+  .maison-dehors h2 { font-size: 27px; margin-top: 12px; }
+  .maison-dehors__reperes { font-size: 19px; }
+}
+
+/* 25/09, retours de Rodolphe (planche-fonds-maison-F1.html, planche-photos-maison-decouvrir.html) :
+   - F1 : « je n'arrive pas à distinguer les sections » : les sections de contenu alternent un lin soutenu (#ebe2d0,
+     2 tons plus sombre que la crème) et le blanc ; le passe-partout de la façade s'éclaircit pour rester visible.
+   - T2 « mais coins arrondis » : style des photos de Maison hors bandeaux pleine largeur. Les angles visibles de la
+     photo sont arrondis largement (24 px) ; l'angle collé au bord de l'écran reste droit. */
+.maison-lieu, .maison-dehors { background: #ebe2d0; }
+.maison-lieu__photos { background: #fbf8f2; }
+.maison-dehors__photo { border-radius: 24px 0 0 24px; }
+@media (max-width: 760.98px) { .maison-dehors__photo { border-radius: 0; } }
+/* 25/09 (Rodolphe : « oui ») : l'arrondi des photos de Maison étendu à la section 3, plus petit parce que les photos
+   le sont : passe-partout 18 px, façade 12 px, détail 14 px (sa bordure blanche comprise). */
+.maison-lieu__photos { border-radius: 18px; }
+.maison-lieu__facade { border-radius: 12px; }
+.maison-lieu__detail { border-radius: 14px; }
+/* Sur le lin, le bronze #7f623b tombe à 4,4 : bronze foncé #6f5533 dans ces deux sections seulement. */
+.maison-lieu .surtitre, .maison-lieu__reperes, .maison-dehors .surtitre, .maison-dehors__reperes { color: #6f5533; }
+
+/* Section 6, « Vos hôtes » (25/09, choix M-A). Blanc, entre le lin de « Dehors » et le blanc de « Réserver » (un filet
+   les sépare) ; portrait vertical aux angles arrondis. */
+.maison-hotes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 80px; align-items: center; padding: 60px var(--marge); background: var(--fond-section); border-bottom: 1px solid var(--filet); }
+.maison-hotes__photo { aspect-ratio: 4 / 5; max-width: 520px; overflow: hidden; border-radius: 24px; }
+.maison-hotes__photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.maison-hotes .surtitre { color: var(--accent); }
+.maison-hotes h2 { font-family: var(--titre); font-weight: 400; font-size: 38px; line-height: 1.12; margin-top: 16px; }
+.maison-hotes__texte { margin-top: 20px; max-width: 32em; }
+.maison-hotes__plus { display: flex; flex-wrap: wrap; gap: 6px 28px; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--filet); font-size: 16px; max-width: 36em; }
+.maison-hotes__lien { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 5px; }
+@media (max-width: 999.98px) { .maison-hotes { gap: 48px; } }
+@media (max-width: 760.98px) {
+  .maison-hotes { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 28px var(--marge); }
+  .maison-hotes__photo { max-width: none; aspect-ratio: 4 / 3; }
+  .maison-hotes__photo img { object-position: 50% 30%; }
+  .maison-hotes h2 { font-size: 27px; margin-top: 12px; }
+  .maison-hotes__plus { flex-direction: column; }
+}
+
+/* Sections 7 et 8 (25/09, choix R3 et A3 de planche-section-7.html). La région sur le lin (alternance F1), la photo depuis
+   le bord gauche de l'écran ; les avis sur le blanc, séparés de « Réserver » (blanc aussi) par un filet. */
+.maison-region { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 72px; align-items: center; padding: 60px var(--marge) 60px 0; background: #ebe2d0; }
+.maison-region__photo { aspect-ratio: 4 / 3; overflow: hidden; border-radius: 0 24px 24px 0; }
+.maison-region__photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.maison-region .surtitre { color: #6f5533; }
+.maison-region h2, .maison-avis h2 { font-family: var(--titre); font-weight: 400; font-size: 38px; line-height: 1.12; margin-top: 16px; }
+.maison-region__intro { margin-top: 18px; font-size: 19px; max-width: 34em; }
+.maison-fiche { list-style: none; margin: 26px 0 0; padding: 0; }
+.maison-fiche li { display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; padding: 14px 0; border-top: 1px solid var(--filet); }
+.maison-fiche li:last-child { border-bottom: 1px solid var(--filet); }
+.maison-fiche h3 { margin: 0; font-family: var(--titre); font-weight: 400; font-size: 22px; line-height: 1.2; }
+.maison-fiche em { font-family: var(--titre); font-size: 18px; color: #6f5533; white-space: nowrap; }
+.maison-fiche p { grid-column: 1 / -1; font-size: 16px; color: #4d4a44; }
+.maison-avis { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr); gap: 72px; align-items: start; padding: 60px var(--marge); background: var(--fond-section); border-bottom: 1px solid var(--filet); }
+.maison-avis .surtitre { color: var(--accent); }
+.maison-avis__note { display: flex; align-items: baseline; gap: 10px; margin-top: 30px; font-size: 16px; }
+.maison-avis__chiffre { font-family: var(--titre); font-style: italic; font-size: 120px; line-height: .9; color: var(--accent); }
+.maison-avis__source { margin-top: 10px; font-size: 16px; line-height: 1.45; }
+.maison-avis__source small { font-size: 15px; color: #4d4a44; }
+.maison-avis__source a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.maison-avis__autres { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--filet); font-size: 16px; max-width: 22em; }
+.maison-avis__mention { margin-top: 24px; font-size: 15px; color: #4d4a44; }
+/* 25/09 (Rodolphe : « on ne sait pas d'où viennent les avis, on peut penser d'une plateforme ») : à gauche les notes des
+   plateformes, chacune avec son lien ; à droite, un en-tête dit que les avis sont laissés directement aux hôtes, et la
+   mention d'information est placée sous eux. */
+.maison-avis__entete { margin: 0 0 22px; padding-bottom: 14px; border-bottom: 1px solid var(--encre); font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.maison-avis__autres a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.maison-avis__labels { list-style: none; margin: 18px 0 0; padding: 18px 0 0; border-top: 1px solid var(--filet); font-size: 16px; font-weight: 600; }
+.maison-avis__labels li + li { margin-top: 6px; }
+.maison-avis__presse { margin-top: 10px; font-size: 16px; font-style: italic; }
+.maison-avis__liste { display: grid; gap: 34px; }
+.maison-avis__avis { margin: 0; padding-bottom: 30px; border-bottom: 1px solid var(--filet); }
+.maison-avis__avis blockquote { margin: 0; font-family: var(--titre); font-style: italic; font-size: 21px; line-height: 1.5; }
+.maison-avis__avis figcaption { margin-top: 12px; font-size: 15px; color: #4d4a44; }
+.maison-avis__avis figcaption b { display: block; font-size: 16px; font-weight: 600; color: var(--encre); }
+@media (max-width: 999.98px) { .maison-region, .maison-avis { gap: 48px; } }
+@media (max-width: 760.98px) {
+  .maison-region { grid-template-columns: minmax(0, 1fr); gap: 30px; padding: 0 0 28px; }
+  .maison-region__photo { border-radius: 0; }
+  .maison-region__texte { padding: 0 var(--marge); }
+  .maison-avis { grid-template-columns: minmax(0, 1fr); gap: 40px; padding: 28px var(--marge); }
+  .maison-region h2, .maison-avis h2 { font-size: 27px; margin-top: 12px; }
+  .maison-avis__chiffre { font-size: 84px; }
+  .maison-avis__avis blockquote { font-size: 19px; }
+}
+.maison-avis.avis--plateformes { grid-template-columns: minmax(0, 1fr); }
+/* 25/09 (Rodolphe : « oui ») : sans avis recueillis, les labels et la presse passent à droite de la note, pour que la
+   section occupe sa largeur au lieu de laisser un grand vide. Sur téléphone, tout reste en une colonne. */
+@media (min-width: 761px) {
+  .avis--plateformes .maison-avis__gauche { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); column-gap: 72px; align-items: start; }
+  .avis--plateformes .maison-avis__gauche > .surtitre, .avis--plateformes .maison-avis__gauche > h2 { grid-column: 1 / -1; }
+  .avis--plateformes .maison-avis__labels { grid-column: 2; grid-row: 3; align-self: end; margin-top: 30px; }
+  .avis--plateformes .maison-avis__presse { grid-column: 2; grid-row: 4; align-self: start; }
+}
+.avis-masque { display: none; }
+.maison-avis__plus { display: inline-block; margin-top: 24px; padding: 0 0 4px; border: 0; background: none; cursor: pointer; font-family: var(--titre); font-style: italic; font-size: 19px; color: var(--encre); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 6px; }
+.maison-avis__plus[hidden] { display: none; }
+
+/* « Pratique » et questions fréquentes (25/09) : repères en bande serrée à icônes (dessin P3), à gauche ; questions en
+   accordéon à droite (organisation P2) ; sur téléphone, tout en une colonne. */
+.pratique { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 80px; align-items: start; padding: 56px var(--marge) 60px; background: #ebe2d0; }
+.pratique h2 { margin-top: 14px; font-family: var(--titre); font-size: 38px; font-weight: 400; line-height: 1.12; }
+.pratique__reperes { list-style: none; margin: 30px 0 0; padding: 18px 0; display: grid; gap: 14px; border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet); }
+.pratique__reperes li { display: flex; gap: 12px; align-items: flex-start; font-size: 17px; line-height: 1.5; }
+.pratique__reperes b { font-weight: 600; }
+.pratique__ico { flex: none; width: 24px; height: 24px; margin-top: 1px; fill: none; stroke: #6f5533; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.pratique__titre { margin: 0 0 14px; font-family: var(--titre); font-size: 26px; font-weight: 400; line-height: 1.25; }
+.pratique__faq { border-top: 1px solid var(--filet); }
+.pratique__item { border-bottom: 1px solid var(--filet); }
+.pratique__item h4 { margin: 0; }
+.pratique__q { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; width: 100%; padding: 18px 0; border: 0; background: none; color: inherit; text-align: left; cursor: pointer; font-family: var(--titre); font-size: 21px; font-weight: 400; line-height: 1.35; }
+.pratique__q::after { content: "+"; flex: none; font: 300 26px/1 "Jost", sans-serif; color: #6f5533; }
+.pratique__q[aria-expanded="true"]::after { content: "–"; }
+.pratique__r { margin: 0; padding: 0 40px 20px 0; font-size: 17px; }
+.pratique__r--ferme { display: none; }
+.pratique:not(:has(.pratique__item)) { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 760.98px) {
+  .pratique { grid-template-columns: minmax(0, 1fr); gap: 44px; padding: 32px var(--marge) 28px; }
+  .pratique h2 { font-size: 27px; }
+  .pratique__titre { font-size: 23px; }
+}
+
+/* 25/09 : sur téléphone, les bandeaux (message du moment, démo) défilent avec la page au lieu de rester fixés en haut :
+   vus à l'arrivée, ils ne mangent plus l'écran pendant la lecture (il n'y a pas d'en-tête fixe sur téléphone). */
+@media (max-width: 760.98px) { .bandeaux { position: absolute; } }
+
+
+/* Calendrier des disponibilités (25/09, essai-calendrier.html validé par Rodolphe). Deux mois sur ordinateur, un mois
+   et des flèches sur téléphone, avec les premiers jours du mois suivant sur la dernière ligne. Récapitulatif : le bouton
+   « Réserver ces dates » n'existe qu'une fois l'arrivée et le départ choisis (dates obligatoires, module 7 a). */
+.dispo { --d-accent: #7f623b; --d-sur: #ffffff; --d-clair: #eadfcb; --d-case: #faf7f1; --d-doux: #4d4a44; --d-passe: #6b6966; --d-r: 2px;
+  display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 64px; align-items: start;
+  margin-top: 48px; padding-top: 36px; border-top: 1px solid var(--filet); scroll-margin-top: calc(var(--haut-bandeaux, 0px) + 90px); }
+.dispo p { margin: 0; }
+.dispo__titre { margin: 0; font-family: var(--titre); font-weight: 400; font-size: 30px; line-height: 1.2; }
+.dispo__regle { margin-top: 8px !important; color: var(--d-doux); font-size: 16px; line-height: 1.55; }
+.dispo__legende { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 18px !important; font-size: 15px; color: var(--d-doux); }
+.dispo__legende span { display: flex; align-items: center; gap: 8px; }
+.dispo__l { width: 18px; height: 18px; border: 1px solid var(--filet); border-radius: 3px; background: var(--d-case); }
+.dispo__l--passe { border-color: transparent; background: rgba(0, 0, 0, .06); }
+.dispo__l--pris { border-color: var(--d-doux); background: repeating-linear-gradient(135deg, var(--d-case) 0 3px, var(--d-doux) 3px 4.5px); }
+.dispo__l--sel { border-color: var(--d-accent); background: var(--d-accent); }
+.dispo__verif { margin-top: 10px !important; font-size: 15px; color: var(--d-doux); }
+.dispo__logements { min-width: 0; margin: 0 0 18px; padding: 0; border: 0; }
+.dispo__logements legend { margin-bottom: 8px; padding: 0; font-size: 16px; font-weight: 700; }
+.dispo__liste { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.dispo__logement { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--filet); border-radius: var(--d-r);
+  background: var(--d-case); color: var(--encre); font: inherit; font-size: 15.5px; line-height: 1.35; text-align: left; cursor: pointer; }
+.dispo__logement b { display: block; font-size: 16.5px; }
+.dispo__faits, .dispo__etat { display: block; color: var(--d-doux); font-size: 15px; }
+.dispo__etat { margin-top: 4px; color: var(--encre); font-weight: 700; }
+.dispo__etat--non { color: var(--d-doux); font-weight: 400; text-decoration: line-through; }
+.dispo__case { display: flex; flex: none; align-items: center; justify-content: center; width: 22px; height: 22px; margin-top: 1px;
+  border: 1.5px solid var(--d-doux); border-radius: 4px; color: var(--d-sur); font-size: 14px; font-weight: 800; }
+.dispo__logement[aria-pressed="true"] { border-color: var(--d-accent); box-shadow: inset 0 0 0 1px var(--d-accent); }
+.dispo__logement[aria-pressed="true"] .dispo__case { border-color: var(--d-accent); background: var(--d-accent); }
+.dispo__guide { min-height: 52px; margin: 0 0 14px !important; padding: 12px 16px; border-left: 4px solid var(--d-accent); background: var(--d-case); font-size: 16px; line-height: 1.55; }
+.dispo__nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.dispo__nav button { width: 44px; height: 44px; border: 1px solid var(--filet); border-radius: 50%; background: var(--d-case); color: var(--encre); font-size: 22px; line-height: 1; cursor: pointer; }
+.dispo__nav button:disabled { opacity: .35; cursor: default; }
+.dispo__mois { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+.dispo__nom { margin: 0 0 10px !important; font-family: var(--titre); font-size: 22px; }
+.dispo__nav .dispo__nom { margin: 0 !important; }
+.dispo__jours, .dispo__grille { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+.dispo__jours span { padding-bottom: 4px; color: var(--d-doux); font-size: 13px; text-align: center; }
+.dispo__j { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 46px; padding: 0;
+  border: 1px solid var(--filet); border-radius: var(--d-r); background: var(--d-case); color: var(--encre);
+  font-family: inherit; font-size: 16px; font-weight: 600; line-height: 1; cursor: pointer; }
+.dispo__j:hover:not(:disabled) { border-color: var(--d-accent); box-shadow: inset 0 0 0 1px var(--d-accent); }
+.dispo__j:focus-visible, .dispo__logement:focus-visible { outline: 3px solid var(--d-accent); outline-offset: 2px; }
+.dispo__j--vide { border: 0; background: none; cursor: default; }
+.dispo__j--passe { border-color: transparent; background: rgba(0, 0, 0, .05); color: var(--d-passe); font-weight: 400; cursor: default; }
+.dispo__j--pris { border-color: var(--d-doux); color: var(--d-doux); font-weight: 400; text-decoration: line-through; text-decoration-thickness: 1.5px;
+  background: repeating-linear-gradient(135deg, var(--d-case) 0 6px, color-mix(in srgb, var(--d-doux) 20%, var(--d-case)) 6px 8px); cursor: not-allowed; }
+.dispo__j--court { border-style: dotted; background: none; color: var(--d-doux); font-weight: 400; cursor: not-allowed; }
+.dispo__j--sel { border-color: var(--d-clair); background: var(--d-clair); }
+.dispo__j--bord { border-color: var(--d-accent); background: var(--d-accent); color: var(--d-sur); }
+.dispo__j--auj { box-shadow: inset 0 0 0 2px var(--encre); }
+.dispo__j--suivant { border-style: dashed; }
+.dispo__j small { margin-top: 2px; font-size: 13px; font-weight: 600; line-height: 1; }
+.dispo__recap { margin-top: 22px; padding: 20px 22px; border: 1px solid var(--filet); border-radius: var(--d-r); background: var(--d-case); }
+.dispo__dates { font-family: var(--titre); font-weight: 400; font-size: 30px; font-size: 22px; line-height: 1.3; }
+.dispo__prix { margin-top: 4px !important; color: var(--d-doux); font-size: 15.5px; }
+.dispo__recap .bouton { width: 100%; justify-content: center; margin-top: 16px; }
+.dispo__rassure { margin-top: 10px !important; color: var(--d-doux); font-size: 15px; }
+.dispo__ecrire { margin-top: 12px !important; color: var(--d-doux); font-size: 15.5px; }
+.dispo__ecrire a, .dispo__effacer { color: var(--encre); font-weight: 700; text-decoration: underline; text-decoration-color: var(--d-accent); text-underline-offset: 4px; }
+.dispo__effacer { margin-top: 8px; padding: 0; border: 0; background: none; font: inherit; font-size: 15px; font-weight: 400; cursor: pointer; }
+.dispo-eclat { animation: dispo-eclat 1.6s ease-out; }
+/* Largeurs moyennes : les deux mois ne tiennent pas à côté du texte, le calendrier passe dessous (contrôle du 25/09, 768 px) */
+@media (max-width: 1099px) { .dispo { grid-template-columns: minmax(0, 1fr); gap: 0; } .dispo__cote { display: contents; } .dispo__cote > * { order: 0; } .dispo__cal { order: 1; margin-top: 24px; } .dispo__cote > .dispo__recap { order: 2; max-width: 560px; margin-top: 22px; } }
+@keyframes dispo-eclat { from { box-shadow: 0 0 0 4px var(--d-accent, currentColor); } to { box-shadow: 0 0 0 0 transparent; } }
+@media (prefers-reduced-motion: reduce) { .dispo-eclat { animation: none; } }
+@media (max-width: 760.98px) {
+  .dispo { grid-template-columns: minmax(0, 1fr); gap: 0; margin-top: 36px; padding-top: 28px; }
+  .dispo__cote { display: contents; }
+  .dispo__cote > * { order: 0; }
+  .dispo__cal { order: 1; }
+  .dispo__cote > .dispo__recap { order: 2; margin-top: 22px; }
+  .dispo__titre { font-size: 26px; }
+  .dispo__dates { font-size: 20px; }
+  .dispo__j { height: 44px; font-size: 15px; }
+  .dispo__mois { grid-template-columns: minmax(0, 1fr); }
+  /* Téléphone : une ligne par chambre, pour que la grille reste près du haut */
+  .dispo__liste { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .dispo__logement { align-items: center; min-height: 48px; padding: 9px 12px; }
+  .dispo__logement > span:last-child { display: flex; flex: 1; flex-wrap: wrap; align-items: baseline; column-gap: 8px; }
+  .dispo__logement b, .dispo__faits { display: inline; }
+  .dispo__etat { margin: 0 0 0 auto; }
+}
+
+/* 26/09 : quatre liens légaux dans le pied (mentions, confidentialité, conditions de location, plan du site) ; ils passent
+   à la ligne entre eux, jamais au milieu d'un lien. */
+.pied__legal { flex-wrap: wrap; row-gap: 0; }
+.pied__legal a { white-space: nowrap; }
+@media (max-width: 760.98px) { .pied__legal { justify-content: flex-start; column-gap: 22px; } }
+
+/* 26/09 : la ligne vers la page groupes, sous les voyageurs du formulaire */
+.champ__groupe { margin: -4px 0 0; font-size: 15px; line-height: 1.5; }
+.champ__groupe a { display: inline-flex; align-items: center; min-height: 44px; color: var(--encre); font-weight: 700; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
+/* 26/09 : la ligne vers les cartes cadeaux, au bas de Réserver, et le champ du numéro de bon */
+.cadeau-ligne { margin: 32px 0 0; font-size: 16px; }
+.pied__avec-icone span { white-space: nowrap; }
+.cadeau-ligne a { display: inline-flex; align-items: center; min-height: 44px; color: var(--encre); font-weight: 700; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
+/* 26/09 (Rodolphe) : sur tablette, entre 761 et 1 099 px, le menu de l'en-tête se replie en un bouton « Menu » qui ouvre
+   le panneau du téléphone (mêmes liens, mêmes gestes) ; au-delà, le menu reste déplié. Les règles du panneau, écrites
+   pour le téléphone, sont reprises à ces largeurs. */
+.menu-replie { display: none; }
+@media (min-width: 761px) and (max-width: 1099.98px) {
+  .entete .menu { display: none; }
+  .menu-replie { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border: 1px solid currentColor;
+    border-radius: 8px; background: none; color: inherit; font: inherit; font-size: 14px; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; cursor: pointer; justify-self: end; margin-right: 16px; }
+  .menu-replie svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+  .feuille {
+    position: fixed; z-index: 60; inset: auto 0 0 0; top: auto;
+    width: 100%; max-width: none; max-height: 80svh; margin: 0; padding: 0;
+    border: 0; border-radius: 0;
+    background: var(--fond-section); color: var(--encre);
+  }
+  .feuille::backdrop { background: rgba(var(--voile), .62); }
+  .feuille__tete { display: flex; align-items: center; justify-content: space-between; padding: 16px var(--marge) 12px; }
+  .feuille__titre { font-size: 10px; letter-spacing: .22em; font-weight: 600; text-transform: uppercase; }
+  .feuille__fermer {
+    width: 44px; height: 44px; margin-right: -10px; display: flex; align-items: center; justify-content: center;
+    border: 0; background: none; color: inherit; cursor: pointer;
+  }
+  .feuille__fermer svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; }
+  .feuille a:not(.feuille__titre), .feuille .ligne-mail {
+    display: flex; align-items: center; gap: 14px; min-height: 58px;
+    padding: 0 var(--marge); border-top: 1px solid var(--filet);
+  }
+  .feuille nav a { font-family: var(--titre); font-size: 21px; font-weight: 400; }
+  .feuille nav a::after { content: ""; flex: none; width: 9px; height: 9px; margin-left: auto; margin-right: 4px;
+    border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); opacity: .6; }
+  .feuille__action { font-size: 17px; font-weight: 500; }
+  .feuille__action svg { width: 21px; height: 21px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+  .feuille__pied { padding: 16px var(--marge) calc(20px + env(safe-area-inset-bottom)); border-top: 1px solid var(--filet); }
+  .feuille__pied .bouton { width: 100%; }
+  .feuille__tete { background: var(--fond-tete); }
+  .feuille__titre { font-size: 13px; letter-spacing: .2em; }
+  .feuille nav a svg {
+    width: 21px; height: 21px; flex: none; fill: none; stroke: currentColor;
+    stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; opacity: .7;
+  }
+  .feuille__action { background: var(--fond-section); }
+  .feuille__action svg { opacity: 1; }
+  .feuille__action--wa svg { stroke: #25D366; }
+  .feuille__action--mail svg { stroke: #2f6fb5; }
+  .feuille nav a:active, .feuille nav a.est-presse,
+  .feuille__action:active, .feuille__action.est-presse { background: rgba(var(--voile), .07); }
+}
+</style>
+</head>
+<body>
+
+<header id="haut" class="entete">
+  <a class="nom" href="maison.html">La Maison du Noyer</a>
+  <nav class="menu capitales" aria-label="Menu principal">
+    <a href="maison-gite.html">La maison</a>
+    <a href="#region">La région</a>
+    <a href="maison-groupes.html">Groupes</a>
+  </nav>
+  <button class="menu-replie" type="button" aria-haspopup="dialog" aria-controls="feuille-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu</button>
+  <div class="actions">
+    <a class="capitales" href="maison-actualites.html">Journal</a>
+    <a class="capitales" href="#contact">Contact</a>
+    <a class="tel capitales" href="tel:+33553000001">05&nbsp;53&nbsp;00&nbsp;00&nbsp;01</a>
+    <a class="bouton" href="#reserver">Réserver</a>
+  </div>
+</header>
+
+<main>
+  <section class="ouverture" aria-labelledby="nom-etablissement">
+    <div class="cadre">
+      <!-- 24/09 : formats légers (AVIF, repli WebP) en trois largeurs, sortis de outils/optimiser-photos.py. Sur téléphone
+           la photo couvre 616 px de haut, soit environ 920 px de largeur d'image. Le JPEG reste le repli. -->
+      <picture>
+        <source type="image/avif" srcset="photos-ia/optim/06-640.avif 640w, photos-ia/optim/06-960.avif 960w, photos-ia/optim/06-1264.avif 1264w" sizes="(max-width: 760px) 960px, 100vw">
+        <source type="image/webp" srcset="photos-ia/optim/06-640.webp 640w, photos-ia/optim/06-960.webp 960w, photos-ia/optim/06-1264.webp 1264w" sizes="(max-width: 760px) 960px, 100vw">
+      <img class="photo" src="photos-ia/06.jpg" data-t="photos-ia/06t.jpg" data-c="photos-ia/06c.jpg" width="1264" height="848" fetchpriority="high"
+           alt="Le grand salon de la maison&#8239;: murs de pierre blonde, poutres de chêne, cheminée, canapé de lin et longue table de ferme"></picture>
+    </div>
+    <div class="lieu">
+      <p class="surtitre capitales"><span>Gîte à Villars, <span class="nowrap">à 13&nbsp;km de Brantôme</span></span></p>
+      <h1 id="nom-etablissement">La Maison du&nbsp;Noyer</h1>
+      <p class="promesse">Il y a des maisons qui ont du charme, et d’autres qui vous&nbsp;charment.</p>
+    </div>
+    <div class="socle">
+      <div class="bande-infos">
+        <!-- 24/09 soir (Rodolphe, choix 2 sur planche-faits-maison.html) : les chiffres clés. Chaque fait se lit d'une
+             traite, du grand chiffre à sa légende, pour le voyageur comme pour Google et les IA. -->
+        <ul class="faits">
+          <li><span class="chiffre">10<small>&nbsp;<span class="legende__long">personnes</span><span class="legende__court">pers.</span></small></span> <span class="legende">maison entière</span></li>
+          <li><span class="chiffre"><small>dès</small> 1&#8239;650&nbsp;€</span> <span class="legende">la semaine</span></li>
+          <li><span class="chiffre">4,8<small>&nbsp;sur&nbsp;5</small></span> <span class="legende"><span class="etoiles" aria-hidden="true">★★★★★</span> 38&nbsp;avis<span class="legende__suite"> Gîtes de France</span></span></li>
+        </ul>
+      </div>
+      <!-- 24/09 (module 3c, décision de Rodolphe) : dans le gabarit, ce lien mènera à la section « Disponibilités »
+           de la maison (un seul logement), et non au formulaire comme « Réserver ». La maquette n'a pas encore cette
+           section : il pointe provisoirement vers #reserver. -->
+      <a class="lien" href="#disponibilites">Voir les disponibilités<span class="fleche" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- Section 3, « La maison » (25/09, planche section 3, choix M-B de Rodolphe) : module 2 bis. Surtitre composé
+       avec le mot du lieu choisi par le propriétaire (« la maison », « la ferme »…), repères époque et matériaux
+       (deux petits champs facultatifs : vides, la ligne disparaît), texte du lieu (250 à 700 caractères), le
+       détail (photo et légende, obligatoires). La façade encadrée est une photo FACULTATIVE : sans elle, le
+       détail reste seul dans le cadre (règle CSS :has plus bas), décision de Rodolphe (« même commentaire »). -->
+  <section class="suite maison-lieu reveal" id="la-maison" aria-labelledby="titre-maison">
+    <div class="maison-lieu__grille">
+      <div class="maison-lieu__texte">
+        <p class="surtitre capitales">La maison</p>
+        <h2 id="titre-maison">Bâtie en 1760, restaurée avec respect</h2>
+        <p class="maison-lieu__reperes">XVIII<sup>e</sup> siècle · pierre blonde et chêne</p>
+        <p>Une maison de maître du Périgord vert, restée dans la même famille depuis sa construction. Sa restauration a gardé ce qu’elle avait de plus beau&#8239;: les murs de pierre blonde, la charpente de chêne du grand salon, les tomettes d’origine et la cheminée où l’on fait encore du feu l’hiver. Autour, un jardin clos de murets, des roses anciennes et le vieux noyer qui lui a donné son nom.</p>
+      </div>
+      <figure class="maison-lieu__photos">
+        <div class="maison-lieu__facade">
+          <picture>
+            <source type="image/avif" srcset="photos-ia/optim/05-480.avif 480w, photos-ia/optim/05-800.avif 800w" sizes="(max-width: 760px) 90vw, 45vw">
+            <source type="image/webp" srcset="photos-ia/optim/05-480.webp 480w, photos-ia/optim/05-800.webp 800w" sizes="(max-width: 760px) 90vw, 45vw">
+            <img src="photos-ia/05.jpg" data-t="photos-ia/05t.jpg" data-c="photos-ia/05c.jpg" width="1264" height="848" loading="lazy" decoding="async"
+                 alt="La façade de la Maison du Noyer vue du jardin, les roses anciennes au premier plan."></picture>
+        </div>
+        <div class="maison-lieu__detail">
+          <picture>
+            <source type="image/avif" srcset="photos-ia/optim/07-480.avif 480w, photos-ia/optim/07-800.avif 800w" sizes="(max-width: 760px) 50vw, 25vw">
+            <source type="image/webp" srcset="photos-ia/optim/07-480.webp 480w, photos-ia/optim/07-800.webp 800w" sizes="(max-width: 760px) 50vw, 25vw">
+            <img src="photos-ia/07.jpg" data-t="photos-ia/07t.jpg" data-c="photos-ia/07c.jpg" width="1264" height="848" loading="lazy" decoding="async"
+                 alt="La porte de chêne et ses pentures de fer, dans le mur de pierre blonde."></picture>
+        </div>
+        <figcaption class="maison-lieu__cartel">La porte de chêne et ses pentures de fer, d’origine.</figcaption>
+      </figure>
+    </div>
+  </section>
+  <!-- Section 4, le logement (25/09, planche section 4, choix M-B de Rodolphe) : module 3a. La démo n'a qu'un
+       logement (la maison entière) : une seule grande présentation (ETATS-PARTICULIERS 4.1), photo principale en
+       bandeau, accroche, chiffres clés en italique comme dans l'ouverture, bouton vers la page du logement, et la
+       ligne « groupes » quand l'établissement est concerné. Libellé au singulier composé selon le type (« Le gîte »).
+       Plusieurs logements : cartes, dessinées avec les chambres de Hôtes (section 5). -->
+  <section class="maison-logement reveal" id="logement" aria-labelledby="titre-logement">
+    <p class="surtitre capitales">Le gîte</p>
+    <h2 id="titre-logement">Toute la maison pour vous, du grand salon aux chambres sur le jardin.</h2>
+    <div class="maison-logement__photo">
+      <picture>
+        <source type="image/avif" srcset="photos-ia/optim/18-640.avif 640w, photos-ia/optim/18-960.avif 960w, photos-ia/optim/18-1264.avif 1264w" sizes="100vw">
+        <source type="image/webp" srcset="photos-ia/optim/18-640.webp 640w, photos-ia/optim/18-960.webp 960w, photos-ia/optim/18-1264.webp 1264w" sizes="100vw">
+        <img src="photos-ia/18.jpg" data-c="photos-ia/18c.jpg" width="1264" height="848" loading="lazy" decoding="async"
+             alt="La grande chambre, sa cheminée de marbre, son armoire de noyer et sa fenêtre à petits carreaux."></picture>
+    </div>
+    <div class="maison-logement__bas">
+      <ul class="maison-logement__chiffres">
+        <li><b>10</b><span>personnes</span></li>
+        <li><b>5</b><span>chambres</span></li>
+        <li><b>260<small>&nbsp;m²</small></b><span>de maison</span></li>
+        <li><b>1&nbsp;650&nbsp;€</b><span>dès, la semaine</span></li>
+      </ul>
+      <div class="maison-logement__action">
+        <a class="bouton" href="maison-gite.html">Découvrir le gîte</a>
+        <!-- 25/09 (Rodolphe) : la ligne se compose avec les trois premières occasions cochées au module 10, dans l'ordre de
+             la liste (le mariage seulement s'il est accepté) ; aucune cochée : « Vous venez à plusieurs ? ». -->
+        <p>Réunion de famille, séminaire, mariage&#8239;? <a class="maison-logement__lien" href="maison-groupes.html">Groupes et maison entière</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- Section 5, « Dehors » (25/09, planche-section-5.html, choix M-A de Rodolphe) : module 2 bis (dehors, narrateur,
+       80 à 300 caractères) et repères tirés du module 3b (terrasse, piscine et sa saison, jardin). Texte à gauche, photo
+       sur les deux tiers jusqu'au bord de l'écran : après le cadre (section 3) et le bandeau (section 4), une composition
+       décalée. Section facultative : sans texte « dehors », elle disparaît. -->
+  <section class="maison-dehors reveal" id="dehors" aria-labelledby="titre-dehors">
+    <div class="maison-dehors__texte">
+      <p class="surtitre capitales">Dehors</p>
+      <h2 id="titre-dehors">Le jardin, la terrasse sous le noyer, la piscine.</h2>
+      <p class="maison-dehors__reperes">Terrasse privée · piscine de mai à septembre · jardin clos</p>
+      <p>Le grand jardin se partage entre les chambres. La terrasse de pierre, à l’ombre du vieux noyer, accueille les dîners d’été&#8239;; la piscine, bordée de pierre claire, se cache derrière les rosiers.</p>
+    </div>
+    <div class="maison-dehors__photo">
+      <picture>
+        <source type="image/avif" srcset="photos-ia/optim/19-640.avif 640w, photos-ia/optim/19-960.avif 960w, photos-ia/optim/19-1264.avif 1264w" sizes="(max-width: 760px) 100vw, 62vw">
+        <source type="image/webp" srcset="photos-ia/optim/19-640.webp 640w, photos-ia/optim/19-960.webp 960w, photos-ia/optim/19-1264.webp 1264w" sizes="(max-width: 760px) 100vw, 62vw">
+        <img src="photos-ia/19.jpg" data-c="photos-ia/19c.jpg" width="1264" height="848" loading="lazy" decoding="async"
+             alt="La terrasse de pierre et sa grande table à l’ombre du noyer, la piscine bordée de pierre claire, la maison derrière."></picture>
+    </div>
+  </section>
+  <!-- Section 6, « Vos hôtes » (25/09, planche-section-6.html, choix M-A de Rodolphe) : module 2, portrait, prénoms,
+       texte à la troisième personne (100 à 250), langues, Instagram. Le titre se réduit aux prénoms : le surtitre dit
+       déjà « Vos hôtes ». Petit-déjeuner et table : un paragraphe de plus sous le texte, si l'établissement en propose
+       (pas la démo). Photo aux angles arrondis, style des photos de Maison. -->
+  <section class="maison-hotes reveal" id="hotes" aria-labelledby="titre-hotes">
+    <div class="maison-hotes__photo"><picture><source type="image/avif" srcset="photos-ia/optim/20-480.avif 480w, photos-ia/optim/20-720.avif 720w, photos-ia/optim/20-928.avif 928w" sizes="(max-width: 760px) 100vw, 40vw"><source type="image/webp" srcset="photos-ia/optim/20-480.webp 480w, photos-ia/optim/20-720.webp 720w, photos-ia/optim/20-928.webp 928w" sizes="(max-width: 760px) 100vw, 40vw"><img src="photos-ia/20.jpg" data-c="photos-ia/20c.jpg" width="928" height="1152" loading="lazy" decoding="async" alt="Hélène et François dans le jardin, devant le mur de pierre blonde et le vieux noyer."></picture></div>
+    <div>
+      <p class="surtitre capitales">Vos hôtes</p>
+      <h2 id="titre-hotes">Hélène et François</h2>
+      <p class="maison-hotes__texte">Ils habitent l’aile est de la maison depuis trente ans, connaissent chaque pierre et chaque rosier, et laissent leurs hôtes libres, tout en restant là pour une clé, un conseil ou un bouquet.</p>
+      <p class="maison-hotes__plus"><span>Vos hôtes parlent français et anglais.</span> <a class="maison-hotes__lien" href="#instagram">La maison sur Instagram</a></p>
+    </div>
+  </section>
+  <!-- Section 7, « La région, en bref » (25/09, planche-section-7.html, choix R3 de Rodolphe) : module 4, seconde partie,
+       décision a (l'introduction de la région sert aussi ici) et lieux « à la une » (immanquables) avec distance calculée.
+       Photo du pays depuis le bord gauche de l'écran, angles arrondis (style Maison) ; fiche à filets. -->
+  <section class="maison-region reveal" id="region" aria-labelledby="titre-region">
+    <div class="maison-region__photo"><picture>
+      <source type="image/avif" srcset="photos-ia/optim/z1-480.avif 480w, photos-ia/optim/z1-800.avif 800w, photos-ia/optim/z1-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 55vw">
+      <source type="image/webp" srcset="photos-ia/optim/z1-480.webp 480w, photos-ia/optim/z1-800.webp 800w, photos-ia/optim/z1-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 55vw">
+      <img src="photos/Z1-bonne-14285474.jpg" width="2400" height="1350" loading="lazy" decoding="async" alt="La vallée de la Dordogne vue d’en haut, la rivière entre les prés et les bois."></picture></div>
+    <div class="maison-region__texte">
+      <p class="surtitre capitales">La région</p>
+      <h2 id="titre-region">Autour de Villars, en bref.</h2>
+      <p class="maison-region__intro">Le Périgord vert porte bien son nom&#8239;: c’est la partie la plus boisée et la plus calme du département, celle des vallées étroites et des villages de pierre blonde.</p>
+      <ul class="maison-fiche"><li><h3>Brantôme</h3><em>8&nbsp;km</em><p>Son abbaye adossée à la falaise, et la Dronne tout autour.</p></li><li><h3>Château de Bourdeilles</h3><em>11&nbsp;km</em><p>Deux châteaux, l’un médiéval, l’autre Renaissance, au-dessus de la rivière.</p></li><li><h3>Grottes de Villars</h3><em>3&nbsp;km</em><p>Des peintures de la préhistoire et des salles de cristaux.</p></li><li><h3>Saint-Jean-de-Côle</h3><em>21&nbsp;km</em><p>L’un des plus beaux villages de France, sa place et son pont.</p></li></ul>
+    </div>
+  </section>
+  <!-- Section 8, « Ce qu'on en dit » (25/09, planche-section-7.html, choix A3 de Rodolphe) : module 5. La note principale en
+       très grand Bodoni italique (le geste de « 1760 » et des chiffres clés), sa source, la date du relevé et le lien ;
+       les autres plateformes ; la mention d'information ; labels (avec leur date) et presse (sans logo). À droite, les
+       avis recueillis, du plus récent au plus ancien. Avis, noms et article de démo inventés. -->
+  <section class="maison-avis reveal" id="avis" aria-labelledby="titre-avis">
+    <div class="maison-avis__gauche">
+      <p class="surtitre capitales">Ce qu’on en dit</p>
+      <h2 id="titre-avis">Une maison dont on parle avec soin.</h2>
+      <p class="maison-avis__note"><span class="maison-avis__chiffre">4,8</span><span>sur 5</span></p>
+      <p class="maison-avis__source">38 avis Gîtes de France<br><small>relevé en septembre 2026</small> · <a href="#">Voir les avis</a></p>
+      <p class="maison-avis__autres"><b>Google</b> 4,9 sur 5 · 22 avis · <a href="#">Voir les avis</a></p>
+      <ul class="maison-avis__labels"><li>Gîtes de France · 4 épis · depuis 2019</li><li>Meublé de tourisme classé 4 étoiles · 2024</li></ul>
+      <p class="maison-avis__presse">«&#8239;Les maisons de maître du Périgord vert&#8239;», Le Journal du Périgord, avril 2026</p>
+    </div>
+    <div class="maison-avis__droite">
+      <p class="maison-avis__entete">Les avis laissés directement à Hélène et François</p>
+      <div class="maison-avis__liste" data-avis><figure class="maison-avis__avis"><blockquote>Tout est d’époque sans rien de poussiéreux. Le grand salon, le soir, avec la cheminée&#8239;: on comprend pourquoi la famille ne l’a jamais vendue.</blockquote><figcaption><b>Anne-Claire D.</b>séjour en août 2026</figcaption></figure><figure class="maison-avis__avis"><blockquote>Une vraie maison, pas une location&#8239;: les livres, les bouquets, la piscine cachée derrière les rosiers. Hélène nous a laissé une liste d’adresses écrite à la main.</blockquote><figcaption><b>Philippe M.</b>séjour en juillet 2026</figcaption></figure><figure class="maison-avis__avis"><blockquote>Dix personnes, trois générations, et chacun a trouvé son coin. Nous reviendrons pour les cinquante ans de notre père.</blockquote><figcaption><b>Famille B.</b>séjour en mai 2026</figcaption></figure></div>
+      <button class="maison-avis__plus" type="button" data-avis-plus hidden>Lire les autres avis</button>
+      <p class="maison-avis__mention">Recueillis par les hôtes auprès des voyageurs après leur séjour, publiés avec leur accord, sans contrepartie, du plus récent au plus ancien.</p>
+    </div>
+  </section>
+<section class="demande" id="reserver" aria-labelledby="titre-demande">
+  <div class="demande__tete">
+    <p class="surtitre capitales">Réserver</p>
+    <h2 id="titre-demande">Votre séjour commence ici.</h2>
+    <p class="demande__dit">Vous réservez directement auprès de nous, sans intermédiaire.</p>
+  </div>
+  <!-- Section « Disponibilités » (25/09, module 3c, option calendrier ; essai-calendrier.html validé par Rodolphe).
+       Sans l'option, ce bloc est remplacé par la durée minimale, les jours d'arrivée et « Dites-nous vos dates » ; en
+       panne de synchronisation, par « Disponibilités momentanément indisponibles » (ETATS-PARTICULIERS 5.1). -->
+  <div class="dispo reveal" id="disponibilites" data-calendrier='{"min": 3, "bp": "760.98px", "reponse": "sous 24 heures", "logements": [{"nom": "La Maison du Noyer", "prix": 240, "pris": [[1, 7], [14, 20], [29, 36], [56, 58]]}], "bouton": "bouton"}'>
+    <div class="dispo__cote">
+      <h3 class="dispo__titre">Les dates libres</h3>
+      <p class="dispo__regle">3 nuits minimum · à la semaine en juillet et août, du samedi au samedi · 240&nbsp;€ la nuit hors saison</p>
+      <p class="dispo__legende"><span><i class="dispo__l"></i>libre</span><span><i class="dispo__l dispo__l--pris"></i>déjà réservé</span><span><i class="dispo__l dispo__l--passe"></i>passé</span><span><i class="dispo__l dispo__l--sel"></i>vos dates</span></p>
+      <p class="dispo__verif">Vérifié il y a 40&nbsp;min</p>
+      <div class="dispo__recap" data-recap aria-live="polite"></div>
+    </div>
+    <div class="dispo__cal" data-grille></div>
+  </div>
+  <!-- 24/09 : les quatre blocs communs de la section Réserver (module 7, f à i), repris de Hôtes et dessinés pour
+       Maison : étapes sans scènes, canaux, formulaire replié, colonne « Une question ? » avec la façade. Textes à la
+       première personne du pluriel, comme Hôtes (Rodolphe, 24/09 : « les propriétaires » donnait l'impression
+       d'écrire à une personne extérieure ; remplace la variante à la troisième personne du 22/09). Le délai de
+       réponse quitte la phrase d'en-tête pour la carte du formulaire, comme sur Hôtes : il n'est dit qu'une fois. -->
+  <div class="etapes-bloc reveal">
+    <p class="etapes-bloc__titre">Comment ça se passe</p>
+    <ol class="etapes">
+      <li>
+        <div class="etapes__tete"><span class="etapes__num" aria-hidden="true">01</span><span class="etapes__lien" aria-hidden="true"></span></div>
+        <p class="etapes__titre">Vous nous dites ce que vous cherchez</p>
+        <p>Dates, nombre de voyageurs, envies particulières.</p>
+      </li>
+      <li>
+        <div class="etapes__tete"><span class="etapes__num" aria-hidden="true">02</span><span class="etapes__lien" aria-hidden="true"></span></div>
+        <p class="etapes__titre">Nous vous répondons</p>
+        <p>Disponibilité confirmée et prix pour vos dates précises.</p>
+      </li>
+      <li>
+        <div class="etapes__tete"><span class="etapes__num" aria-hidden="true">03</span><span class="etapes__lien" aria-hidden="true"></span></div>
+        <p class="etapes__titre">Vous prenez le temps qu’il vous faut</p>
+        <p>Posez d’autres questions, demandez des précisions.</p>
+      </li>
+      <li>
+        <div class="etapes__tete"><span class="etapes__num" aria-hidden="true">04</span></div>
+        <p class="etapes__titre">Rien à payer tout de suite</p>
+        <p>Aucune carte bancaire à saisir, le règlement vient plus tard, avec nous.</p>
+      </li>
+    </ol>
+  </div>
+  <div class="canaux-bloc" id="contact">
+    <p class="canaux-bloc__titre">Comment souhaitez-vous nous joindre&#8239;?</p>
+    <ol class="canaux">
+      <li>
+        <a class="canal canal--tel" href="tel:+33553000001">
+          <span class="canal__rond" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4.5-2 1.3a11 11 0 0 0 5.7 5.7l1.3-2 4.5 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></svg></span>
+          <span class="canal__libelle">Par téléphone</span>
+          <span class="canal__valeur">05&nbsp;53&nbsp;00&nbsp;00&nbsp;01</span>
+          <span class="canal__mot">De vive voix, tous les jours de 9&nbsp;h à 20&nbsp;h.</span>
+        </a>
+      </li>
+      <li>
+        <a class="canal canal--wa" href="https://wa.me/33553000001?text=Bonjour,%20je%20vous%20%C3%A9cris%20depuis%20votre%20site.">
+          <span class="canal__rond" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.62 0-3.13-.44-4.44-1.2l-.32-.19-3.02.79.81-2.94-.21-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.36-5.86c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg></span>
+          <span class="canal__libelle">Sur WhatsApp</span>
+          <span class="canal__valeur">Nous contacter</span>
+          <span class="canal__mot">Un appel ou un message rapide, à toute heure.</span>
+        </a>
+      </li>
+      <li>
+        <a class="canal canal--ecrit" href="#formulaire" aria-controls="demande-formulaire" aria-expanded="false" data-ouvrir-formulaire>
+          <span class="canal__rond" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.5 8 6 8-6"/></svg></span>
+          <span class="canal__libelle">Par écrit</span>
+          <span class="canal__valeur">Remplir le formulaire</span>
+          <span class="canal__mot">Dates, voyageurs, envies&#8239;: tout en une fois.</span>
+        </a>
+      </li>
+    </ol>
+  </div>
+  <div class="demande__formulaire" id="demande-formulaire">
+  <div class="carte-demande reveal" id="formulaire">
+    <p class="carte-demande__titre">Votre demande de séjour</p>
+    <p class="carte-demande__delai">Nous vous répondons <strong>sous 24 heures</strong>.</p>
+    <form novalidate>
+    <div class="resume" role="alert">
+      <p>Deux informations manquent pour envoyer votre demande.</p>
+      <ul>
+        <li><a href="#courriel">Votre adresse e-mail</a></li>
+        <li><a href="#arrivee">La date d’arrivée</a></li>
+      </ul>
+    </div>
+    <div class="champ champ--large">
+      <label for="bon-cadeau">Numéro de votre bon cadeau <small>si vous en avez un</small></label>
+      <input id="bon-cadeau" name="bon_cadeau" type="text" autocomplete="off">
+    </div>
+    <div class="champ champ--large">
+      <label for="nom">Prénom et nom</label>
+      <input id="nom" name="nom" type="text" autocomplete="name" required>
+      <span class="champ__erreur">Erreur : ce champ est nécessaire pour vous répondre.</span>
+    </div>
+    <div class="champ">
+      <label for="courriel">E-mail</label>
+      <input id="courriel" name="courriel" type="email" autocomplete="email" required>
+      <span class="champ__erreur">Erreur : cette adresse e-mail semble incomplète.</span>
+    </div>
+    <div class="champ">
+      <label for="tel">Téléphone <small>facultatif</small></label>
+      <input id="tel" name="tel" type="tel" autocomplete="tel">
+      <span class="champ__erreur">Erreur : ce numéro semble incomplet.</span>
+    </div>
+    <div class="champ champ--large">
+      <label for="souhait">Ce que vous souhaitez</label>
+      <select id="souhait" name="souhait" required>
+        <option>La maison entière</option>
+        <option>Un logement seulement</option>
+      </select>
+      <span class="champ__erreur">Erreur : choisissez ce que vous souhaitez louer.</span>
+    </div>
+    <div class="champ">
+      <label for="arrivee">Arrivée</label>
+      <input id="arrivee" name="arrivee" type="date" required>
+      <span class="champ__erreur">Erreur : indiquez la date d’arrivée souhaitée.</span>
+    </div>
+    <div class="champ">
+      <label for="depart">Départ</label>
+      <input id="depart" name="depart" type="date" required>
+      <span class="champ__erreur">Erreur : indiquez la date de départ souhaitée.</span>
+    </div>
+    <div class="champ champ--large">
+      <label class="case"><input type="checkbox" name="flexible"> Mes dates sont flexibles de quelques jours</label>
+    </div>
+    <div class="champ">
+      <label for="adultes">Adultes</label>
+      <select id="adultes" name="adultes" required>
+        <option value="1">1 adulte</option>
+        <option value="2" selected>2 adultes</option>
+        <option value="3">3 adultes</option>
+        <option value="4">4 adultes</option>
+        <option value="5">5 adultes</option>
+        <option value="6">6 adultes</option>
+        <option value="7">7 adultes</option>
+        <option value="8">8 adultes ou plus</option>
+      </select>
+      <span class="champ__erreur">Erreur : indiquez le nombre d’adultes.</span>
+    </div>
+    <div class="champ">
+      <label for="enfants">Enfants <small>de moins de 12 ans</small></label>
+      <select id="enfants" name="enfants">
+        <option value="0" selected>Aucun enfant</option>
+        <option value="1">1 enfant</option>
+        <option value="2">2 enfants</option>
+        <option value="3">3 enfants</option>
+        <option value="4">4 enfants</option>
+        <option value="5">5 enfants ou plus</option>
+      </select>
+      <span class="champ__erreur">Erreur : indiquez un nombre.</span>
+    </div>
+    <!-- 26/09 (Rodolphe) : quand la page groupes existe, le formulaire y renvoie, sous les voyageurs. -->
+    <p class="champ champ--large champ__groupe">Vous venez à plusieurs, pour une fête ou un séminaire&#8239;? <a href="maison-groupes.html">Demandez un devis pour le groupe</a></p>
+
+    <div class="champ champ--large">
+      <label for="message">Votre message <small>facultatif</small></label>
+      <textarea id="message" name="message" maxlength="2000"></textarea>
+      <span class="compteur" aria-hidden="true">0 / 2 000</span>
+      <span class="champ__erreur">Erreur : ce message dépasse 2 000 caractères.</span>
+    </div>
+    <div class="champ champ-piege" aria-hidden="true">
+      <label for="site">Ne remplissez pas ce champ</label>
+      <input id="site" name="site" type="text" tabindex="-1" autocomplete="off">
+    </div>
+    <p class="anti-robot">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 5 6.2v5c0 4.1 2.8 7.9 7 9.3 4.2-1.4 7-5.2 7-9.3v-5z"/><path d="m9.2 12 2 2 3.6-3.8"/></svg>
+      Un test anti-robot protège ce formulaire. Il s’affiche ici et ne demande rien dans la plupart des cas.
+    </p>
+    <div class="demande__pied">
+      <button class="bouton" type="submit">Envoyer ma demande</button>
+      <p class="demande__note"><strong>Votre demande n’est pas encore une réservation.</strong>
+        Vos coordonnées ne servent qu’à vous répondre.
+        <a href="#confidentialite">Politique de confidentialité</a>.
+        Ce formulaire est protégé par un test anti-robot.</p>
+    </div>
+    </form>
+  </div>
+  <!-- Colonne « Une question ? » (module 7, i) : pour Maison, la façade et le jardin (décision de Rodolphe, 24/09). -->
+  <figure class="colonne-info">
+    <div class="colonne-info__cadre">
+      <picture>
+        <source type="image/avif" srcset="photos-ia/optim/17-480.avif 480w, photos-ia/optim/17-720.avif 720w, photos-ia/optim/17-928.avif 928w" sizes="(max-width: 960px) 100vw, 460px">
+        <source type="image/webp" srcset="photos-ia/optim/17-480.webp 480w, photos-ia/optim/17-720.webp 720w, photos-ia/optim/17-928.webp 928w" sizes="(max-width: 960px) 100vw, 460px">
+      <img src="photos-ia/17.jpg" data-c="photos-ia/17c.jpg" width="928" height="1152" loading="lazy" decoding="async"
+           alt="Le hall d'entrée, son escalier de chêne et la porte ouverte sur le jardin."></picture>
+    </div>
+    <figcaption class="colonne-info__sous">
+      <p class="colonne-info__question">Une question&#8239;?</p>
+      <a class="colonne-info__tel" href="tel:+33553000001">05&nbsp;53&nbsp;00&nbsp;00&nbsp;01</a>
+      <p class="colonne-info__invite">Appelez-nous, nous vous répondons avec plaisir.</p>
+    </figcaption>
+  </figure>
+  </div>
+  <div class="confirme">
+    <!-- 26/09 : la phrase du remerciement de l'univers (validée le 16/09), accord de Rodolphe. -->
+    <h3>Votre message est bien arrivé à la maison.</h3>
+    <p>Nous vous répondons <strong>sous 24 heures</strong>, à l’adresse que vous venez de donner. Ce n’est pas encore une
+      réservation : nous vérifions d’abord que tout est libre à vos dates.</p>
+    <p>Pensez à regarder vos indésirables : la première réponse s’y range parfois.</p>
+    <p>Une question d’ici là ? Écrivez-nous, ou appelez le 05 53 00 00 01.</p>
+  </div>
+  <p class="cadeau-ligne">Offrir un séjour&#8239;? <a href="maison-cadeaux.html">Nos cartes cadeaux</a></p>
+</section>
+  <!-- Section « Pratique » et questions fréquentes (25/09, planche-section-8.html : sur ordinateur, le dessin de P3 dans
+       l'organisation de P2 ; sur téléphone, P3, choix de Rodolphe pour les trois univers). Module 8 : repères composés
+       sans saisie depuis les autres modules ; 0 à 8 questions, jamais une information déjà affichée ; sans question, la
+       colonne disparaît et les repères prennent la largeur. Faits et questions de démo inventés. -->
+  <section class="pratique reveal" id="pratique" aria-labelledby="titre-pratique">
+    <div class="pratique__gauche">
+      <p class="surtitre capitales">Pratique</p>
+      <h2 id="titre-pratique">Tout ce qu’il faut savoir.</h2>
+      <ul class="pratique__reperes"><li><svg class="pratique__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><path d="M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg><p><b>Arrivée et départ</b> Le samedi : arrivée à partir de 16&nbsp;h, départ avant 10&nbsp;h</p></li><li><svg class="pratique__ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="9" r="1.8"/><circle cx="12" cy="6.5" r="1.8"/><circle cx="17" cy="9" r="1.8"/><path d="M8 17c0-3 2-5 4-5s4 2 4 5c0 1.5-1.5 2-4 2s-4-.5-4-2z"/></svg><p><b>Animaux</b> Chiens acceptés sur demande</p></li><li><svg class="pratique__ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><p><b>Ouverture</b> Toute l’année</p></li><li><svg class="pratique__ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg><p><b>Paiement</b> Virement, chèque, chèques-vacances</p></li><li><svg class="pratique__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.5-5.6 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg><p><b>Accès</b> À 3&nbsp;km de Villars, gare de Périgueux à 35&nbsp;km</p></li><li><svg class="pratique__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16M6 14a6 6 0 0 1 12 0M12 8V6M3 18h18"/></svg><p><b>Services</b> Linge fourni, ménage de fin de séjour compris, bois pour la cheminée</p></li></ul>
+    </div>
+    <div class="pratique__droite">
+      <h3 class="pratique__titre">Questions fréquentes</h3>
+      <div class="pratique__faq"><div class="pratique__item"><h4><button class="pratique__q" type="button" aria-expanded="false" aria-controls="faq-0">La piscine est-elle sécurisée&#8239;?</button></h4><p class="pratique__r pratique__r--ferme" id="faq-0">Oui, par une barrière aux normes avec portillon. Elle est ouverte de mai à septembre et n’est pas chauffée.</p></div><div class="pratique__item"><h4><button class="pratique__q" type="button" aria-expanded="false" aria-controls="faq-1">Peut-on faire venir un chef à domicile&#8239;?</button></h4><p class="pratique__r pratique__r--ferme" id="faq-1">Oui, Hélène et François vous donneront les coordonnées de deux chefs de la région qui connaissent la cuisine de la maison.</p></div><div class="pratique__item"><h4><button class="pratique__q" type="button" aria-expanded="false" aria-controls="faq-2">Que faire s’il pleut&#8239;?</button></h4><p class="pratique__r pratique__r--ferme" id="faq-2">La grande bibliothèque du salon, la salle de jeux dans l’ancienne grange, et les grottes de Villars à trois kilomètres.</p></div><div class="pratique__item"><h4><button class="pratique__q" type="button" aria-expanded="false" aria-controls="faq-3">Peut-on arriver un autre jour que le samedi&#8239;?</button></h4><p class="pratique__r pratique__r--ferme" id="faq-3">Hors juillet et août, oui : demandez-le dans le formulaire, la réponse vient dans la journée.</p></div></div>
+    </div>
+  </section>
+</main>
+<footer class="pied reveal">
+  <div class="pied__marque-haut"></div>
+  <div class="pied__grille">
+    <div class="pied__marque">
+      <p class="pied__nom">La Maison du Noyer</p>
+      <p class="pied__signe">Des maisons qui vous charment.</p>
+      <div class="pied__reseaux">
+        <a href="#instagram" aria-label="Suivez-nous sur Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.9c3 0 3.3 0 4.5.07 1.1.05 1.7.24 2.1.4.5.2.9.45 1.3.85.4.4.65.8.85 1.3.16.4.35 1 .4 2.1.06 1.2.07 1.5.07 4.5s0 3.3-.07 4.5c-.05 1.1-.24 1.7-.4 2.1a3.5 3.5 0 0 1-.85 1.3c-.4.4-.8.65-1.3.85-.4.16-1 .35-2.1.4-1.2.06-1.5.07-4.5.07s-3.3 0-4.5-.07c-1.1-.05-1.7-.24-2.1-.4a3.5 3.5 0 0 1-1.3-.85 3.5 3.5 0 0 1-.85-1.3c-.16-.4-.35-1-.4-2.1C2.9 15.3 2.9 15 2.9 12s0-3.3.07-4.5c.05-1.1.24-1.7.4-2.1.2-.5.45-.9.85-1.3.4-.4.8-.65 1.3-.85.4-.16 1-.35 2.1-.4C8.7 2.9 9 2.9 12 2.9zm0 3.15A5.95 5.95 0 1 0 12 18a5.95 5.95 0 0 0 0-11.9zm0 9.8A3.85 3.85 0 1 1 12 8.2a3.85 3.85 0 0 1 0 7.65zm6.15-9.98a1.39 1.39 0 1 1-2.78 0 1.39 1.39 0 0 1 2.78 0z"/></svg></a>
+        <a href="#facebook" aria-label="Suivez-nous sur Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+        <a href="#tiktok" aria-label="Suivez-nous sur TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 3c.28 2 1.5 3.42 3.5 3.6v2.7c-1.3.1-2.5-.3-3.5-1.02v6.3c0 3.3-2.4 5.42-5.2 5.42-2.7 0-4.8-2-4.8-4.7 0-2.9 2.4-4.9 5.4-4.6v2.82c-.4-.12-.9-.16-1.3-.1-1 .12-1.7.9-1.6 1.9.1 1 .9 1.72 1.9 1.66 1.1-.05 1.8-.92 1.8-2V3z"/></svg></a>
+        <a href="#youtube" aria-label="Suivez-nous sur YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C18.3 5.2 12 5.2 12 5.2s-6.3 0-7.9.4A2.5 2.5 0 0 0 2.4 7.3C2 8.8 2 12 2 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.6.4 7.9.4 7.9.4s6.3 0 7.9-.4a2.5 2.5 0 0 0 1.7-1.7C22 15.2 22 12 22 12zM10 15V9l5 3-5 3z"/></svg></a>
+      </div>
+    </div>
+    <nav class="pied__bloc" aria-label="Pages du site">
+      <p class="pied__label">Découvrir</p>
+      <div class="pied__liste">
+      <a class="pied__avec-icone" href="maison-gite.html"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4.5 20 11v8.5a.5.5 0 0 1-.5.5h-15a.5.5 0 0 1-.5-.5z"/><path d="M10 20v-6h4v6"/></svg><span>La maison</span></a>
+      <a class="pied__avec-icone" href="#region"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.5-5.6 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg><span>La région</span></a>
+      <a class="pied__avec-icone" href="maison-groupes.html"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.2" r="2.4"/><path d="M15.8 14.3a4.4 4.4 0 0 1 4.9 5.2"/></svg><span>Groupes</span></a>
+      <a class="pied__avec-icone" href="maison-actualites.html"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 3.5h10l3 3v14h-13zM8.5 9h7M8.5 12.5h7M8.5 16h4.5"/></svg><span>Journal</span></a>
+      <a class="pied__avec-icone" href="maison-cadeaux.html"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="8.5" width="17" height="4" rx=".5"/><path d="M5 12.5V20h14v-7.5M12 8.5V20M12 8.5c-1.5-3.5-5.5-4-5.5-1.5 0 1.5 3 1.5 5.5 1.5zM12 8.5c1.5-3.5 5.5-4 5.5-1.5 0 1.5-3 1.5-5.5 1.5z"/></svg><span>Cartes cadeaux</span></a>
+      <a class="pied__avec-icone" href="#contact"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.5 8 6 8-6"/></svg><span>Contact</span></a>
+    
+      </div>
+    </nav>
+    <div class="pied__bloc">
+      <p class="pied__label">Nous joindre</p>
+      <div class="pied__liste">
+      <a class="pied__contact" href="tel:+33553000001"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.8l1.4 4.1-2 1.4a11.5 11.5 0 0 0 6.2 6.2l1.4-2 4.1 1.4v2.8a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span>05 53 00 00 01</span></a>
+      <a class="pied__contact" href="mailto:bonjour@maisondunoyer-exemple.fr"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.5 8 6 8-6"/></svg><span>bonjour@<wbr><span class="ligne-mail__domaine">maisondunoyer-exemple.fr</span></span></a>
+      <a class="pied__contact" href="https://maps.google.com/?q=Villars,+Dordogne" target="_blank" rel="noopener"><svg class="pied__icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.5-5.6 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg><span>Lieu-dit le Noyer 24530 Villars, en Dordogne</span></a>
+    
+      </div>
+    </div>
+  </div>
+  <div class="pied__bas">
+    <p class="pied__credit">&copy; 2026 La Maison du Noyer &middot; Site réalisé par Soralva</p>
+    <nav class="pied__legal" aria-label="Mentions">
+      <a href="maison-mentions-legales.html">Mentions légales</a>
+      <a href="maison-confidentialite.html">Confidentialité</a>
+      <a href="maison-confidentialite.html#cookies">Cookies</a>
+      <a href="maison-conditions-location.html">Conditions de location</a>
+      <a href="maison-plan-du-site.html">Plan du site</a>
+    </nav>
+    <a class="pied__haut" href="#haut">Haut de page <span aria-hidden="true">&uarr;</span></a>
+  </div>
+</footer>
+
+<nav class="barre" aria-label="Actions rapides">
+  <a class="capitales" href="#menu">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <span>Menu</span>
+  </a>
+  <a class="capitales" href="tel:+33553000001">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4.5-2 1.3a11 11 0 0 0 5.7 5.7l1.3-2 4.5 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></svg>
+    <span>Appeler</span>
+  </a>
+  <a class="capitales" href="#contact">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.5 8 6 8-6"/></svg>
+    <span>Écrire</span>
+  </a>
+  <a class="bouton" href="#reserver">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+    <span>Réserver</span>
+  </a>
+</nav>
+
+<a class="bulle" href="https://wa.me/33553000001?text=Bonjour,%20je%20vous%20%C3%A9cris%20depuis%20votre%20site." aria-label="Écrire sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.62 0-3.13-.44-4.44-1.2l-.32-.19-3.02.79.81-2.94-.21-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.36-5.86c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"></path></svg>
+</a>
+
+<dialog class="feuille" id="feuille-menu" aria-label="Menu">
+  <div class="feuille__tete">
+    <a class="feuille__titre capitales" href="maison.html" style="color:inherit;text-decoration:none">La Maison du Noyer</a>
+    <button class="feuille__fermer" type="button" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <nav aria-label="Menu principal">
+    <a href="maison-gite.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4.5 20 11v8.5a.5.5 0 0 1-.5.5h-15a.5.5 0 0 1-.5-.5z"/><path d="M10 20v-6h4v6"/></svg>La maison</a>
+    <a href="#region"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.5-5.6 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg>La région</a>
+    <a href="maison-groupes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19.5c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M16 5.6a3 3 0 0 1 0 4.8M17.5 14.9c2 .7 3 2.4 3 4.6"/></svg>Groupes</a>
+    <a href="maison-actualites.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 3.5h10l3 3v14h-13zM8.5 9h7M8.5 12.5h7M8.5 16h4.5"/></svg>Journal</a>
+    <a href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.5 8 6 8-6"/></svg>Contact</a>
+  </nav>
+  <div class="feuille__pied">
+    <a class="bouton" href="#reserver">Réserver</a>
+  </div>
+</dialog>
+
+<dialog class="feuille" id="feuille-ecrire" aria-label="Écrire">
+  <div class="feuille__tete">
+    <span class="feuille__titre capitales">Écrire à La Maison du Noyer</span>
+    <button class="feuille__fermer" type="button" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <a class="feuille__action feuille__action--wa" href="https://wa.me/33553000001?text=Bonjour,%20je%20vous%20%C3%A9cris%20depuis%20votre%20site."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.2-4.3A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.8 8.2h1.6l.8 2.4-1.1.8a6.3 6.3 0 0 0 3.4 3.4l.8-1.1 2.4.8v1.6a1.1 1.1 0 0 1-1.2 1.1 9.1 9.1 0 0 1-7.8-7.8 1.1 1.1 0 0 1 1.1-1.2z"/></svg> WhatsApp</a>
+  <a class="feuille__action feuille__action--mail" href="mailto:bonjour@maisondunoyer-exemple.fr"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.5 8 6 8-6"/></svg> E-mail</a>
+  <p class="ligne-mail"><span>bonjour@<wbr><span class="ligne-mail__domaine">maisondunoyer-exemple.fr</span></span><button type="button" data-copier>Copier</button></p>
+</dialog>
+
+<div class="bandeaux" id="bandeaux" hidden>
+  <p class="bandeau bandeau--demo"><span>Démo Soralva : lieu fictif, photos IA, aucun envoi · <a href="https://soralva.com/" style="color:inherit;text-decoration:underline;text-underline-offset:3px;padding:12px 4px">soralva.com</a></span></p>
+  <p class="bandeau bandeau--message">Table d’hôtes exceptionnelle le 12 octobre, douze couverts. <a href="#reserver">Voir les dates</a></p>
+</div>
+
+<div class="consentement" id="consentement" role="region" aria-label="Cookies" hidden>
+  <p><strong>Aidez-nous à améliorer La Maison du Noyer.</strong> Nous mesurons les pages les plus consultées pour rendre le site plus agréable et plus utile. Aucune publicité, aucune revente, aucun partage de vos données.
+    <a href="maison-confidentialite.html#cookies">Politique de confidentialité</a></p>
+  <div class="consentement__actions">
+    <button type="button" data-consentement>Accepter</button>
+    <button type="button" data-consentement>Refuser</button>
+  </div>
+</div>
+
+<script>
+  // Seul script de la maquette : ?photo=t bascule sur les photos « téléphone », ?photo=c sur le jeu « pire cas »
+  // (lumière de midi, ciel blanc, contraste écrasé), qui est l'épreuve réelle du texte incrusté.
+  var jeu = (/[?&]photo=([tc])(&|$)/.exec(location.search) || [])[1];
+  if (jeu) {
+    document.querySelectorAll('img[data-' + jeu + ']').forEach(function (img) {
+      // les formats légers (AVIF, WebP) passeraient avant la photo de test : on les retire (24/09, comme Hôtes)
+      var cadre = img.closest('picture');
+      if (cadre) { cadre.querySelectorAll('source').forEach(function (s) { s.remove(); }); }
+      img.src = img.getAttribute('data-' + jeu);
+    });
+  }
+
+  // L'en-tête d'ordinateur, sur le modèle de soralva.com (choix de Rodolphe, 21/09) : affiché en entier au
+  // chargement, réduit dès le défilement. Le premier calcul se fait dans une image, transition coupée, pour qu'une
+  // page ouverte déjà défilée ne joue pas la réduction comme une animation.
+  var entete = document.querySelector('.entete');
+  if (entete) {
+    var collee = null;
+    var majEntete = function () {
+      var doit = window.scrollY > 40;
+      if (doit === collee) return;
+      collee = doit;
+      entete.classList.toggle('collee', collee);
+    };
+    window.addEventListener('scroll', majEntete, { passive: true });
+    requestAnimationFrame(function () {
+      entete.classList.add('sans-transition');
+      majEntete();
+      requestAnimationFrame(function () { entete.classList.remove('sans-transition'); });
+    });
+  }
+
+  // Les deux panneaux du pouce. Ouverts par la barre du bas, fermés par la croix, par Échap ou en touchant
+  // l'assombrissement. ?panneau=menu ou ?panneau=ecrire les ouvre au chargement, pour les captures.
+  var panneaux = { menu: document.getElementById('feuille-menu'), ecrire: document.getElementById('feuille-ecrire') };
+  var ouvrir = function (nom) {
+    var d = panneaux[nom];
+    if (d && typeof d.showModal === 'function' && !d.open) { d.showModal(); }
+  };
+  document.querySelectorAll('.menu-replie').forEach(function (b) { b.addEventListener('click', function () { ouvrir('menu'); }); });
+  document.querySelectorAll('.barre a[href="#menu"]').forEach(function (a) {
+    a.addEventListener('click', function (ev) { ev.preventDefault(); ouvrir('menu'); });
+  });
+  document.querySelectorAll('.barre a[href="#contact"]').forEach(function (a) {
+    a.addEventListener('click', function (ev) { ev.preventDefault(); ouvrir('ecrire'); });
+  });
+  Object.keys(panneaux).forEach(function (nom) {
+    var d = panneaux[nom];
+    if (!d) return;
+    d.querySelectorAll('[data-fermer]').forEach(function (b) { b.addEventListener('click', function () { d.close(); }); });
+    // 23/09 : un lien touché dans le panneau le referme (Rodolphe), la page part ensuite vers sa section.
+    d.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { d.close(); }); });
+    d.addEventListener('click', function (ev) {
+      var r = d.getBoundingClientRect();
+      if (ev.clientY < r.top || ev.clientX < r.left || ev.clientX > r.right) { d.close(); }
+    });
+  });
+  var copier = document.querySelector('[data-copier]');
+  if (copier) {
+    copier.addEventListener('click', function () {
+      var adresse = copier.parentNode.querySelector('span').textContent;
+      if (navigator.clipboard) { navigator.clipboard.writeText(adresse); }
+      copier.textContent = 'Copié';
+      setTimeout(function () { copier.textContent = 'Copier'; }, 2000);
+    });
+  }
+  var panneau = (/[?&]panneau=(menu|ecrire)(&|$)/.exec(location.search) || [])[1];
+  if (panneau) { ouvrir(panneau); }
+
+  // Le départ ne peut être avant l'arrivée (revue du 21/09). Le seul attribut min ne suffit pas : un visiteur
+  // peut taper une date au clavier sans passer par le calendrier. On vérifie donc aussi à chaque changement, avec
+  // le même habillage d'erreur (filet et message) que les autres champs, texte remis en place si la date redevient
+  // valide.
+  var champArrivee = document.getElementById('arrivee');
+  var champDepart = document.getElementById('depart');
+  if (champArrivee && champDepart) {
+    var blocDepart = champDepart.closest('.champ');
+    var messageDepart = blocDepart ? blocDepart.querySelector('.champ__erreur') : null;
+    var texteOrigine = messageDepart ? messageDepart.textContent : '';
+    var verifierDepart = function () {
+      if (champArrivee.value && champDepart.value && champDepart.value < champArrivee.value) {
+        if (blocDepart) { blocDepart.classList.add('champ--faux'); }
+        if (messageDepart) { messageDepart.textContent = 'Erreur : la date de départ doit être après l’arrivée.'; }
+        return false;
+      }
+      if (blocDepart) { blocDepart.classList.remove('champ--faux'); }
+      if (messageDepart) { messageDepart.textContent = texteOrigine; }
+      return true;
+    };
+    champArrivee.addEventListener('change', function () {
+      if (champArrivee.value) { champDepart.min = champArrivee.value; }
+      verifierDepart();
+    });
+    champDepart.addEventListener('change', verifierDepart);
+  }
+
+
+  // Les quatre états du formulaire : ?forme=erreurs, ?forme=envoi, ?forme=confirme. Sans paramètre, le repos.
+  var forme = (/[?&]forme=(erreurs|envoi|confirme)(&|$)/.exec(location.search) || [])[1];
+  var bloc = document.querySelector('.demande');
+  var formulaire = bloc.querySelector('form');
+  if (forme === 'erreurs') {
+    formulaire.classList.add('a-erreurs');
+    ['courriel', 'arrivee'].forEach(function (id) { document.getElementById(id).closest('.champ').classList.add('champ--faux'); });
+  } else if (forme === 'envoi') {
+    formulaire.classList.add('envoi');
+    formulaire.querySelector('button').textContent = 'Envoi en cours';
+  } else if (forme === 'confirme') {
+    bloc.classList.add('est-confirmee');
+  }
+
+  // Formulaire replié (24/09, repris de Hôtes, module 7 h) : il s'ouvre par « Par écrit », et directement par tous
+  // les boutons Réserver, pour que celui qui veut réserver n'ait jamais un clic de plus. Ouvert d'office seulement
+  // par un lien explicite vers #formulaire, ou avec ?forme= (captures des états). Pas sur #reserver : l'adresse
+  // garde #reserver après un clic, et chaque rechargement rouvrirait le formulaire sans clic.
+  var ouvreurs = document.querySelectorAll('[data-ouvrir-formulaire]');
+  var ouvrirFormulaire = function () {
+    bloc.classList.remove('formulaire-ferme');
+    ouvreurs.forEach(function (o) { o.setAttribute('aria-expanded', 'true'); });
+  };
+  if (forme || location.hash === '#formulaire') { ouvrirFormulaire(); }
+  else { bloc.classList.add('formulaire-ferme'); }
+  ouvreurs.forEach(function (o) {
+    o.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      ouvrirFormulaire();
+      document.getElementById('formulaire').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('nom').focus({ preventScroll: true });
+    });
+  });
+  document.querySelectorAll('a[href="#reserver"]').forEach(function (a) { a.addEventListener('click', ouvrirFormulaire); });
+
+  // Le compteur du message (24/09, repris de Hôtes) : il n'était branché sur rien. Il suit la saisie et le collage,
+  // le seul cas où maxlength tronque un texte sans rien dire.
+  var champMessage = document.getElementById('message');
+  var compteur = formulaire.querySelector('.compteur');
+  if (champMessage && compteur) {
+    var compter = function () { compteur.textContent = champMessage.value.length.toLocaleString('fr-FR') + ' / 2 000'; };
+    champMessage.addEventListener('input', compter);
+    compter();
+  }
+
+  // L'envoi (24/09, repris de Hôtes) : sans lui, « Envoyer ma demande » rechargeait la page en recopiant toute la
+  // saisie dans l'adresse (méthode GET par défaut), coordonnées comprises. La maquette montre les vrais états : les
+  // erreurs si un champ obligatoire manque (résumé en tête, annoncé par role="alert"), sinon « Envoi en cours » puis
+  // la confirmation. En production, le même point d'entrée enverra la demande au service choisi.
+  var NOMBRES = ['Une information manque', 'Deux informations manquent', 'Trois informations manquent', 'Quatre informations manquent'];
+  formulaire.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var manquants = [];
+    var verifier = function (id, libelle, valide) {
+      var champ = document.getElementById(id);
+      var bon = valide(champ.value.trim());
+      champ.closest('.champ').classList.toggle('champ--faux', !bon);
+      champ.setAttribute('aria-invalid', bon ? 'false' : 'true');
+      if (!bon) { manquants.push([id, libelle]); }
+    };
+    verifier('nom', 'Votre prénom et votre nom', function (v) { return v.length > 0; });
+    verifier('courriel', 'Votre adresse e-mail', function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); });
+    verifier('arrivee', 'La date d’arrivée', function (v) { return v.length > 0; });
+    verifier('depart', 'La date de départ', function (v) { return v.length > 0; });
+    var resume = formulaire.querySelector('.resume');
+    if (manquants.length) {
+      resume.querySelector('p').textContent = NOMBRES[manquants.length - 1] + ' pour envoyer votre demande.';
+      var liste = resume.querySelector('ul');
+      liste.innerHTML = '';
+      manquants.forEach(function (m) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = '#' + m[0];
+        a.textContent = m[1];
+        li.appendChild(a);
+        liste.appendChild(li);
+      });
+      formulaire.classList.add('a-erreurs');
+      resume.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      return;
+    }
+    formulaire.classList.remove('a-erreurs');
+    formulaire.classList.add('envoi');
+    formulaire.querySelector('button[type="submit"]').textContent = 'Envoi en cours';
+    setTimeout(function () {
+      bloc.classList.add('est-confirmee');
+      bloc.querySelector('.confirme').scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }, 1200);
+  });
+
+
+  // Les trois bandeaux du lot 2. ?bandeau=demo, message, consentement, ou plusieurs séparés par une virgule.
+  // Ils sont masqués par défaut : le message et la démonstration dépendent du client, le consentement du visiteur.
+  var demandes = ((/[?&]bandeau=([a-z,]+)(&|$)/.exec(location.search) || [])[1] || 'demo').split(',');
+  var hauts = document.getElementById('bandeaux');
+  var demo = hauts.querySelector('.bandeau--demo');
+  var message = hauts.querySelector('.bandeau--message');
+  demo.hidden = demandes.indexOf('demo') < 0;
+  message.hidden = demandes.indexOf('message') < 0;
+  hauts.hidden = demo.hidden && message.hidden;
+  if (!hauts.hidden) {
+    // L'en-tête descend de la hauteur des bandeaux, et la page avec lui. Mesure refaite quand les polices arrivent
+    // et quand les bandeaux changent de taille (23/09) : mesurés une seule fois, avant l'arrivée de la police, ils
+    // valaient 107 px au lieu de 124 à 390 px de large, et le haut de la page passait 17 px sous les bandeaux.
+    var caler = function () { document.documentElement.style.setProperty('--haut-bandeaux', hauts.offsetHeight + 'px'); };
+    requestAnimationFrame(caler);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(caler); }
+    if ('ResizeObserver' in window) { new ResizeObserver(caler).observe(hauts); }
+  }
+  var cookies = document.getElementById('consentement');
+  cookies.hidden = demandes.indexOf('consentement') < 0;
+  cookies.querySelectorAll('[data-consentement]').forEach(function (b) {
+    b.addEventListener('click', function () { cookies.hidden = true; });
+  });
+
+  // Geste 2 : l'apparition au défilement. Le geste ne s'arme que si le visiteur ne demande pas moins de mouvement ;
+  // sans JS ou en mouvement réduit, la classe js-motion n'est jamais posée et tout reste visible.
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+    var aReveler = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entrees) {
+        entrees.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('vu'); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      aReveler.forEach(function (el) { io.observe(el); });
+    } else {
+      aReveler.forEach(function (el) { el.classList.add('vu'); });
+    }
+  }
+  // 25/09 : l'onde du bouton Réserver de l'en-tête, toutes les 5 s, reprise de Hôtes (décision de Rodolphe : « oui »
+  // à son extension). Mêmes garde-fous : ne s'arme pas en mouvement réduit ; saute son tour quand la souris est sur
+  // l'en-tête, quand le bouton a le focus, quand l'onglet ou l'en-tête est caché (téléphone) ; s'arrête dès qu'un
+  // lien Réserver a été cliqué.
+  (function () {
+    var bouton = document.querySelector('.entete .bouton');
+    if (!bouton || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var entete = bouton.closest('.entete');
+    var minuterie = setInterval(function () {
+      if (document.hidden || entete.matches(':hover') || bouton.matches(':focus-visible') || !entete.offsetWidth) return;
+      bouton.classList.remove('onde'); void bouton.offsetWidth; bouton.classList.add('onde');
+    }, 5000);
+    bouton.addEventListener('animationend', function (e) { if (e.target === bouton) bouton.classList.remove('onde'); });
+    document.querySelectorAll('a[href="#reserver"]').forEach(function (a) {
+      a.addEventListener('click', function () { clearInterval(minuterie); bouton.classList.remove('onde'); });
+    });
+  })();
+  // 25/09 : démonstration de l'état « aucun avis recueilli, seulement les notes des plateformes » (?avis=plateformes) :
+  // l'en-tête, les avis, le bouton et la mention disparaissent (règle 1.4 d, élément vide = retiré) ; notes, labels et
+  // presse restent. Au gabarit, c'est le générateur qui n'écrit pas ces blocs.
+  if (/[?&]avis=plateformes/.test(location.search)) {
+    document.querySelectorAll('[data-avis], [data-avis-plus], .avis-hotes__entete, .avis-hotes__mention, .maison-avis__droite, .maison-avis__mention, .horizon-avis__entete, .horizon-avis__mention')
+      .forEach(function (el) { el.remove(); });
+    var sec = document.getElementById('avis'); if (sec) sec.classList.add('avis--plateformes');
+  }
+  // 25/09 : avis recueillis. Trois visibles (un sur téléphone) ; au-delà, « Lire les N autres avis », par paquets de cinq (« Lire 5 avis de
+  // plus » tant qu'il en reste plus de cinq), pour qu'un établissement à 100 avis ne déverse pas tout d'un coup. Sans script,
+  // tout est visible ; le texte reste dans la page pour Google et les IA.
+  (function () {
+    var liste = document.querySelector('[data-avis]');
+    var bouton = document.querySelector('[data-avis-plus]');
+    if (!liste || !bouton) return;
+    // 25/09 (Rodolphe) : sur téléphone, un seul avis visible, les suivants au clic.
+    var avis = Array.prototype.slice.call(liste.children), montres = matchMedia('(max-width: 760.98px)').matches ? 1 : 3, PAQUET = 5;  // 25/09 (Rodolphe) : cinq au plus par clic, dix était trop, surtout sur téléphone
+    function maj() {
+      avis.forEach(function (a, i) { a.classList.toggle('avis-masque', i >= montres); });
+      var reste = avis.length - montres;
+      bouton.hidden = reste <= 0;
+      bouton.textContent = reste > PAQUET ? 'Lire ' + PAQUET + ' avis de plus' : 'Lire ' + (reste > 1 ? 'les ' + reste + ' autres avis' : 'le dernier avis');
+    }
+    bouton.addEventListener('click', function () { montres += PAQUET; maj(); });
+    maj();
+  })();
+  // 25/09 : questions fréquentes en accordéon (la première ouverte). Sans script, toutes les réponses sont visibles.
+  document.querySelectorAll('.pratique__q').forEach(function (b, i) {
+    var r = document.getElementById(b.getAttribute('aria-controls'));
+    function etat(ouvert) { b.setAttribute('aria-expanded', ouvert ? 'true' : 'false'); r.classList.toggle('pratique__r--ferme', !ouvert); }
+    etat(false);
+    b.addEventListener('click', function () { etat(b.getAttribute('aria-expanded') !== 'true'); });
+  });
+  // 25/09 : le calendrier des disponibilités (essai-calendrier.html, validé par Rodolphe). Plusieurs logements : la
+  // liste au-dessus de la grille ; la grille ne montre que les nuits où tous les logements cochés sont libres (aucun
+  // coché : au moins un). Le choix des dates survit au changement de mois ; retoucher l'arrivée ou le départ ne défait
+  // rien. Les dates choisies remplissent le formulaire aussitôt, pour que tous les boutons Réserver l'ouvrent prérempli.
+  // Démo : réservations comptées en jours depuis aujourd'hui ; au gabarit, elles viennent des calendriers des
+  // plateformes, avec l'heure de la dernière vérification (en panne : ETATS-PARTICULIERS 5.1).
+  (function () {
+    var bloc = document.querySelector('[data-calendrier]');
+    if (!bloc) return;
+    var o = JSON.parse(bloc.getAttribute('data-calendrier'));
+    var MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+    var MOIS_C = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+    var JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+    var MAX_MOIS = 11, maintenant = new Date(), auj = new Date(maintenant.getFullYear(), maintenant.getMonth(), maintenant.getDate());
+    function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+    function plus(d, n) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); }
+    function nuits(a, b) { return Math.round((b - a) / 864e5); }
+    function court(d) { return d.getDate() + ' ' + MOIS_C[d.getMonth()]; }
+    function long(d) { return JOURS[d.getDay()] + ' ' + d.getDate() + ' ' + MOIS[d.getMonth()]; }
+    function liste(n) { return n.length < 2 ? n.join('') : n.slice(0, -1).join(', ') + ' et ' + n[n.length - 1]; }
+
+    var logements = o.logements.map(function (l) {
+      var pr = {};
+      l.pris.forEach(function (p) { for (var k = p[0]; k <= p[1]; k++) pr[iso(plus(auj, k))] = true; });
+      return { nom: l.nom, cap: l.cap, prix: l.prix, libre: function (d) { return !pr[iso(d)]; } };
+    });
+    var plusieurs = logements.length > 1, choix = {};
+    if (o.choisi) choix[o.choisi] = true;   // page d'un logement : il est déjà coché
+    var mq = matchMedia('(max-width: ' + o.bp + ')');
+    var grille = bloc.querySelector('[data-grille]'), recap = bloc.querySelector('[data-recap]');
+    var champA = document.getElementById('arrivee'), champD = document.getElementById('depart');
+    var debut = null, fin = null, decalage = 0, message = '', ecrit = false;
+
+    function choisis() { return logements.filter(function (l) { return choix[l.nom]; }); }
+    function libreSur(l, a, b) { for (var x = a; x < b; x = plus(x, 1)) if (!l.libre(x)) return false; return true; }
+    function prise(d) {
+      var ch = choisis();
+      if (ch.length) return ch.some(function (l) { return !l.libre(d); });
+      return !logements.some(function (l) { return l.libre(d); });
+    }
+    function passe(d) { return d < auj; }
+    function departOk(d) {
+      if (!debut || d <= debut || nuits(debut, d) < o.min) return false;
+      if (plusieurs && !choisis().length) return logements.some(function (l) { return libreSur(l, debut, d); });
+      for (var x = debut; x < d; x = plus(x, 1)) if (prise(x)) return false;
+      return true;
+    }
+
+    // Une arrivée n'est proposée que si la durée minimale tient derrière elle
+    function arriveePossible(d) {
+      var sd = debut, sf = fin, ok = false;
+      debut = d; fin = null;
+      for (var k = o.min; k <= o.min + 30 && !ok; k++) if (departOk(plus(d, k))) ok = true;
+      debut = sd; fin = sf;
+      return ok;
+    }
+
+    function toucher(d) {
+      if ((debut && +d === +debut) || (fin && +d === +fin)) return;
+      message = '';
+      if (debut && !fin && departOk(d)) { fin = d; }
+      else if (!passe(d) && !prise(d)) {
+        debut = d; fin = null;
+        var ok = false;
+        for (var k = o.min; k <= o.min + 30 && !ok; k++) if (departOk(plus(d, k))) ok = true;
+        if (!ok) { message = 'Après le ' + court(d) + ', il n’y a pas ' + o.min + ' nuits libres de suite : choisissez une autre arrivée.'; debut = null; }
+      }
+      rendre();
+    }
+
+    function basculer(nom) {
+      if (choix[nom]) delete choix[nom]; else choix[nom] = true;
+      message = '';
+      var bloque = debut && fin ? choisis().filter(function (l) { return !libreSur(l, debut, fin); }).map(function (l) { return l.nom; }) : [];
+      if (bloque.length) {
+        message = liste(bloque) + (bloque.length > 1 ? ' ne sont pas libres' : ' n’est pas libre') + ' du ' + court(debut) + ' au ' + court(fin) + ' : choisissez d’autres dates.';
+        debut = fin = null;
+      } else if (debut && !fin && prise(debut)) { debut = null; }
+      rendre();
+    }
+
+    function caseJour(d, suivant) {
+      var b = document.createElement('button'), etat = 'libre', choixDepart = debut && !fin;
+      b.type = 'button'; b.className = 'dispo__j';
+      b.innerHTML = d.getDate() + (suivant && d.getDate() === 1 ? '<small>' + MOIS_C[d.getMonth()] + '</small>' : '');
+      if (passe(d)) { b.classList.add('dispo__j--passe'); b.disabled = true; etat = 'passé'; }
+      else if (choixDepart && departOk(d)) { etat = 'départ possible'; }
+      else if (debut && fin && +d === +fin) { etat = 'votre départ'; }
+      else if (prise(d)) { b.classList.add('dispo__j--pris'); b.disabled = true; etat = 'déjà réservé'; }
+      else if (choixDepart && d > debut && nuits(debut, d) < o.min) { b.classList.add('dispo__j--court'); b.disabled = true; etat = 'séjour trop court'; }
+      else if (!choixDepart && !(debut && fin && d >= debut && d <= fin) && !arriveePossible(d)) { b.classList.add('dispo__j--court'); b.disabled = true; etat = 'moins de ' + o.min + ' nuits libres à partir de ce jour'; }
+      if (choixDepart && +d === +debut) b.classList.add('dispo__j--bord');
+      if (debut && fin && d >= debut && d <= fin) { b.classList.add('dispo__j--sel'); if (+d === +debut || +d === +fin) b.classList.add('dispo__j--bord'); }
+      if (+d === +auj) b.classList.add('dispo__j--auj');
+      if (suivant) b.classList.add('dispo__j--suivant');
+      b.setAttribute('aria-label', long(d) + ', ' + etat);
+      if (!b.disabled) b.addEventListener('click', function () { toucher(d); });
+      return b;
+    }
+
+    function unMois(annee, m, avecSuite) {
+      var bloc1 = document.createElement('div'), g = document.createElement('div');
+      bloc1.innerHTML = '<div class="dispo__jours" aria-hidden="true"><span>lu</span><span>ma</span><span>me</span><span>je</span><span>ve</span><span>sa</span><span>di</span></div>';
+      g.className = 'dispo__grille';
+      var vides = (new Date(annee, m, 1).getDay() + 6) % 7, dernier = new Date(annee, m + 1, 0).getDate();
+      function vide() { var v = document.createElement('span'); v.className = 'dispo__j dispo__j--vide'; return v; }
+      for (var i = 0; i < vides; i++) g.appendChild(vide());
+      for (var j = 1; j <= dernier; j++) g.appendChild(caseJour(new Date(annee, m, j), false));
+      var reste = (7 - (vides + dernier) % 7) % 7;
+      for (var k = 1; k <= reste; k++) g.appendChild(avecSuite ? caseJour(new Date(annee, m + 1, k), true) : vide());
+      bloc1.appendChild(g);
+      return bloc1;
+    }
+
+    function listeLogements() {
+      var f = document.createElement('fieldset'), l = document.createElement('div');
+      f.className = 'dispo__logements';
+      f.innerHTML = '<legend>Quelle chambre&#8239;? Une ou plusieurs</legend>';
+      l.className = 'dispo__liste';
+      logements.forEach(function (lg) {
+        var oui = !!choix[lg.nom], dispo = !(debut && fin) || libreSur(lg, debut, fin), b = document.createElement('button');
+        b.type = 'button'; b.className = 'dispo__logement'; b.setAttribute('aria-pressed', oui);
+        b.innerHTML = '<span class="dispo__case" aria-hidden="true">' + (oui ? '✓' : '') + '</span><span><b>' + lg.nom + '</b>'
+          + '<span class="dispo__faits">' + lg.cap + '</span><span class="dispo__faits">' + lg.prix + ' € la nuit</span>'
+          + (debut && fin ? '<span class="dispo__etat' + (dispo ? '' : ' dispo__etat--non') + '">' + (dispo ? 'libre ✓' : 'prise') + '</span>' : '') + '</span>';
+        b.addEventListener('click', function () { basculer(lg.nom); });
+        l.appendChild(b);
+      });
+      f.appendChild(l);
+      return f;
+    }
+
+    function rendre() {
+      var n = mq.matches ? 1 : 2;
+      if (decalage > MAX_MOIS - n + 1) decalage = MAX_MOIS - n + 1;
+      var base = new Date(auj.getFullYear(), auj.getMonth() + decalage, 1), ch = choisis().map(function (l) { return l.nom; });
+      grille.innerHTML = '';
+      if (plusieurs) grille.appendChild(listeLogements());
+      var guide = document.createElement('p'), pour = '';
+      guide.className = 'dispo__guide'; guide.setAttribute('aria-live', 'polite');
+      if (plusieurs) pour = ch.length ? ' Les jours libres sont ceux où ' + liste(ch) + (ch.length > 1 ? ' sont libres.' : ' est libre.') : ' Sans chambre choisie, un jour est libre si au moins une chambre l’est.';
+      if (message) guide.textContent = message;
+      else if (!debut) guide.innerHTML = '<b>1.</b> Touchez votre jour d’arrivée.' + pour;
+      else if (!fin) guide.innerHTML = 'Arrivée le <b>' + long(debut) + '</b>. <b>2.</b> Touchez votre jour de départ' + (n === 1 ? ' (flèche › pour le mois suivant).' : '.');
+      else guide.innerHTML = '<b>' + nuits(debut, fin) + ' nuits</b> du ' + long(debut) + ' au ' + long(fin) + '. ' + (plusieurs && !ch.length ? 'Choisissez votre chambre : la liste dit lesquelles sont libres à ces dates.' : 'Ces dates sont libres.');
+      grille.appendChild(guide);
+
+      var nav = document.createElement('div'), prec = document.createElement('button'), suiv = document.createElement('button'), nom = document.createElement('p');
+      nav.className = 'dispo__nav';
+      prec.type = suiv.type = 'button'; prec.textContent = '‹'; suiv.textContent = '›';
+      prec.setAttribute('aria-label', 'Mois précédent'); suiv.setAttribute('aria-label', 'Mois suivant');
+      prec.disabled = decalage === 0; suiv.disabled = decalage >= MAX_MOIS - n + 1;
+      prec.addEventListener('click', function () { decalage--; rendre(); });
+      suiv.addEventListener('click', function () { decalage++; rendre(); });
+      nom.className = 'dispo__nom'; nom.textContent = n === 1 ? MOIS[base.getMonth()] + ' ' + base.getFullYear() : '';
+      nav.appendChild(prec); nav.appendChild(nom); nav.appendChild(suiv);
+      grille.appendChild(nav);
+
+      var zone = document.createElement('div');
+      zone.className = 'dispo__mois';
+      for (var i = 0; i < n; i++) {
+        var d = new Date(base.getFullYear(), base.getMonth() + i, 1), col = document.createElement('div');
+        if (n === 2) { var t = document.createElement('p'); t.className = 'dispo__nom'; t.textContent = MOIS[d.getMonth()] + ' ' + d.getFullYear(); col.appendChild(t); }
+        col.appendChild(unMois(d.getFullYear(), d.getMonth(), n === 1));
+        zone.appendChild(col);
+      }
+      grille.appendChild(zone);
+      rendreRecap();
+    }
+
+    // Les dates et les chambres choisies passent aussitôt dans le formulaire
+    function synchroniser() {
+      if (debut && fin) { champA.value = iso(debut); champD.value = iso(fin); ecrit = true; }
+      else if (ecrit) { champA.value = champD.value = ''; ecrit = false; }
+      if (plusieurs) document.querySelectorAll('input[name="chambre"]').forEach(function (c) { c.checked = c.value === '?' ? !choisis().length : !!choix[c.value]; });
+      document.querySelectorAll('.barre a[href="#reserver"]').forEach(function (a) {
+        if (debut && fin) a.setAttribute('aria-label', 'Réserver du ' + long(debut) + ' au ' + long(fin)); else a.removeAttribute('aria-label');
+      });
+    }
+
+    function rendreRecap() {
+      var ch = plusieurs ? choisis() : logements;
+      if (debut && fin) {
+        var nb = nuits(debut, fin), parNuit = ch.reduce(function (s, l) { return s + l.prix; }, 0);
+        recap.innerHTML = '<p class="dispo__dates">Du ' + court(debut) + ' au ' + court(fin) + ' · ' + nb + ' nuits</p>'
+          + (plusieurs && ch.length ? '<p class="dispo__prix"><b>' + ch.map(function (l) { return l.nom; }).join(' + ') + '</b></p>' : '')
+          + '<p class="dispo__prix">' + (ch.length ? 'Environ ' + (nb * parNuit).toLocaleString('fr-FR') + ' € (' + nb + ' × ' + parNuit + ' €), taxe de séjour en plus'
+            : 'Libres à vos dates : ' + liste(logements.filter(function (l) { return libreSur(l, debut, fin); }).map(function (l) { return l.nom; })) + '.') + '</p>'
+          + '<button type="button" class="' + o.bouton + '" data-reserver-dates>' + (plusieurs && ch.length > 1 ? 'Réserver ces ' + ch.length + ' chambres' : 'Réserver ces dates') + '</button>'
+          + '<p class="dispo__rassure">Rien à payer maintenant : nous vous répondons ' + o.reponse + ' pour confirmer.</p>'
+          + '<button type="button" class="dispo__effacer" data-effacer>Changer de dates</button>';
+      } else {
+        recap.innerHTML = '<p class="dispo__dates">' + (debut ? 'Arrivée le ' + court(debut) + ', et le départ&#8239;?' : 'Choisissez vos dates') + '</p>'
+          + '<p class="dispo__prix">' + (debut ? 'Touchez le jour de départ dans le calendrier.' : 'Dans le calendrier, touchez le jour d’arrivée puis le jour de départ.') + '</p>'
+          + '<p class="dispo__ecrire">Vos dates ne sont pas encore fixées&#8239;? <a href="#contact">Écrivez-nous</a></p>'
+          + (debut ? '<button type="button" class="dispo__effacer" data-effacer>Changer de dates</button>' : '');
+      }
+      var r = recap.querySelector('[data-reserver-dates]'), e = recap.querySelector('[data-effacer]');
+      if (r) r.addEventListener('click', function () {
+        synchroniser();
+        if (!matchMedia('(prefers-reduced-motion: reduce)').matches) [champA, champD].forEach(function (c) { c.classList.remove('dispo-eclat'); void c.offsetWidth; c.classList.add('dispo-eclat'); });
+        var ouvreur = document.querySelector('[data-ouvrir-formulaire]');
+        if (ouvreur) ouvreur.click();
+      });
+      if (e) e.addEventListener('click', function () { debut = fin = null; message = ''; rendre(); });
+      synchroniser();
+    }
+
+    (mq.addEventListener ? mq.addEventListener('change', rendre) : mq.addListener(rendre));
+    rendre();
+  })();
+</script>
+</body>
+</html>
