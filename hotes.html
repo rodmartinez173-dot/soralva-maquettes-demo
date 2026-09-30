@@ -45,6 +45,11 @@
     "addressRegion": "Dordogne",
     "addressCountry": "FR"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.32127,
+    "longitude": 0.57193
+  },
   "numberOfRooms": 4,
   "priceRange": "À partir de 85 € la nuit",
   "amenityFeature": [
@@ -2694,10 +2699,17 @@ h1 { font-size: 64px; font-weight: 400; line-height: 1.02; letter-spacing: -.01e
         </div>
       </div>
       <figure class="portrait">
+        <!-- 29/09 (LCP de 3,4 s au banc, accord de Rodolphe) : sur téléphone, le portrait ne se voit que dans la
+             bande de 320 px ; il reçoit un carré recadré à la zone visible (02-bande, voir RECADRES dans
+             outils/optimiser-photos.py), 47 Ko au lieu de 77 pour le téléphone de Lighthouse. Et il passe après
+             la façade (fetchpriority="low") : c'est elle, l'élément LCP. Classe .recadre : le script des jeux de
+             test (?photo=t, ?photo=c) retire aussi ces sources-là. -->
         <picture>
+          <source class="recadre" media="(max-width: 760px)" type="image/avif" srcset="photos-ia/optim/02-bande-480.avif 480w, photos-ia/optim/02-bande-768.avif 768w, photos-ia/optim/02-bande-928.avif 928w" sizes="100vw">
+          <source class="recadre" media="(max-width: 760px)" type="image/webp" srcset="photos-ia/optim/02-bande-480.webp 480w, photos-ia/optim/02-bande-768.webp 768w, photos-ia/optim/02-bande-928.webp 928w" sizes="100vw">
           <source type="image/avif" srcset="photos-ia/optim/02-480.avif 480w, photos-ia/optim/02-720.avif 720w, photos-ia/optim/02-928.avif 928w" sizes="(max-width: 760px) 100vw, 612px">
           <source type="image/webp" srcset="photos-ia/optim/02-480.webp 480w, photos-ia/optim/02-720.webp 720w, photos-ia/optim/02-928.webp 928w" sizes="(max-width: 760px) 100vw, 612px">
-          <img src="photos-ia/02.jpg" data-t="photos-ia/02t.jpg" data-c="photos-ia/02c.jpg" width="928" height="1152"
+          <img src="photos-ia/02.jpg" data-t="photos-ia/02t.jpg" data-c="photos-ia/02c.jpg" width="928" height="1152" fetchpriority="low"
                alt="Claire et Marc, vos hôtes, côte à côte dans le jardin."></picture>
         <figcaption class="mot">
           <p class="citation police-titre">«&#8239;Nous avons restauré cette ferme pour vous y recevoir. Venez prendre le&nbsp;<span class="nowrap">petit-déjeuner</span> sous le tilleul.&#8239;»</p>
@@ -3390,9 +3402,10 @@ h1 { font-size: 64px; font-weight: 400; line-height: 1.02; letter-spacing: -.01e
   if (jeu) {
     document.querySelectorAll('img[data-' + jeu + ']').forEach(function (img) {
       // les formats légers (AVIF, WebP) passeraient avant la photo de test : on les retire, sauf la photo dorée
-      // du téléphone, qui n'a pas de jeu de test (la façade téléphone reste donc hors du contrôle « pire cas »)
+      // du téléphone, qui n'a pas de jeu de test (la façade téléphone reste donc hors du contrôle « pire cas ») ;
+      // le portrait recadré pour le téléphone (.recadre, 29/09) part aussi : son jeu de test existe
       var cadre = img.closest('picture');
-      if (cadre) { cadre.querySelectorAll('source[type]:not([media])').forEach(function (s) { s.remove(); }); }
+      if (cadre) { cadre.querySelectorAll('source[type]:not([media]), source.recadre').forEach(function (s) { s.remove(); }); }
       img.src = img.getAttribute('data-' + jeu);
     });
   }
