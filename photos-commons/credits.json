@@ -62,5 +62,77 @@
   "licence": "CC0",
   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:Lascaux_IV_-_30.jpg"
+ },
+ "puyguilhem": {
+  "fichier": "puyguilhem.jpg",
+  "titre": "File:Château Puyguilhem.jpg",
+  "auteur": "Juliofsanguino",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_Puyguilhem.jpg"
+ },
+ "grottes-villars": {
+  "fichier": "grottes-villars.jpg",
+  "titre": "File:Le cheval de Villars (emblème de la grotte) dordogne -24- photo 3 cropped.jpg",
+  "auteur": "Mj.galais, recadrée par Andrew Dalby",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Le_cheval_de_Villars_(embl%C3%A8me_de_la_grotte)_dordogne_-24-_photo_3_cropped.jpg"
+ },
+ "boschaud": {
+  "fichier": "boschaud.jpg",
+  "titre": "File:Villars abbaye Boschaud (25).JPG",
+  "auteur": "Père Igor",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Villars_abbaye_Boschaud_(25).JPG"
+ },
+ "saint-jean-de-cole": {
+  "fichier": "saint-jean-de-cole.jpg",
+  "titre": "File:Saint-Jean-de-Côle pont prieuré.JPG",
+  "auteur": "Père Igor",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Saint-Jean-de-C%C3%B4le_pont_prieur%C3%A9.JPG"
+ },
+ "brantome": {
+  "fichier": "brantome.jpg",
+  "titre": "File:Abbaye Saint-Pierre de Brantôme 2016 n09.jpg",
+  "auteur": "Marie-Lan Nguyen",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Abbaye_Saint-Pierre_de_Brant%C3%B4me_2016_n09.jpg"
+ },
+ "velorail": {
+  "fichier": "velorail.jpg",
+  "titre": "File:Corgnac-sur-l'Isle vélo-rail (2).JPG",
+  "auteur": "Père Igor",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Corgnac-sur-l%27Isle_v%C3%A9lo-rail_(2).JPG"
+ },
+ "bourdeilles": {
+  "fichier": "bourdeilles.jpg",
+  "titre": "File:Bourdeilles.jpg",
+  "auteur": "Martialheland",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bourdeilles.jpg"
+ },
+ "perigueux": {
+  "fichier": "perigueux.jpg",
+  "titre": "File:Périgueux Isle et cathédrale depuis pont Saint-Georges.JPG",
+  "auteur": "Père Igor",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:P%C3%A9rigueux_Isle_et_cath%C3%A9drale_depuis_pont_Saint-Georges.JPG"
+ },
+ "hautefort": {
+  "fichier": "hautefort.jpg",
+  "titre": "File:Château de Hautefort 1.jpg",
+  "auteur": "Jebulon",
+  "licence": "CC0",
+  "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Hautefort_1.jpg"
  }
 }
