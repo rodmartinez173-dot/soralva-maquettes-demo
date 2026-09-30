@@ -112,14 +112,12 @@
 @font-face { font-family: "Fraunces"; src: url("polices/fraunces.woff2") format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; }
 @font-face { font-family: "Fraunces"; src: url("polices/fraunces-italique.woff2") format("woff2"); font-weight: 300 600; font-style: italic; font-display: swap; }
 @font-face { font-family: "Nunito Sans"; src: url("polices/nunito-sans.woff2") format("woff2"); font-weight: 400 800; font-stretch: 100%; font-style: normal; font-display: swap; }
-/* Option A (29/09, accord de Rodolphe, à l'essai sur la démo) : Caveat (49 Ko) ne se charge plus avec la page. Au
-   banc, elle partageait la bande passante de la photo de façade (élément LCP) et coûtait environ 0,25 s. Le script
-   de fin de page la charge une fois la façade affichée (FontFace, voir « Option A » dans le script). En attendant,
-   les gestes manuscrits s'écrivent dans l'italique de Fraunces, déjà chargée pour l'ouverture : « Caveat repli »
-   reprend son fichier, en style normal pour qu'aucune fausse italique ne s'ajoute, et à 76 % de sa taille, la
-   largeur mesurée de Caveat sur « Suivez-nous », « Claire et Marc, vos hôtes » et « chez Claire & Marc » (71 à
-   79 %). À hauteur de ligne égale, le passage à Caveat ne décale rien. */
-@font-face { font-family: "Caveat repli"; src: url("polices/fraunces-italique.woff2") format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; size-adjust: 76%; }
+/* Option A essayée puis retirée le 29/09 : charger Caveat par script après la photo de façade, l'italique de
+   Fraunces à 76 % en attendant. Mesurée en ligne sur 5 passages, elle a dégradé le résultat (LCP 3,0 -> 3,17 s,
+   TBT 0-126 -> ~480 ms, score 91 -> 78) : le simulateur de Lighthouse compte la police comme demandée avant le LCP
+   malgré le délai, et le changement de police relance la mise en page d'une feuille de 203 Ko. À ne pas refaire
+   sans une feuille allégée par le générateur. */
+@font-face { font-family: "Caveat"; src: url("polices/caveat-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
 :root {
   /* FUSION du 22/09 : palette reprise telle quelle de hotes-diptyque-essai-chaleur.html (synthèse de Rodolphe,
      abandon de la famille rosée). --fond et --fond-section sont réunis en un seul neutre légèrement réchauffé
@@ -152,7 +150,7 @@
   --filet: rgba(66, 47, 38, .24);   /* recalé sur le nouvel --encre (22/09) */
   --titre: "Fraunces", Georgia, serif;
   --texte: "Nunito Sans", "Segoe UI", sans-serif;
-  --manuscrite: "Caveat", "Caveat repli";   /* geste manuscrit (22/09), hébergée localement, jamais depuis un service tiers ; chargée après la façade (option A, 29/09, voir @font-face plus haut) */
+  --manuscrite: "Caveat";   /* geste manuscrit (22/09), hébergée localement (voir @font-face plus bas), jamais depuis un service tiers */
   --fond-carte: #f4eae0;             /* beige sable chaud, carte du formulaire (remplace le lin doré #e7e0ca) */
   /* Retour 1 (22/09, troisième passage) : Rodolphe veut le miel plus clair, même teinte même saturation. Trois
      paliers calculés par lui, texte --encre dessus : L66 #e5ac6c = 6,27:1 ; L70 #e8b67d = 6,85:1 ;
@@ -3416,23 +3414,6 @@ h1 { font-size: 64px; font-weight: 400; line-height: 1.02; letter-spacing: -.01e
       img.src = img.getAttribute('data-' + jeu);
     });
   }
-
-  // Option A (29/09) : la manuscrite ne se charge qu'une fois la photo de façade affichée, pour lui laisser toute la
-  // bande passante (voir « Caveat repli » dans les @font-face). Filet de sécurité : 3 s au plus tard.
-  (function () {
-    if (!('FontFace' in window) || !document.fonts) return;
-    var fait = false;
-    function charger() {
-      if (fait) return;
-      fait = true;
-      new FontFace('Caveat', 'url(polices/caveat-600.woff2) format("woff2")', { weight: '600', style: 'normal', display: 'swap' })
-        .load().then(function (police) { document.fonts.add(police); }, function () {});
-    }
-    var facade = document.querySelector('.facade img');
-    if (!facade || facade.complete) { charger(); }
-    else { facade.addEventListener('load', charger); facade.addEventListener('error', charger); }
-    setTimeout(charger, 3000);
-  })();
 
   // Décision de Rodolphe (22/09) : la colonne de réassurance n'a plus qu'une version (photo + contenu complet),
   // le script qui basculait ?colonne=photo entre deux variantes n'a plus lieu d'être et a été retiré d'ici.
