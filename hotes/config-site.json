@@ -1,0 +1,587 @@
+{
+  "version": 1,
+  "nom": "Le Tilleul",
+  "contacts": {
+    "courriel": "bonjour@letilleul-exemple.fr",
+    "telephone": "05 53 00 00 00",
+    "whatsapp": "https://wa.me/33553000000"
+  },
+  "ouverture": [
+    {
+      "du": "04-01",
+      "au": "10-31"
+    }
+  ],
+  "logements": [
+    {
+      "id": "L01",
+      "nom": "La Cour",
+      "capacite": 2,
+      "calendrier": true,
+      "regles": {
+        "nuits_min": 2,
+        "saisons": [
+          {
+            "du": "04-01",
+            "au": "04-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "10-01",
+            "au": "10-31",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "05-01",
+            "au": "06-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "09-01",
+            "au": "09-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "07-01",
+            "au": "08-31",
+            "nuits_min": 3,
+            "jours_arrivee": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "L02",
+      "nom": "Les Prés",
+      "capacite": 2,
+      "calendrier": true,
+      "regles": {
+        "nuits_min": 2,
+        "saisons": [
+          {
+            "du": "04-01",
+            "au": "04-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "10-01",
+            "au": "10-31",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "05-01",
+            "au": "06-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "09-01",
+            "au": "09-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "07-01",
+            "au": "08-31",
+            "nuits_min": 3,
+            "jours_arrivee": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "L03",
+      "nom": "Le Fournil",
+      "capacite": 4,
+      "calendrier": true,
+      "regles": {
+        "nuits_min": 2,
+        "saisons": [
+          {
+            "du": "04-01",
+            "au": "04-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "10-01",
+            "au": "10-31",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "05-01",
+            "au": "06-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "09-01",
+            "au": "09-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "07-01",
+            "au": "08-31",
+            "nuits_min": 3,
+            "jours_arrivee": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "L04",
+      "nom": "Le Grenier",
+      "capacite": 4,
+      "calendrier": true,
+      "regles": {
+        "nuits_min": 2,
+        "saisons": [
+          {
+            "du": "04-01",
+            "au": "04-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "10-01",
+            "au": "10-31",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "05-01",
+            "au": "06-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "09-01",
+            "au": "09-30",
+            "nuits_min": 2,
+            "jours_arrivee": null
+          },
+          {
+            "du": "07-01",
+            "au": "08-31",
+            "nuits_min": 3,
+            "jours_arrivee": null
+          }
+        ]
+      }
+    }
+  ],
+  "formulaires": {
+    "sejour": {
+      "reference": "demande-sejour",
+      "sujet": "Nouvelle demande de séjour",
+      "merci": {
+        "fr": "/merci.html",
+        "en": "/en/merci.html",
+        "es": "/es/merci.html"
+      },
+      "retour": "/#formulaire",
+      "champs": {
+        "bon_cadeau": {
+          "genre": "texte",
+          "max": 60,
+          "libelle": {
+            "fr": "Numéro de bon cadeau",
+            "en": "Gift voucher number",
+            "es": "Número de bono regalo"
+          }
+        },
+        "nom": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Prénom et Nom",
+            "en": "First name and surname",
+            "es": "Nombre y apellidos"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "E-mail",
+            "en": "Email",
+            "es": "Correo electrónico"
+          }
+        },
+        "tel": {
+          "genre": "telephone",
+          "max": 40,
+          "libelle": {
+            "fr": "Téléphone",
+            "en": "Phone",
+            "es": "Teléfono"
+          }
+        },
+        "chambre": {
+          "genre": "choix_multiple",
+          "libelle": {
+            "fr": "Chambres",
+            "en": "Rooms",
+            "es": "Habitaciones"
+          },
+          "choix": [
+            "La Cour",
+            "Les Prés",
+            "Le Fournil",
+            "Le Grenier",
+            "?"
+          ]
+        },
+        "arrivee": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Arrivée",
+            "en": "Arrival",
+            "es": "Llegada"
+          }
+        },
+        "depart": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Départ",
+            "en": "Departure",
+            "es": "Salida"
+          }
+        },
+        "flexible": {
+          "genre": "case",
+          "libelle": {
+            "fr": "Dates flexibles",
+            "en": "Flexible dates",
+            "es": "Fechas flexibles"
+          }
+        },
+        "adultes": {
+          "genre": "entier",
+          "min": 1,
+          "max_valeur": 99,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Adultes",
+            "en": "Adults",
+            "es": "Adultos"
+          }
+        },
+        "enfants": {
+          "genre": "entier",
+          "min": 0,
+          "max_valeur": 99,
+          "libelle": {
+            "fr": "Enfants",
+            "en": "Children",
+            "es": "Niños"
+          }
+        },
+        "table": {
+          "genre": "case",
+          "libelle": {
+            "fr": "Table d’hôtes",
+            "en": "Table d’hôtes dinner",
+            "es": "Cena en la mesa de huéspedes"
+          }
+        },
+        "demande_particuliere": {
+          "genre": "choix_multiple",
+          "libelle": {
+            "fr": "Demande particulière",
+            "en": "Special request",
+            "es": "Petición especial"
+          },
+          "choix": [
+            "Un groupe",
+            "Un long séjour",
+            "Une arrivée tardive"
+          ]
+        },
+        "message": {
+          "genre": "texte_long",
+          "max": 2000,
+          "libelle": {
+            "fr": "Message",
+            "en": "Message",
+            "es": "Mensaje"
+          }
+        }
+      }
+    },
+    "groupe": {
+      "reference": "demande-groupe",
+      "sujet": "Nouvelle demande de groupe",
+      "merci": {
+        "fr": "/merci.html",
+        "en": "/en/merci.html",
+        "es": "/es/merci.html"
+      },
+      "retour": "/groupes.html",
+      "champs": {
+        "occasion": {
+          "genre": "choix",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Occasion",
+            "en": "Occasion",
+            "es": "Ocasión"
+          },
+          "choix": [
+            "Réunion de famille",
+            "Séminaire",
+            "Mariage",
+            "Séjour entre amis",
+            "Anniversaire",
+            "Cousinade",
+            "Baptême",
+            "Stage ou retraite"
+          ]
+        },
+        "personnes": {
+          "genre": "entier",
+          "min": 1,
+          "max_valeur": 999,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Nombre de personnes",
+            "en": "Number of guests",
+            "es": "Número de personas"
+          }
+        },
+        "arrivee": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Arrivée",
+            "en": "Arrival",
+            "es": "Llegada"
+          }
+        },
+        "depart": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Départ",
+            "en": "Departure",
+            "es": "Salida"
+          }
+        },
+        "nom": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre nom",
+            "en": "Your name",
+            "es": "Su nombre"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre adresse électronique",
+            "en": "Your email address",
+            "es": "Su correo electrónico"
+          }
+        },
+        "message": {
+          "genre": "texte_long",
+          "max": 2000,
+          "libelle": {
+            "fr": "Message",
+            "en": "Message",
+            "es": "Mensaje"
+          }
+        }
+      }
+    },
+    "cadeau": {
+      "reference": "demande-cadeau",
+      "sujet": "Nouvelle commande de bon cadeau",
+      "merci": {
+        "fr": "/merci.html",
+        "en": "/en/merci.html",
+        "es": "/es/merci.html"
+      },
+      "retour": "/cartes-cadeaux.html",
+      "champs": {
+        "bon": {
+          "genre": "choix",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Le bon",
+            "en": "Voucher",
+            "es": "Bono"
+          },
+          "choix": {
+            "0": "Trois nuits aux Prés",
+            "1": "Deux nuits au Tilleul",
+            "2": "Un bon d’une valeur au choix"
+          }
+        },
+        "montant": {
+          "genre": "entier",
+          "min": 1,
+          "max_valeur": 9999,
+          "libelle": {
+            "fr": "Montant",
+            "en": "Amount",
+            "es": "Importe"
+          }
+        },
+        "nom": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre nom",
+            "en": "Your name",
+            "es": "Su nombre"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre adresse électronique",
+            "en": "Your email address",
+            "es": "Su correo electrónico"
+          }
+        },
+        "telephone": {
+          "genre": "telephone",
+          "max": 40,
+          "libelle": {
+            "fr": "Téléphone",
+            "en": "Phone",
+            "es": "Teléfono"
+          }
+        },
+        "beneficiaire": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Pour qui",
+            "en": "Recipient",
+            "es": "Para quién"
+          }
+        },
+        "date_envoi": {
+          "genre": "date",
+          "libelle": {
+            "fr": "Date d’envoi",
+            "en": "Date to send",
+            "es": "Fecha de envío"
+          }
+        },
+        "message": {
+          "genre": "texte_long",
+          "max": 200,
+          "libelle": {
+            "fr": "Message",
+            "en": "Message",
+            "es": "Mensaje"
+          }
+        }
+      }
+    },
+    "avis": {
+      "reference": "demande-avis",
+      "sujet": "Nouvel avis",
+      "merci": {
+        "fr": "/donnez-votre-avis.html?merci",
+        "en": "/en/donnez-votre-avis.html?merci",
+        "es": "/es/donnez-votre-avis.html?merci"
+      },
+      "retour": "/donnez-votre-avis.html",
+      "champs": {
+        "avis": {
+          "genre": "texte_long",
+          "max": 500,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre avis",
+            "en": "Your review",
+            "es": "Su opinión"
+          }
+        },
+        "prenom": {
+          "genre": "texte",
+          "max": 28,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Prénom",
+            "en": "First name",
+            "es": "Nombre"
+          }
+        },
+        "initiale": {
+          "genre": "texte",
+          "max": 1,
+          "libelle": {
+            "fr": "Initiale du nom",
+            "en": "Initial of your surname",
+            "es": "Inicial del apellido"
+          }
+        },
+        "mois": {
+          "genre": "texte",
+          "max": 40,
+          "libelle": {
+            "fr": "Mois du séjour",
+            "en": "Month of stay",
+            "es": "Mes de la estancia"
+          }
+        },
+        "logement": {
+          "genre": "texte",
+          "max": 80,
+          "libelle": {
+            "fr": "Logement",
+            "en": "Accommodation",
+            "es": "Alojamiento"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "libelle": {
+            "fr": "E-mail",
+            "en": "Email",
+            "es": "Correo electrónico"
+          }
+        },
+        "accord": {
+          "genre": "case",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Accord pour la publication",
+            "en": "Consent to publication",
+            "es": "Consentimiento para la publicación"
+          }
+        }
+      }
+    }
+  },
+  "antirobot": {
+    "cle_site": "1x00000000000000000000AA"
+  },
+  "calendrier_plusieurs_sources": true
+}

@@ -1,0 +1,423 @@
+{
+  "version": 1,
+  "nom": "La Maison du Noyer",
+  "contacts": {
+    "courriel": "bonjour@maisondunoyer-exemple.fr",
+    "telephone": "05 53 00 00 01",
+    "whatsapp": "https://wa.me/33553000001"
+  },
+  "ouverture": null,
+  "logements": [
+    {
+      "id": "L01",
+      "nom": "La Maison du Noyer",
+      "capacite": 10,
+      "calendrier": true,
+      "regles": {
+        "nuits_min": 3,
+        "saisons": [
+          {
+            "du": "11-01",
+            "au": "03-31",
+            "nuits_min": 3,
+            "jours_arrivee": null
+          },
+          {
+            "du": "04-01",
+            "au": "06-30",
+            "nuits_min": 3,
+            "jours_arrivee": null
+          },
+          {
+            "du": "09-01",
+            "au": "10-31",
+            "nuits_min": 3,
+            "jours_arrivee": null
+          },
+          {
+            "du": "07-01",
+            "au": "08-31",
+            "nuits_min": 7,
+            "jours_arrivee": [
+              6
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "formulaires": {
+    "sejour": {
+      "reference": "demande-sejour",
+      "sujet": "Nouvelle demande de séjour",
+      "merci": {
+        "fr": "/merci.html",
+        "en": "/en/merci.html",
+        "es": "/es/merci.html"
+      },
+      "retour": "/#formulaire",
+      "champs": {
+        "bon_cadeau": {
+          "genre": "texte",
+          "max": 60,
+          "libelle": {
+            "fr": "Numéro de bon cadeau",
+            "en": "Gift voucher number",
+            "es": "Número de bono regalo"
+          }
+        },
+        "nom": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Prénom et Nom",
+            "en": "First name and surname",
+            "es": "Nombre y apellidos"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "E-mail",
+            "en": "Email",
+            "es": "Correo electrónico"
+          }
+        },
+        "tel": {
+          "genre": "telephone",
+          "max": 40,
+          "libelle": {
+            "fr": "Téléphone",
+            "en": "Phone",
+            "es": "Teléfono"
+          }
+        },
+        "arrivee": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Arrivée",
+            "en": "Arrival",
+            "es": "Llegada"
+          }
+        },
+        "depart": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Départ",
+            "en": "Departure",
+            "es": "Salida"
+          }
+        },
+        "flexible": {
+          "genre": "case",
+          "libelle": {
+            "fr": "Dates flexibles",
+            "en": "Flexible dates",
+            "es": "Fechas flexibles"
+          }
+        },
+        "adultes": {
+          "genre": "entier",
+          "min": 1,
+          "max_valeur": 99,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Adultes",
+            "en": "Adults",
+            "es": "Adultos"
+          }
+        },
+        "enfants": {
+          "genre": "entier",
+          "min": 0,
+          "max_valeur": 99,
+          "libelle": {
+            "fr": "Enfants",
+            "en": "Children",
+            "es": "Niños"
+          }
+        },
+        "demande_particuliere": {
+          "genre": "choix_multiple",
+          "libelle": {
+            "fr": "Demande particulière",
+            "en": "Special request",
+            "es": "Petición especial"
+          },
+          "choix": [
+            "Un mariage",
+            "Un séminaire",
+            "Un groupe",
+            "Un long séjour"
+          ]
+        },
+        "message": {
+          "genre": "texte_long",
+          "max": 2000,
+          "libelle": {
+            "fr": "Message",
+            "en": "Message",
+            "es": "Mensaje"
+          }
+        }
+      }
+    },
+    "groupe": {
+      "reference": "demande-groupe",
+      "sujet": "Nouvelle demande de groupe",
+      "merci": {
+        "fr": "/merci.html",
+        "en": "/en/merci.html",
+        "es": "/es/merci.html"
+      },
+      "retour": "/groupes.html",
+      "champs": {
+        "occasion": {
+          "genre": "choix",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Occasion",
+            "en": "Occasion",
+            "es": "Ocasión"
+          },
+          "choix": [
+            "Réunion de famille",
+            "Séminaire",
+            "Mariage",
+            "Séjour entre amis",
+            "Anniversaire",
+            "Cousinade",
+            "Baptême",
+            "Stage ou retraite"
+          ]
+        },
+        "personnes": {
+          "genre": "entier",
+          "min": 1,
+          "max_valeur": 999,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Nombre de personnes",
+            "en": "Number of guests",
+            "es": "Número de personas"
+          }
+        },
+        "arrivee": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Arrivée",
+            "en": "Arrival",
+            "es": "Llegada"
+          }
+        },
+        "depart": {
+          "genre": "date",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Départ",
+            "en": "Departure",
+            "es": "Salida"
+          }
+        },
+        "nom": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre nom",
+            "en": "Your name",
+            "es": "Su nombre"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre adresse électronique",
+            "en": "Your email address",
+            "es": "Su correo electrónico"
+          }
+        },
+        "message": {
+          "genre": "texte_long",
+          "max": 2000,
+          "libelle": {
+            "fr": "Message",
+            "en": "Message",
+            "es": "Mensaje"
+          }
+        }
+      }
+    },
+    "cadeau": {
+      "reference": "demande-cadeau",
+      "sujet": "Nouvelle commande de bon cadeau",
+      "merci": {
+        "fr": "/merci.html",
+        "en": "/en/merci.html",
+        "es": "/es/merci.html"
+      },
+      "retour": "/cartes-cadeaux.html",
+      "champs": {
+        "bon": {
+          "genre": "choix",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Le bon",
+            "en": "Voucher",
+            "es": "Bono"
+          },
+          "choix": {
+            "0": "Un long week-end à la Maison du Noyer",
+            "1": "Un bon d’une valeur au choix"
+          }
+        },
+        "montant": {
+          "genre": "entier",
+          "min": 1,
+          "max_valeur": 9999,
+          "libelle": {
+            "fr": "Montant",
+            "en": "Amount",
+            "es": "Importe"
+          }
+        },
+        "nom": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre nom",
+            "en": "Your name",
+            "es": "Su nombre"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre adresse électronique",
+            "en": "Your email address",
+            "es": "Su correo electrónico"
+          }
+        },
+        "telephone": {
+          "genre": "telephone",
+          "max": 40,
+          "libelle": {
+            "fr": "Téléphone",
+            "en": "Phone",
+            "es": "Teléfono"
+          }
+        },
+        "beneficiaire": {
+          "genre": "texte",
+          "max": 120,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Pour qui",
+            "en": "Recipient",
+            "es": "Para quién"
+          }
+        },
+        "date_envoi": {
+          "genre": "date",
+          "libelle": {
+            "fr": "Date d’envoi",
+            "en": "Date to send",
+            "es": "Fecha de envío"
+          }
+        },
+        "message": {
+          "genre": "texte_long",
+          "max": 200,
+          "libelle": {
+            "fr": "Message",
+            "en": "Message",
+            "es": "Mensaje"
+          }
+        }
+      }
+    },
+    "avis": {
+      "reference": "demande-avis",
+      "sujet": "Nouvel avis",
+      "merci": {
+        "fr": "/donnez-votre-avis.html?merci",
+        "en": "/en/donnez-votre-avis.html?merci",
+        "es": "/es/donnez-votre-avis.html?merci"
+      },
+      "retour": "/donnez-votre-avis.html",
+      "champs": {
+        "avis": {
+          "genre": "texte_long",
+          "max": 500,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Votre avis",
+            "en": "Your review",
+            "es": "Su opinión"
+          }
+        },
+        "prenom": {
+          "genre": "texte",
+          "max": 28,
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Prénom",
+            "en": "First name",
+            "es": "Nombre"
+          }
+        },
+        "initiale": {
+          "genre": "texte",
+          "max": 1,
+          "libelle": {
+            "fr": "Initiale du nom",
+            "en": "Initial of your surname",
+            "es": "Inicial del apellido"
+          }
+        },
+        "mois": {
+          "genre": "texte",
+          "max": 40,
+          "libelle": {
+            "fr": "Mois du séjour",
+            "en": "Month of stay",
+            "es": "Mes de la estancia"
+          }
+        },
+        "courriel": {
+          "genre": "courriel",
+          "max": 254,
+          "libelle": {
+            "fr": "E-mail",
+            "en": "Email",
+            "es": "Correo electrónico"
+          }
+        },
+        "accord": {
+          "genre": "case",
+          "obligatoire": true,
+          "libelle": {
+            "fr": "Accord pour la publication",
+            "en": "Consent to publication",
+            "es": "Consentimiento para la publicación"
+          }
+        }
+      }
+    }
+  },
+  "antirobot": {
+    "cle_site": "1x00000000000000000000AA"
+  },
+  "calendrier_plusieurs_sources": true
+}
