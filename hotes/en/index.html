@@ -301,7 +301,7 @@
         <svg class="partage__icone" viewBox="0 0 44 44" aria-hidden="true"><path d="M9 18h20v8a9 9 0 0 1-9 9h-2a9 9 0 0 1-9-9z"/><path d="M29 20h3a4 4 0 0 1 0 8h-3"/><path d="M15 12c0-2 2-2 2-4M21 12c0-2 2-2 2-4"/><path d="M7 38h26"/></svg>
         <h3 class="partage__titre police-titre">In the morning, we all meet under the lime tree.</h3>
         <p class="partage__texte police-titre">Bread from Bourdeilles, our plum and fig jams, honey from our neighbour, eggs from our hens and fruit from the orchard.</p>
-        <p class="partage__heure police-titre">8 am – 10 am<small>included in the night</small></p>
+        <p class="partage__heure police-titre">8 am – 10 am<small>included in the room rate</small></p>
         <p class="partage__signe police-titre">“The jams are mine. The bread is from the baker: she opens at 7 am.”<span>Claire</span></p>
       </div>
       <div class="partage__col">
@@ -527,7 +527,7 @@
         </a>
       </li>
       <li>
-        <a class="canal canal--wa" href="https://wa.me/33553000000?text=Hello,%20I%20am%20writing%20to%20you%20from%20your%20website.">
+        <a class="canal canal--wa" href="https://wa.me/33553000000?text=Hello,%20I%20found%20you%20through%20your%20website.">
           <span class="canal__rond" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.62 0-3.13-.44-4.44-1.2l-.32-.19-3.02.79.81-2.94-.21-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.36-5.86c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg></span>
           <span class="canal__libelle">On WhatsApp</span>
           <span class="canal__valeur">Contact Claire and Marc</span>
@@ -550,7 +550,7 @@
     <p class="carte-demande__delai">Leave us a message, we will reply <strong>within 24 hours</strong>.</p>
     <form method="post" action="/api/demande" novalidate>
     <div class="resume" role="alert">
-      <p>Two details are missing to send your request.</p>
+      <p>Two details are missing before you can send your request.</p>
       <ul>
         <li><a href="#courriel">Your email address</a></li>
         <li><a href="#arrivee">The arrival date</a></li>
@@ -603,7 +603,7 @@
         <svg class="champ__icone" aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
         <input id="arrivee" name="arrivee" type="date" required>
       </div>
-      <span class="champ__erreur">Error: give your preferred arrival date.</span>
+      <span class="champ__erreur">Error: please enter your preferred arrival date.</span>
     </div>
     <div class="champ">
       <label for="depart">Departure</label>
@@ -611,7 +611,7 @@
         <svg class="champ__icone" aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
         <input id="depart" name="depart" type="date" required>
       </div>
-      <span class="champ__erreur">Error: give your preferred departure date.</span>
+      <span class="champ__erreur">Error: please enter your preferred departure date.</span>
     </div>
     <div class="champ champ--large">
       <label class="case"><input type="checkbox" name="flexible"> My dates are flexible by a few days</label>
@@ -631,7 +631,7 @@
           <option value="8">8 adults or more</option>
         </select>
       </div>
-      <span class="champ__erreur">Error: give the number of adults.</span>
+      <span class="champ__erreur">Error: please enter the number of adults.</span>
     </div>
     <div class="champ">
       <label for="enfants">Children <small>under 12</small></label>
@@ -646,7 +646,7 @@
           <option value="5">5 children or more</option>
         </select>
       </div>
-      <span class="champ__erreur">Error: give a number.</span>
+      <span class="champ__erreur">Error: please enter a number.</span>
     </div>
     <p class="champ champ--large champ__groupe">Coming as a group, for a party or a seminar? <a href="groupes.html">Ask for a group quote</a></p>
     <div class="champ champ--large">
@@ -668,7 +668,7 @@
     </div>
     <p class="anti-robot" data-antirobot-mention>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 5 6.2v5c0 4.1 2.8 7.9 7 9.3 4.2-1.4 7-5.2 7-9.3v-5z"/><path d="m9.2 12 2 2 3.6-3.8"/></svg>
-      An anti-robot test protects this form. It appears here and asks nothing of you in most cases.
+      An anti-robot test protects this form. It appears here; in most cases, it needs nothing from you.
     </p>
     <input type="hidden" name="type" value="sejour"><input type="hidden" name="langue" value="en">
     <div class="antirobot" data-antirobot></div>
@@ -807,14 +807,14 @@
   </a>
   <a class="caps" href="#contact">
     <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.5 8 6 8-6"/></svg>
-    Write
+    Message
   </a>
   <a class="bouton caps" href="#reserver">
     <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
     Book
   </a>
 </nav>
-<a class="bulle" href="https://wa.me/33553000000?text=Hello,%20I%20am%20writing%20to%20you%20from%20your%20website." aria-label="Message us on WhatsApp">
+<a class="bulle" href="https://wa.me/33553000000?text=Hello,%20I%20found%20you%20through%20your%20website." aria-label="Message us on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.62 0-3.13-.44-4.44-1.2l-.32-.19-3.02.79.81-2.94-.21-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.36-5.86c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg>
 </a>
 <dialog class="feuille" id="feuille-menu" aria-label="Menu">
@@ -838,14 +838,14 @@
     <a class="bouton caps" href="#reserver"><span class="bouton__texte">Book</span><span class="bouton__pastille" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span></a>
   </div>
 </dialog>
-<dialog class="feuille" id="feuille-ecrire" aria-label="Write">
+<dialog class="feuille" id="feuille-ecrire" aria-label="Message">
   <div class="feuille__tete">
     <span class="feuille__titre">Write to Claire and Marc</span>
     <button class="feuille__fermer" type="button" data-fermer aria-label="Close">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
   </div>
-  <a class="feuille__action feuille__action--wa" href="https://wa.me/33553000000?text=Hello,%20I%20am%20writing%20to%20you%20from%20your%20website.">
+  <a class="feuille__action feuille__action--wa" href="https://wa.me/33553000000?text=Hello,%20I%20found%20you%20through%20your%20website.">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.62 0-3.13-.44-4.44-1.2l-.32-.19-3.02.79.81-2.94-.21-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.36-5.86c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg>
     WhatsApp
   </a>
@@ -858,6 +858,6 @@
     <button type="button" data-copier>Copy</button>
   </p>
 </dialog>
-<script src="../site.645aec6b.js" defer></script>
+<script src="../site.2b537269.js" defer></script>
 </body>
 </html>

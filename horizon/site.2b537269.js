@@ -566,9 +566,9 @@ et: ' et ', nuit: 'nuit', nuits: 'nuits',
 jours: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi']
 },
 en: {
-capacite_un: '{noms} sleeps {places} guests at most, and your group is {n}.',
-capacite_plusieurs: '{noms} sleep {places} guests at most, and your group is {n}.',
-capacite_tous: 'We can host {places} guests at most, and your group is {n}.',
+capacite_un: '{noms} sleeps {places} guests at most, and there are {n} of you.',
+capacite_plusieurs: '{noms} sleep {places} guests at most, and there are {n} of you.',
+capacite_tous: 'We can host {places} guests at most, and there are {n} of you.',
 duree: 'Stays are {min} nights minimum, and your request is for {nuits}.',
 jour: 'Arrivals are not usually on a {jour}.',
 fermeture: 'Part of your stay falls outside our opening period.',
@@ -583,7 +583,7 @@ jours: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 es: {
 capacite_un: '{noms} admite {places} personas como máximo, y su solicitud es para {n}.',
 capacite_plusieurs: '{noms} admiten {places} personas como máximo, y su solicitud es para {n}.',
-capacite_tous: 'Admitimos {places} personas como máximo, y su solicitud es para {n}.',
+capacite_tous: 'Podemos alojar a {places} personas como máximo, y su solicitud es para {n}.',
 duree: 'Las estancias son de {min} noches como mínimo, y su solicitud es de {nuits}.',
 jour: 'Normalmente las llegadas no se realizan el {jour}.',
 fermeture: 'Una parte de su estancia queda fuera de nuestro periodo de apertura.',
@@ -1019,9 +1019,9 @@ b.tabIndex = foyer && +d === +foyer ? 0 : -1;
 if (EN) etat = 'free';
 if (passe(d)) { b.classList.add('dispo__j--passe'); inactif(b); etat = ES ? 'pasado' : EN ? 'past' : 'passé'; }
 else if (debut && +d === +debut) { etat = ES ? 'su llegada' : EN ? 'your arrival' : 'votre arrivée'; }
-else if (choixDepart && departOk(d)) { etat = ES ? 'salida posible' : EN ? 'possible departure' : 'départ possible'; }
+else if (choixDepart && departOk(d)) { etat = ES ? 'salida posible' : EN ? 'departure possible' : 'départ possible'; }
 else if (debut && fin && +d === +fin) { etat = ES ? 'su salida' : EN ? 'your departure' : 'votre départ'; }
-else if (debut && fin && d > debut && d < fin) { etat = ES ? 'en su estancia' : EN ? 'in your stay' : 'dans votre séjour'; }
+else if (debut && fin && d > debut && d < fin) { etat = ES ? 'en su estancia' : EN ? 'part of your stay' : 'dans votre séjour'; }
 else if (ferme(d)) { b.classList.add('dispo__j--ferme'); inactif(b); clos = true; etat = ES ? 'cerrado' : EN ? 'closed' : 'fermé'; }
 else if (prise(d)) { b.classList.add('dispo__j--pris'); inactif(b); etat = ES ? 'ya reservado' : EN ? 'already booked' : 'déjà réservé'; }
 else if (choixDepart && d > debut && nuits(debut, d) < minDe(debut)) { b.classList.add('dispo__j--court'); inactif(b); etat = ES ? 'estancia demasiado corta' : EN ? 'stay too short' : 'séjour trop court'; }
@@ -1121,7 +1121,7 @@ var oui = !!choix[lg.nom], dispo = !(debut && fin) || libreSur(lg, debut, fin), 
 b.type = 'button'; b.className = 'dispo__logement'; b.setAttribute('aria-pressed', oui); b.setAttribute('data-cle', 'l' + lg.nom);
 b.innerHTML = '<span class="dispo__case" aria-hidden="true">' + (oui ? '✓' : '') + '</span><span><b>' + lg.html + '</b>'
 + '<span class="dispo__faits">' + lg.cap + '</span><span class="dispo__faits">' + prixCase(lg) + '</span>'
-+ (debut && fin ? '<span class="dispo__etat' + (dispo ? '' : ' dispo__etat--non') + '">' + (dispo ? (ES ? 'libre ✓' : EN ? 'free ✓' : 'libre ✓') : (ES ? 'ocupada' : EN ? 'booked' : 'prise')) + '</span>' : '') + '</span>';
++ (debut && fin ? '<span class="dispo__etat' + (dispo ? '' : ' dispo__etat--non') + '">' + (dispo ? (ES ? 'libre ✓' : EN ? 'free ✓' : 'libre ✓') : (ES ? 'no disponible' : EN ? 'booked' : 'prise')) + '</span>' : '') + '</span>';
 b.addEventListener('click', function () { basculer(lg.nom); });
 l.appendChild(b);
 });
@@ -1241,7 +1241,7 @@ return 'Dès ' + euros(parNuit) + ' la nuit selon la saison, taxe de séjour en 
 + (o.tarifs ? ' <a href="' + o.tarifs + '">Voir les tarifs</a>' : '');
 }
 if (ES) return 'Aproximadamente ' + euros(nb * parNuit) + ' (' + nb + ' × ' + parNuit.toLocaleString('es-ES') + '\u00a0€), más tasa turística';
-if (EN) return 'About ' + euros(nb * parNuit) + ' (' + nb + ' × €' + parNuit + '), plus tourist tax';
+if (EN) return 'About ' + euros(nb * parNuit) + ' (' + nb + ' × €' + parNuit.toLocaleString('en-GB') + '), plus tourist tax';
 return 'Environ ' + (nb * parNuit).toLocaleString('fr-FR') + ' € (' + nb + ' × ' + parNuit + ' €), taxe de séjour en plus';
 }
 function rendreRecap() {
@@ -1618,7 +1618,7 @@ err.textContent = err.getAttribute('data-debut') + ' ' + noms.join(', ') + '.';
 }
 var RE_COURRIEL = /^[^\s@<>()",;:\\[\]]+@[^\s@<>()",;:\\[\]]+\.[^\s@<>()",;:\\[\]]{2,}$/;
 var lang = document.documentElement.lang;
-var COURRIEL_FAUX = lang === 'es' ? 'Su dirección de correo electrónico parece incompleta.' : lang === 'en' ? 'Your email address seems incomplete.' : 'Votre adresse électronique semble incomplète.';
+var COURRIEL_FAUX = lang === 'es' ? 'Su dirección de correo electrónico parece incompleta.' : lang === 'en' ? 'Your email address looks incomplete.' : 'Votre adresse électronique semble incomplète.';
 f.addEventListener('submit', function (e) {
 e.preventDefault();
 var manque = false, bas = null, faux = null;
